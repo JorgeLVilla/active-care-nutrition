@@ -1,0 +1,109 @@
+<div class="maual_feat_collection">
+  <div class="manu_fetcont">
+    <h2>{{ section.settings.title }}</h2>
+    <div class="manu_desc">
+      {{ section.settings.content }}
+    </div>
+    <div class="featur_coll_mnu">
+      {% for block in section.blocks %}
+        <div class="featur_coll_box">
+          {% if block.settings.image_pc != blank %}<img src="{{ block.settings.image_pc | img_url:'master' }}">{% endif %}
+          <h3 style="color:{{ block.settings.img_ttlclr }}">{{ block.settings.img_ttl }}</h3>
+          <h5 style="color:{{ block.settings.img_subttlclr }}">{{ block.settings.img_subttl }}</h5>
+          <div class="img_cntnt">
+            {{ block.settings.img_cntnt }}
+          </div>
+          {% if block.settings.img_btntxt != blank %}
+            <div class="img_btn_cl">
+              <a href="{{ block.settings.img_btnurl }}" style="background:{{ block.settings.img_btnclr }}">{{ block.settings.img_btntxt }}</a>
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<style>
+.maual_feat_collection .manu_fetcont h2 {color: black;font-size: 55px;font-weight: 600;letter-spacing: 0;text-align: center;margin-top: 200px;}
+.maual_feat_collection .manu_fetcont .manu_desc {color: black;max-width: 60rem;margin: 0 auto;text-align: center;}
+.maual_feat_collection .featur_coll_mnu {display: flex;justify-content: center;text-align: center;margin-bottom: 80px;}
+.maual_feat_collection .featur_coll_box h3 {font-size: 29px;letter-spacing: 0;margin-bottom: 10px;}  
+.maual_feat_collection .featur_coll_box h5 {font-size: 16px;letter-spacing: 3px;text-transform: uppercase;}  
+.maual_feat_collection .img_cntnt {color: black;width: 65%;margin: 0 auto;}
+.maual_feat_collection .img_btn_cl a {display: block;max-width: 195px;margin: 50px auto;color: #fff;font-weight: 700;padding: 8px 0;border-radius: 100px;}
+</style>
+{% schema %}
+  {
+    "name": "Manual collection",
+    "settings": [
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+        "type":"textarea",
+        "id":"content",
+        "label":"Content"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"image",
+        "name":"image",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"image_pc",
+            "label":"Image"
+          },
+          {
+            "type":"text",
+            "id":"img_ttl",
+            "label":"Title"
+          },
+          {
+            "type":"color",
+            "id":"img_ttlclr",
+            "label":"Title color"
+          },
+          {
+            "type":"text",
+            "id":"img_subttl",
+            "label":"Sub Title"
+          },
+          {
+            "type":"color",
+            "id":"img_subttlclr",
+            "label":"Sub Title color"
+          },
+          {
+            "type":"textarea",
+            "id":"img_cntnt",
+            "label":"Content"
+          },
+          {
+            "type":"text",
+            "id":"img_btntxt",
+            "label":"Button text"
+          },
+          {
+            "type":"url",
+            "id":"img_btnurl",
+            "label":"Button Link"
+          },
+          {
+            "type":"color",
+            "id":"img_btnclr",
+            "label":"Button color"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Manual collection"
+      }
+    ]
+  }
+{% endschema %}

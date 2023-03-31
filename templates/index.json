@@ -1,0 +1,514 @@
+{
+  "sections": {
+    "hero-video": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "title": "Your Whole Body Experience",
+        "title_size": 68,
+        "subheading": "FORMULATED FOR WHOLE-BODY HEALTH",
+        "link_text": "Shop Now",
+        "link": "shopify:\/\/collections\/all",
+        "color_accent": "#f65002",
+        "text_align": "vertical-center horizontal-left",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "section_height": "100vh",
+        "mobile_height": "100vh",
+        "show_overlay_image": true,
+        "overlay_image": "shopify:\/\/shop_images\/Plan_de_travail_1_1.png"
+      }
+    },
+    "14bea02e-cf54-4b0f-8d08-042a64446040": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16628043743474__14bea02e-cf54-4b0f-8d08-042a64446040-1674598171bde0f333-0": {
+          "type": "image",
+          "settings": {
+            "top_subtitle": "Functional & Flavorful",
+            "title": "Super Gummies",
+            "bottom_subtitle": "Targeting Whole Body Health and Aging",
+            "title_size": 90,
+            "subheading": "Vitamin & Mineral Array |  Probiotics |  Digestive Enzymes |  Adaptogens & more!!",
+            "link": "shopify:\/\/collections\/all",
+            "link_text": "Get started",
+            "second_style": true,
+            "color_accent": "#f84e00",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Hero_Banner.svg",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16628043743474__14bea02e-cf54-4b0f-8d08-042a64446040-1674598171bde0f333-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "section_height": "750px",
+        "show_overlay_image": true,
+        "overlay_image": "shopify:\/\/shop_images\/Group_800.png"
+      }
+    },
+    "6bc2b4fa-ac28-469c-9cce-ba53f5912647": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--16628043743474__6bc2b4fa-ac28-469c-9cce-ba53f5912647-16740671141fd38d8c-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/cup_icon_7d1d97ae-645a-4e07-8bdd-1c8cc02293e2.png",
+            "title": "Bridge  Nutritional Gaps",
+            "text": "<p>Immunity & Energy Boost Performance, Rest & Recovery, Heart and Beauty Health<\/p>",
+            "hide_icon": false
+          }
+        },
+        "template--16628043743474__6bc2b4fa-ac28-469c-9cce-ba53f5912647-16740671141fd38d8c-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/light_blub.webp",
+            "title": "Mental & Cognitive Wellbeing",
+            "text": "<p>Focus, Mood & Clarity  <\/p><p>Emotional & Social Support <\/p><p>Fight or Flight Response<\/p>",
+            "hide_icon": false
+          }
+        },
+        "451639b7-33f1-42fa-ad39-308ab767a329": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/gut.png",
+            "title": "Digestive & Gut Health",
+            "text": "<p>Gut Microbiome & GI System<\/p><p>Metabolism & Weight<\/p><p>Macro & Micro Nutrient Absorption<\/p>",
+            "hide_icon": false
+          }
+        },
+        "template--16628043743474__6bc2b4fa-ac28-469c-9cce-ba53f5912647-16740671141fd38d8c-2": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/plus_circle.png",
+            "title": "Whole Body Health & Aging",
+            "text": "<p>Cellular Energy & Oxygen Levels<\/p><p>Hormone Balance<\/p><p>24-hr. Circadian Rhythm<\/p>",
+            "hide_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16628043743474__6bc2b4fa-ac28-469c-9cce-ba53f5912647-16740671141fd38d8c-0",
+        "template--16628043743474__6bc2b4fa-ac28-469c-9cce-ba53f5912647-16740671141fd38d8c-1",
+        "451639b7-33f1-42fa-ad39-308ab767a329",
+        "template--16628043743474__6bc2b4fa-ac28-469c-9cce-ba53f5912647-16740671141fd38d8c-2"
+      ],
+      "settings": {
+        "subtitle": "",
+        "title": "Gummies to help support:",
+        "align_text": "center",
+        "single_row": true,
+        "desktop_columns_per_row": 4,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "alt": false,
+        "alt_no_gap": false,
+        "top_padded": false
+      }
+    },
+    "13fe5dd2-bdb8-4d94-a535-8ba87ed68d19": {
+      "type": "saygoodbye_section",
+      "disabled": true,
+      "settings": {
+        "bg_clr": "#f4f4f3",
+        "title": "Say goodbye to...",
+        "content": "Balancing life and health shouldn’t be a chore. Our gummies are easy to manage and integrate into your daily routine.",
+        "ico_1": "shopify:\/\/shop_images\/Rectangle_89_1.png",
+        "txt_1": "Hard-to-stomach capsules",
+        "ico_2": "shopify:\/\/shop_images\/Rectangle_90.png",
+        "txt_2": "Nasty bland powders",
+        "ico_3": "shopify:\/\/shop_images\/Rectangle_91.png",
+        "txt_3": "Multiple subscriptions",
+        "btn_txt": "GET STARTED",
+        "btn_url": "shopify:\/\/collections\/all"
+      }
+    },
+    "text-and-image": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "margin_top": "",
+        "margin_right": "",
+        "page_wd": "",
+        "sect_heading": "Recharge Payment Solutions will build",
+        "image": "shopify:\/\/shop_images\/Group_766.png",
+        "image_width": 700,
+        "bg_clr": "",
+        "subtitle": "",
+        "title": "Build a bundle & Save",
+        "text": "",
+        "button_label": "Start",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "alt": false
+      }
+    },
+    "9a97ebee-8229-4597-9013-36e822bfa569": {
+      "type": "slider-with-button",
+      "blocks": {
+        "6fd6649d-cc5f-49f6-a7c0-29fd09280f7c": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Multivitamin_1.png"
+          }
+        },
+        "f0d8243a-f4ee-4cc0-8b02-90a174a7d36c": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Group_831_1.png"
+          }
+        },
+        "385975ac-d737-48f7-bdf8-43fc8f106895": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Nightime_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "6fd6649d-cc5f-49f6-a7c0-29fd09280f7c",
+        "f0d8243a-f4ee-4cc0-8b02-90a174a7d36c",
+        "385975ac-d737-48f7-bdf8-43fc8f106895"
+      ],
+      "settings": {
+        "title": "A Multi-Nutrient Approach",
+        "content": "Say goodbye to individual supplements with excessive daily values and low absorption rates. With the combined features of a multivitamin and the powers of a probiotic and adaptogen superfoods, our dietary supplements are truly all-in-one. Place an order with ActiveCare today!",
+        "btn_txt": "GET STARTED",
+        "btn_url": "shopify:\/\/collections\/all"
+      }
+    },
+    "377abfe4-0c67-4ec5-81bf-892453d2a02b": {
+      "type": "image-with-text",
+      "blocks": {
+        "ddc7bc4f-0b3d-4780-ba88-c0ae9ca2978c": {
+          "type": "iwt-bullet",
+          "settings": {
+            "iwt_bullet_text": "Multi-Nutrient Gummies"
+          }
+        },
+        "de3ee773-b226-4beb-aefa-6fa9bfed931d": {
+          "type": "iwt-bullet",
+          "settings": {
+            "iwt_bullet_text": "100% Vegan"
+          }
+        },
+        "b41943b4-2f78-4556-97a2-4b89f5825ff3": {
+          "type": "iwt-bullet",
+          "settings": {
+            "iwt_bullet_text": "3rd Party Tested for  Heavy Metals  & Purity"
+          }
+        },
+        "d772771b-282e-45b9-8931-afc779adf7b8": {
+          "type": "iwt-bullet",
+          "settings": {
+            "iwt_bullet_text": "Gelatin, Glueten, Soy, GMO & Artifical Flavoring FREE!"
+          }
+        },
+        "d62359b1-e050-4099-b8cd-4b81d039438f": {
+          "type": "iwt-bullet",
+          "settings": {
+            "iwt_bullet_text": "Targets Whole Body Health & Digestion."
+          }
+        }
+      },
+      "block_order": [
+        "ddc7bc4f-0b3d-4780-ba88-c0ae9ca2978c",
+        "de3ee773-b226-4beb-aefa-6fa9bfed931d",
+        "b41943b4-2f78-4556-97a2-4b89f5825ff3",
+        "d772771b-282e-45b9-8931-afc779adf7b8",
+        "d62359b1-e050-4099-b8cd-4b81d039438f"
+      ],
+      "settings": {
+        "iwt_image": "shopify:\/\/shop_images\/iwt_image_71a2f9fe-87da-46bd-b5cf-ef16307154b2.jpg",
+        "iwt_header": "Try ActiveCare's  Routine!",
+        "iwt_sub_header": "At home or on the go? For you or two? Target whole body health with our perfect routine!",
+        "iwt_button_text": "Get Started",
+        "iwt_button_link": "shopify:\/\/products\/relief-recovery"
+      }
+    },
+    "0b86cf11-5904-447d-8520-2e1883e4eada": {
+      "type": "text-with-icon-supplements",
+      "blocks": {
+        "template--16657789714674__0b86cf11-5904-447d-8520-2e1883e4eada-1677830013cf85ba2f-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/sun_2.png",
+            "title": "Vitamin & Mineral Array",
+            "text": "<p>Power your nutritional journey through fueling your body with essential vitamins and minerals to help boost immunity, energy, beauty and aging.<\/p>",
+            "hide_icon": false
+          }
+        },
+        "template--16657789714674__0b86cf11-5904-447d-8520-2e1883e4eada-1677830013cf85ba2f-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/ameoda.png",
+            "title": "Probiotics",
+            "text": "<p>Empower and protect your bodies ecosystem with a community of 'friendly' microorganisms to help support your guts microbiome, micronutrient synthesis, cognitive functions and systemic health.<\/p>",
+            "hide_icon": false
+          }
+        },
+        "template--16657789714674__0b86cf11-5904-447d-8520-2e1883e4eada-1677830013cf85ba2f-2": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/kidney_2.png",
+            "title": "Digestive Enzymes",
+            "text": "<p>Absorb vital macro and micro nutrients throughout your daily meals and help break downcarbohydrates into sugars. Fats into fatty acids, Lactose into glucose and galactose and Protein into amino acids.<\/p>",
+            "hide_icon": false
+          }
+        },
+        "ab39204a-1ae0-4c3e-8601-b8a65ef014cd": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/vial.png",
+            "title": "Botanical Terpenes",
+            "text": "<p>Discover the hidden gems of nature: terpenes! These scarce, magical compounds found in plants and fruit hold the key to enhancing your well-being by effortlessly boosting your mood, energy, and sleep quality, all while bidding farewell to inflammation and stress.<\/p>",
+            "hide_icon": false
+          }
+        },
+        "eee0ac62-5e94-42d1-ae59-2c9a7105c0f9": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/plant_2.png",
+            "title": "Adaptogen Superfoods",
+            "text": "<p>Fuel your body's resilience with plant and mushroom Adaptogens - a powerful ally for battling stress, harmonizing hormone levels, and reinforcing your internal systems for the fight or flight response.<\/p>",
+            "hide_icon": false
+          }
+        },
+        "cf494e90-c236-4bcc-a5e8-47c904d6b8f8": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/watermelon.png",
+            "title": "Fruit Pectin",
+            "text": "<p>A natural extract sourced from real fruits that's transforming the health scene. Not only does it replace animal-based gelatin, but it's also believed to improve blood sugar and blood fat levels, promote a healthy weight and promote digestion.<\/p>",
+            "hide_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16657789714674__0b86cf11-5904-447d-8520-2e1883e4eada-1677830013cf85ba2f-0",
+        "template--16657789714674__0b86cf11-5904-447d-8520-2e1883e4eada-1677830013cf85ba2f-1",
+        "template--16657789714674__0b86cf11-5904-447d-8520-2e1883e4eada-1677830013cf85ba2f-2",
+        "ab39204a-1ae0-4c3e-8601-b8a65ef014cd",
+        "eee0ac62-5e94-42d1-ae59-2c9a7105c0f9",
+        "cf494e90-c236-4bcc-a5e8-47c904d6b8f8"
+      ],
+      "settings": {
+        "bg_clr": "#f4f4f3",
+        "subtitle": "YOUR BODY, YOUR SUPPORT.",
+        "title": "Supplements that keep up with you.",
+        "align_text": "center",
+        "single_row": false,
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "GET STARTED",
+        "button_link": "shopify:\/\/collections\/all",
+        "alt": false,
+        "alt_no_gap": true,
+        "top_padded": false
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "frontpage",
+        "rows": 1,
+        "per_row_desktop": 3,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    },
+    "7a43332a-89e1-428b-ad76-f4b5c5e4e484": {
+      "type": "manual-featured-collection",
+      "blocks": {
+        "91ec8dea-5a29-4f94-ac0a-f8577ef84bf6": {
+          "type": "image",
+          "settings": {
+            "image_pc": "shopify:\/\/shop_images\/ActiveCare_Hybrid_Multi-dec7_FRONT_1_750x_de5b3c45-b855-4514-998b-75ffd926a8c1.png",
+            "img_ttl": "Immunity & Energy",
+            "img_ttlclr": "#992a36",
+            "img_subttl": "MultiVitamin",
+            "img_subttlclr": "#fd6b6b",
+            "img_cntnt": "Tackle stress and discomfort caused by sudden sudden diet changes, environmental pollutants or extensive travel.",
+            "img_btntxt": "SHOP NOW",
+            "img_btnurl": "shopify:\/\/products\/active-care-nutritions-women-mens-hybird-multi-watermalon-mango",
+            "img_btnclr": "#fd6b6b"
+          }
+        },
+        "94bfa754-1fc1-49a1-9e2d-77ee2abd2a8d": {
+          "type": "image",
+          "settings": {
+            "image_pc": "shopify:\/\/shop_images\/ActiveCare_Relief_Recovery_dec7_FRONT_1_750x_56736561-b2f1-46a3-953f-c86ba61944b0.png",
+            "img_ttl": "Mind & Body",
+            "img_ttlclr": "#f84e00",
+            "img_subttl": "Stress Support",
+            "img_subttlclr": "#ffa114",
+            "img_cntnt": "Tackle stress and discomfort caused by sudden sudden diet changes, environmental pollutants or extensive travel.",
+            "img_btntxt": "SHOP NOW",
+            "img_btnurl": "shopify:\/\/products\/relief-recovery",
+            "img_btnclr": "#ffa114"
+          }
+        },
+        "e2548437-d945-49d0-a386-37d66087ff65": {
+          "type": "image",
+          "settings": {
+            "image_pc": "shopify:\/\/shop_images\/ActiveCare_Sleep_Well_dec7_FRONT_1_750x_eda3d317-6e35-481f-af87-1559cd7a22e8.png",
+            "img_ttl": "Rest + Digest",
+            "img_ttlclr": "#2c3368",
+            "img_subttl": "Nighttime",
+            "img_subttlclr": "#6dc3f3",
+            "img_cntnt": "Tackle stress and discomfort caused by sudden sudden diet changes, environmental pollutants or extensive travel.",
+            "img_btntxt": "SHOP NOW",
+            "img_btnurl": "shopify:\/\/products\/active-care-nutritions-women-mens-rest-support",
+            "img_btnclr": "#6dc3f3"
+          }
+        }
+      },
+      "block_order": [
+        "91ec8dea-5a29-4f94-ac0a-f8577ef84bf6",
+        "94bfa754-1fc1-49a1-9e2d-77ee2abd2a8d",
+        "e2548437-d945-49d0-a386-37d66087ff65"
+      ],
+      "settings": {
+        "title": "The perfect balance",
+        "content": "Add some flavor to your supplements while balancing your nutrition and circadian rhythm."
+      }
+    },
+    "6af831f3-d984-4899-9e78-7e76c4307df1": {
+      "type": "testimonials",
+      "blocks": {
+        "template--16628043743474__6af831f3-d984-4899-9e78-7e76c4307df1-167422921717fd6f6f-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Absolutely LOVE these! I took the Immunity & Energy and what a difference to my daytime routine!!<\/p>",
+            "author": "Jeanne M.",
+            "show_stars": true,
+            "number_of_stars": 5
+          }
+        },
+        "template--16628043743474__6af831f3-d984-4899-9e78-7e76c4307df1-167422921717fd6f6f-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>I have allocated time each day to taking these and WOW. I absolutely love these, they give you a different perspective on how to think\/empower your balanced health and nutrition. I’m feeling a thousand times better for having started these. So much more positive.\"<\/p>",
+            "author": "Jess B",
+            "show_stars": true,
+            "number_of_stars": 5
+          }
+        },
+        "6931b938-6117-4888-9283-aabfddccabce": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>I've taken several different types and forms of multivitamins and NONE of them compare to ActiveCares! Easy to consume, packed with nutrients that target my whole body and shockingly good!<\/p>",
+            "author": "Tom D",
+            "show_stars": true,
+            "number_of_stars": 5
+          }
+        }
+      },
+      "block_order": [
+        "template--16628043743474__6af831f3-d984-4899-9e78-7e76c4307df1-167422921717fd6f6f-0",
+        "template--16628043743474__6af831f3-d984-4899-9e78-7e76c4307df1-167422921717fd6f6f-1",
+        "6931b938-6117-4888-9283-aabfddccabce"
+      ],
+      "settings": {
+        "bg_clr": "#f4f4f3",
+        "title": "Reviews",
+        "align_text": "center",
+        "stars_color": "#ecd504",
+        "stars_empty_color": "#cccccc",
+        "round_images": true,
+        "alt": false
+      }
+    },
+    "f812ab2d-7a85-4383-a517-4ade7d52cc3e": {
+      "type": "solutions-slider",
+      "blocks": {
+        "template--16657789714674__f812ab2d-7a85-4383-a517-4ade7d52cc3e-167783657304e3abc7-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/Group_787_73ad1026-37fc-4bbf-a8b2-1983fb919e55.png",
+            "title": "",
+            "text": "<p>Committed to the highest quality ingredients, manufacturing standards and comprehensive third party testing we aim to help you achieve your nutritional goals and balanced lifestyle!<\/p><p>With pre-portioned, delicious gummies that tastes delicious, you get as much nutrition and satiety as a balanced supplement routine, without all the planning, measuring, and calorie counting.<\/p>",
+            "hide_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16657789714674__f812ab2d-7a85-4383-a517-4ade7d52cc3e-167783657304e3abc7-0"
+      ],
+      "settings": {
+        "subtitle": "Why ActiveCare?",
+        "title": " Feed your mind and body",
+        "align_text": "center",
+        "single_row": true,
+        "desktop_columns_per_row": 1,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "alt": false,
+        "alt_no_gap": true,
+        "top_padded": false
+      }
+    },
+    "4ee93929-1c1d-44fc-ae4a-71767002df25": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "margin_top": "",
+        "margin_right": "",
+        "page_wd": "",
+        "sect_heading": "Recharge Payment Solutions will build",
+        "image": "shopify:\/\/shop_images\/Plan_de_travail_1_1_3.png",
+        "image_width": 700,
+        "bg_clr": "",
+        "subtitle": "",
+        "title": "Build a bundle & save",
+        "text": "",
+        "button_label": "Start",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "hero-video",
+    "14bea02e-cf54-4b0f-8d08-042a64446040",
+    "6bc2b4fa-ac28-469c-9cce-ba53f5912647",
+    "13fe5dd2-bdb8-4d94-a535-8ba87ed68d19",
+    "text-and-image",
+    "9a97ebee-8229-4597-9013-36e822bfa569",
+    "377abfe4-0c67-4ec5-81bf-892453d2a02b",
+    "0b86cf11-5904-447d-8520-2e1883e4eada",
+    "featured-collection",
+    "7a43332a-89e1-428b-ad76-f4b5c5e4e484",
+    "6af831f3-d984-4899-9e78-7e76c4307df1",
+    "f812ab2d-7a85-4383-a517-4ade7d52cc3e",
+    "4ee93929-1c1d-44fc-ae4a-71767002df25"
+  ]
+}

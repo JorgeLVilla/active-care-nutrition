@@ -1,0 +1,128 @@
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<div class="multivitamin_ingredients">
+<div class="multivitamin_ing_cont">
+  <div class="multivitamin_hd">
+    <h2>{{ section.settings.heading }}</h2>
+    <div class="multi_para">
+      {{ section.settings.subheading }}
+    </div>
+  </div>
+  <div class="multi_ingre_tbs">
+    <ul class="multtil">
+      <li><h4 class="active">{{ section.settings.tab1 }}</h4></li>
+      <li><h4>{{ section.settings.tab2 }}</h4></li>
+      <li><h4>{{ section.settings.tab3 }}</h4></li>
+    </ul>
+    <div class="multi_tw">
+      <div class="vtmn_dv">
+      <ul class="vtmn">
+        {% for block in section.blocks %}
+          <li data-id="sh_{{ forloop.index }}" class="{% if forloop.index == 1 %} active{% endif %}" >{{ block.settings.line }}</li>
+        {% endfor %}
+      </ul>
+      </div>
+      <div class="cont_dv">
+      <ul class="content_0">
+        {% for block in section.blocks %}
+          <li data-id="sh_{{ forloop.index }}" class=" {% if forloop.index == 1 %} showcnt{% endif %}" >{{ block.settings.text_cont }}</li>
+        {% endfor %}
+      </ul>
+      </div>
+      <div class="probio_dv">
+      <ul class="content_0">
+        {% for block in section.blocks %}
+          <li class="sh_{{ forloop.index }}">{{ block.settings.text_contpro }}</li>
+        {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<style>
+  .cont_dv li{display:none;}
+  .cont_dv li.showcnt{display:block;}
+  .multtil h4{cursor:pointer;}
+</style>
+<script>
+  $(document).on('click','.vtmn_dv li',function(){
+    var $this = $(this).attr('data-id');
+    $('.vtmn_dv li').removeClass('active');
+    $(this).addClass('active');
+    $('.cont_dv li').each(function(){
+      if($this == $(this).attr('data-id')){
+        $(this).show();
+      }
+      else{
+        $(this).hide();
+      }
+    });
+  });
+  $(document).on('click','.multtil h4',function(){
+    var $this = $(this).attr('data-id');
+    $('.multtil h4').removeClass('active');
+    $(this).addClass('active');
+    
+  });
+  
+</script>
+{% schema %}
+  {
+    "name": "Multivitamin ingredients",
+    "settings": [
+      {
+        "type":"text",
+        "id":"heading",
+        "label":"Heading"
+      },
+      {
+        "type":"textarea",
+        "id":"subheading",
+        "label":"Sub Heading"
+      },
+      {
+        "type":"text",
+        "id":"tab1",
+        "label":"Tab 1"
+      },
+      {
+        "type":"text",
+        "id":"tab2",
+        "label":"Tab 2"
+      },
+      {
+        "type":"text",
+        "id":"tab3",
+        "label":"Tab 3"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"text",
+        "name":"vitamins",
+        "settings":[
+          {
+            "type":"text",
+            "id":"line",
+            "label":"Tab Text"
+          },
+          {
+            "type":"textarea",
+            "id":"text_cont",
+            "label":"Content"
+          },
+          {
+            "type":"textarea",
+            "id":"text_contpro",
+            "label":"Probiotic Content"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"multivitamin ingredients"
+      }
+    ]
+  }
+{% endschema %}

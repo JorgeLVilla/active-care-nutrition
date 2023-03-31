@@ -1,0 +1,36 @@
+<div class="site-footer__section site-footer__section--newsletter" data-aos>
+  <div class="page-width">
+    {%- if section.settings.newsletter_title != blank -%}
+      <div class="h2 appear-delay">{{ section.settings.newsletter_title }}</div>
+    {%- endif -%}
+
+    {%- if section.settings.newsletter_richtext != blank -%}
+      <div class="rte rte--block appear-delay-1">
+        {{ section.settings.newsletter_richtext }}
+      </div>
+    {%- endif -%}
+
+    <div class="appear-delay-2">
+      {%- render 'newsletter-form', section_id: section.id, snippet_context: 'footer' -%}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Newsletter",
+    "settings": [
+      {
+        "type":"text",
+        "id":"newsletter_title",
+        "label":"Title",
+        "default":"NEWSLETTER"
+      },
+      {
+        "type":"textarea",
+        "id":"newsletter_richtext",
+        "label":"Content",
+        "default":"Join our Newsletter"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,1447 @@
+<style> 
+
+  .bundle_text {
+    position: absolute;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    left: 20px !important;
+    padding: 20px !important;
+    bottom: 13% !important;
+    border-radius: 24px;
+    min-width: 624px;
+  }
+
+  .bundle-hero {
+    width: 100%;
+  }
+  
+    .desktop-hero-image {
+      display: flex;
+    }
+
+    .mobile-hero-image {
+      display: none;
+    }
+
+    .floating-hero-image {
+      position: absolute;
+      right: 0%;
+      width: 65%;
+      bottom: -15%;
+    }
+
+  .bundle_nd_sv {
+    margin-bottom: 60px;
+  }
+  
+  @media screen and (max-width: 1200px) { 
+  .bundle_text { 
+    background: rbga(255,255,255,0.5) !important
+  }
+
+    .desktop-hero-image {
+      display: none;
+    }
+
+    
+    .mobile-hero-image {
+      display: flex;
+    }
+  }
+
+  .bundle_img img {
+    width: 100%;
+    min-height: 600px;
+    max-height: 600px;
+/*     object-fit: cover;
+    object-position: right; */
+}
+
+  .bundle_text h2.bundle-main-heading {
+    font-size: 40px;
+    color: #262F69;
+    font-weight: 900;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important
+
+  }
+
+  .bundle-top-heading {
+    font-size: 24px;
+    color: #262F69;
+    font-weight: 500;
+  }
+  
+  .bundle-bottom-heading {
+    font-size: 32px;
+    color: #262F69;
+    font-weight: 500;
+  }
+
+  .bundle-description {
+    font-size: 18px;
+    color: #262F69;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  .bundle_text .secnd_btnshbnl {
+    margin: 30px 0px 10px 0px !important;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    padding: 5px 60px;
+  }
+
+  .hero-logo-grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    margin-top: 20px
+  }
+
+  .logo-grid-item {
+    display: flex;
+    width: 100%; 
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-text {
+    text-align: center;
+    font-size: 16px;
+    color: #262F69;
+    margin-top: 16px;
+    font-weight: 700;
+  }
+
+  .logo-grid-item img {
+    width: auto;
+    max-height: 60px;
+  }
+  
+  .logo-text {
+    
+  }
+
+  
+  }
+
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+{{ 'bundle-page.css' | asset_url | stylesheet_tag }}
+<div class="bundle_nd_sv imagetextwith" style="background:{{ section.settings.tp_bg_clr }};">
+  <div class="bunld_cont">
+    <div class="bundle-hero">
+    <div class="bundle_text">
+      <div class="hidden-background"></div>
+      <span class="bundle-top-heading">{{ section.settings.top_heading }}</span>
+      <h2 class="bundle-main-heading">{{ section.settings.title }}</h2>
+      <span class="bundle-bottom-heading">{{ section.settings.bottom_heading }}</span>
+      <span class="bundle-description">{{ section.settings.description }}</span>
+      {% if section.settings.btn_text != blank %}
+        <a class="secnd_btnshbnl" href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}</a>
+        {% endif %}
+        <div class="hero-logo-grid">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when "hero-logo-item" %}
+                <div class="logo-grid-item">
+                  <img src="{{ block.settings.logo_image | img_url: "master" }}" />
+                  <span class="logo-text">{{ block.settings.text }}</span>
+                </div>
+              {% endcase %}
+            {% endfor %}
+        </div>
+    </div>
+      
+        <img class="floating-hero-image" src="{{ section.settings.floating_img | img_url:'master' }}"> 
+    <div class="bundle_img" style="width: 100%">
+      <img class="desktop-hero-image" src="{{ section.settings.img | img_url:'master' }}">
+      <img class="mobile-hero-image" src="{{ section.settings.mobile_img | img_url:'master' }}"> 
+    </div>
+    </div>
+  </div>
+</div>
+<div>
+  <div class="routine-grid-header">
+    <h2 class="routine--main-text routine-header-text">{{ section.settings.routine_header }}</h2>
+  </div>
+  <div class="routine-grid">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'routine-card'%}
+          <div class="routine-card">
+            <img src="{{ block.settings.image | img_url: "master"}}" />
+            <p class="routine--main-text">{{ block.settings.main_text }}</p>
+            <span class="routine--body-text">{{ block.settings.body_text }}</span>
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+</div>
+<div class="bundle_nd_sv fav_bndl">
+  <h2>{{ section.settings.fav_heading }}</h2>
+  <div class="collection_list">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'shopbundle' %}
+          <div class="coll_grid">
+            <h3>{{ block.settings.shop_ttl }}</h3>
+            {% if block.settings.shop_img != blank %}<img {% if forloop.index == 3 %}style="aspect-ratio: 343/213; object-fit: contain;"{% endif %} src="{{ block.settings.shop_img | img_url:'master' }}">{% endif %}
+            <div class="prod_btns">
+              {% if block.settings.shop_btn_1 != blank %}
+                <a href="{{ block.settings.shop_btnurl_1 }}" class="fsr_btnshbnl">
+                  {{ block.settings.shop_btn_1 }}
+                </a>
+              {% endif %}
+              {% if block.settings.shop_btn_2 != blank %}
+                <a href="{{ block.settings.shop_btnurl_2 }}" class="secnd_btnshbnl">
+                  {{ block.settings.shop_btn_2 }}
+                </a>
+              {% endif %}
+            </div>
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+</div>
+
+{% comment %}
+<div class="product-grid">
+  {% for product in section.settings.collection_test.products %}
+    <div style="
+      background: {{ product.metafields.custom.bundle_background_color }};
+      color: {{ product.metafields.custom.bundle_secondary_text_color }};
+      ">
+      <h2>{{ product.title }}</h2>
+      <div style="display: grid; grid-template-columns: 55% 45%;">
+        <div>
+          <img src="{{ product.featured_image | img_url: "master" }}" />
+        </div>
+        <div>
+          <div style="
+            background: {{ product.metafields.custom.bundle_page_dark_color }};
+            color: {{ product.metafields.custom.bundle_secondary_text_color }};
+            ">
+          <input type="button" id="add-to-cart-button" value="ADD TO CART" onClick="addItemToCart({{ product.first_available_variant.id }}, 1, {{product.selling_plan_groups[0].selling_plans[0].id}})">       
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endcomment %}
+<div class="image-with-text">
+
+  <div class="iwt-image-container">
+    <img class="iwt-image-main" src="{{ section.settings.iwt_image | img_url: "master"}}" />
+  </div>
+  <div class="iwt-text-section">
+    <h2 class="iwt-header">{{ section.settings.iwt_header }}</h2>
+    <h2 class="iwt-sub-header">{{ section.settings.iwt_sub_header }}</h2>
+    <div class="iwt-bullet-section">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when "iwt-bullet" %}
+          <div class="iwt-bullet">
+            <img src="{{ "checkmark-cta.png" | asset_url }}" />
+            <span>{{ block.settings.iwt_bullet_text }}</span>
+          </div>
+      {% endcase %}
+    {% endfor %}
+    </div>
+    <a class="iwt-button-link" href="{{ section.settings.iwt_button_link }}">{{ section.settings.iwt_button_text }}</a>
+  </div>
+  
+</div>
+
+<style>
+
+
+  
+</style>
+
+
+<div>
+  <div class="features-grid-header">
+    <h3 class="features--main-text features-sub-header-text">{{ section.settings.features_sub_header }}</h3>
+    <h2 class="features--main-text features-header-text">{{ section.settings.features_header }}</h2>
+  </div>
+  <div class="features-grid">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'features-card'%}
+          <div class="features-card">
+            <img src="{{ block.settings.image | img_url: "master"}}" />
+            <p class="features--main-text">{{ block.settings.main_text }}</p>
+            <span class="features--body-text">{{ block.settings.body_text }}</span>
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+</div>
+<div class="subscribe_txt" style="background:{{ section.settings.subs_bg_clr }};">
+  {% if section.settings.lft_circletxt != blank %}<span class="subscrTxtlft">{{ section.settings.lft_circletxt }}</span>{% endif %}
+  <h2>{{ section.settings.subs_heading }}</h2>
+  <div class="sec_subscr">
+    <div class="sec_subscrow_1">
+      <div class="icons_clmn">
+        <div class="icttl_1">{{ section.settings.head_1 }}</div>
+      </div>
+      <div class="icons_clmn">
+        <div class="icttl_1">{{ section.settings.head_2 }}</div>
+      </div>
+      <div class="icons_clmn">
+        <div class="icttl_1">{{ section.settings.head_3 }}</div>
+        <img src="{{ section.settings.head_logo | img_url: "master" }}" />
+      </div>
+    </div>
+  <div class="sec_subscrow_1">
+    <div class="icons_clmn">
+      <div class="icons_ttl">
+        {% if section.settings.icon_1 != blank %}
+        <img src="{{ section.settings.icon_1 | img_url:'master' }}">
+        {% endif %}
+        <p>{{ section.settings.ic_txt_1 }}</p>
+      </div>
+    </div>
+    <div class="icons_clmn">
+      <img class="table-icon-image" src="{{ section.settings.x_image | img_url: "master" }}" />
+<!--       <div class="icttl_1"><svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4999 38.5676C29.8959 38.5676 38.3235 30.14 38.3235 19.744C38.3235 9.34802 29.8959 0.92041 19.4999 0.92041C9.10388 0.92041 0.67627 9.34802 0.67627 19.744C0.67627 30.14 9.10388 38.5676 19.4999 38.5676ZM11.077 27.7614C10.296 26.9803 10.296 25.714 11.077 24.933L16.2658 19.7441L11.077 14.5553C10.296 13.7743 10.296 12.5079 11.077 11.7269L11.4827 11.3212C12.2637 10.5402 13.5301 10.5402 14.3111 11.3212L19.4999 16.51L24.6888 11.3211C25.4698 10.5401 26.7362 10.5401 27.5172 11.3211L27.9229 11.7268C28.704 12.5079 28.704 13.7742 27.9229 14.5553L22.7341 19.7441L27.9229 24.933C28.704 25.7141 28.704 26.9804 27.9229 27.7614L27.5172 28.1671C26.7362 28.9482 25.4698 28.9482 24.6888 28.1671L19.4999 22.9782L14.3111 28.1671C13.5301 28.9481 12.2637 28.9481 11.4827 28.1671L11.077 27.7614Z" fill="#D9D9D9"/> </svg></div> -->
+    </div>
+    <div class="icons_clmn">
+      <img class="table-icon-image" src="{{ section.settings.check_image | img_url: "master" }}" />
+<!--       <div class="ico_rgt"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M19.0128 0.567627C8.81937 0.567627 0.525635 8.86713 0.525635 19.0676C0.525635 29.2681 8.81937 37.5676 19.0128 37.5676C29.2062 37.5676 37.4999 29.2681 37.4999 19.0676C37.4999 8.86713 29.2062 0.567627 19.0128 0.567627ZM29.3452 14.1992L17.5301 25.9298C16.8351 26.6253 15.7231 26.6716 14.9818 25.9761L8.7267 20.2731C7.98536 19.5777 7.93903 18.4185 8.5877 17.6766C9.28271 16.9348 10.4411 16.8884 11.1824 17.5839L16.1401 22.1278L26.7042 11.5563C27.4455 10.8145 28.6039 10.8145 29.3452 11.5563C30.0865 12.2982 30.0865 13.4574 29.3452 14.1992Z" fill="#ABF052"/> </svg></div> -->
+    </div>
+  </div>
+  <div class="sec_subscrow_1">
+    <div class="icons_clmn">
+      <div class="icons_ttl">
+        {% if section.settings.icon_2 != blank %}
+        <img src="{{ section.settings.icon_2 | img_url:'master' }}">
+        {% endif %}
+        <p>{{ section.settings.ic_txt_2 }}</p>
+      </div>
+    </div>
+    <div class="icons_clmn">
+      <img class="table-icon-image" src="{{ section.settings.x_image | img_url: "master" }}" />
+<!--       <div class="icttl_1"><svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4999 38.5676C29.8959 38.5676 38.3235 30.14 38.3235 19.744C38.3235 9.34802 29.8959 0.92041 19.4999 0.92041C9.10388 0.92041 0.67627 9.34802 0.67627 19.744C0.67627 30.14 9.10388 38.5676 19.4999 38.5676ZM11.077 27.7614C10.296 26.9803 10.296 25.714 11.077 24.933L16.2658 19.7441L11.077 14.5553C10.296 13.7743 10.296 12.5079 11.077 11.7269L11.4827 11.3212C12.2637 10.5402 13.5301 10.5402 14.3111 11.3212L19.4999 16.51L24.6888 11.3211C25.4698 10.5401 26.7362 10.5401 27.5172 11.3211L27.9229 11.7268C28.704 12.5079 28.704 13.7742 27.9229 14.5553L22.7341 19.7441L27.9229 24.933C28.704 25.7141 28.704 26.9804 27.9229 27.7614L27.5172 28.1671C26.7362 28.9482 25.4698 28.9482 24.6888 28.1671L19.4999 22.9782L14.3111 28.1671C13.5301 28.9481 12.2637 28.9481 11.4827 28.1671L11.077 27.7614Z" fill="#D9D9D9"/> </svg></div> -->
+    </div>
+    <div class="icons_clmn">
+      <img class="table-icon-image" src="{{ section.settings.check_image | img_url: "master" }}" />
+<!--       <div class="ico_rgt"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M19.0128 0.567627C8.81937 0.567627 0.525635 8.86713 0.525635 19.0676C0.525635 29.2681 8.81937 37.5676 19.0128 37.5676C29.2062 37.5676 37.4999 29.2681 37.4999 19.0676C37.4999 8.86713 29.2062 0.567627 19.0128 0.567627ZM29.3452 14.1992L17.5301 25.9298C16.8351 26.6253 15.7231 26.6716 14.9818 25.9761L8.7267 20.2731C7.98536 19.5777 7.93903 18.4185 8.5877 17.6766C9.28271 16.9348 10.4411 16.8884 11.1824 17.5839L16.1401 22.1278L26.7042 11.5563C27.4455 10.8145 28.6039 10.8145 29.3452 11.5563C30.0865 12.2982 30.0865 13.4574 29.3452 14.1992Z" fill="#ABF052"/> </svg></div> -->
+    </div>
+  </div>
+  <div class="sec_subscrow_1">
+    <div class="icons_clmn">
+      <div class="icons_ttl">
+        {% if section.settings.icon_3 != blank %}
+        <img src="{{ section.settings.icon_3 | img_url:'master' }}">
+        {% endif %}        
+        <p>{{ section.settings.ic_txt_3 }}</p>
+      </div>
+    </div>
+    <div class="icons_clmn">
+      <img class="table-icon-image" src="{{ section.settings.x_image | img_url: "master" }}" />
+<!--       <div class="icttl_1"><svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4999 38.5676C29.8959 38.5676 38.3235 30.14 38.3235 19.744C38.3235 9.34802 29.8959 0.92041 19.4999 0.92041C9.10388 0.92041 0.67627 9.34802 0.67627 19.744C0.67627 30.14 9.10388 38.5676 19.4999 38.5676ZM11.077 27.7614C10.296 26.9803 10.296 25.714 11.077 24.933L16.2658 19.7441L11.077 14.5553C10.296 13.7743 10.296 12.5079 11.077 11.7269L11.4827 11.3212C12.2637 10.5402 13.5301 10.5402 14.3111 11.3212L19.4999 16.51L24.6888 11.3211C25.4698 10.5401 26.7362 10.5401 27.5172 11.3211L27.9229 11.7268C28.704 12.5079 28.704 13.7742 27.9229 14.5553L22.7341 19.7441L27.9229 24.933C28.704 25.7141 28.704 26.9804 27.9229 27.7614L27.5172 28.1671C26.7362 28.9482 25.4698 28.9482 24.6888 28.1671L19.4999 22.9782L14.3111 28.1671C13.5301 28.9481 12.2637 28.9481 11.4827 28.1671L11.077 27.7614Z" fill="#D9D9D9"/> </svg></div> -->
+    </div>
+    <div class="icons_clmn">
+      <img class="table-icon-image" src="{{ section.settings.check_image | img_url: "master" }}" />
+<!--       <div class="ico_rgt"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M19.0128 0.567627C8.81937 0.567627 0.525635 8.86713 0.525635 19.0676C0.525635 29.2681 8.81937 37.5676 19.0128 37.5676C29.2062 37.5676 37.4999 29.2681 37.4999 19.0676C37.4999 8.86713 29.2062 0.567627 19.0128 0.567627ZM29.3452 14.1992L17.5301 25.9298C16.8351 26.6253 15.7231 26.6716 14.9818 25.9761L8.7267 20.2731C7.98536 19.5777 7.93903 18.4185 8.5877 17.6766C9.28271 16.9348 10.4411 16.8884 11.1824 17.5839L16.1401 22.1278L26.7042 11.5563C27.4455 10.8145 28.6039 10.8145 29.3452 11.5563C30.0865 12.2982 30.0865 13.4574 29.3452 14.1992Z" fill="#ABF052"/> </svg></div> -->
+    </div>
+  </div>
+  <div class="sec_subscrow_1">
+    <div class="icons_clmn">
+      <div class="icons_ttl">
+                {% if section.settings.icon_4 != blank %}
+        <img src="{{ section.settings.icon_4 | img_url:'master' }}">
+        {% endif %}
+        <p>{{ section.settings.ic_txt_4 }}</p>
+      </div>
+    </div>
+    <div class="icons_clmn">
+      <img class="table-icon-image" src="{{ section.settings.x_image | img_url: "master" }}" />
+<!--       <div class="icttl_1"><svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4999 38.5676C29.8959 38.5676 38.3235 30.14 38.3235 19.744C38.3235 9.34802 29.8959 0.92041 19.4999 0.92041C9.10388 0.92041 0.67627 9.34802 0.67627 19.744C0.67627 30.14 9.10388 38.5676 19.4999 38.5676ZM11.077 27.7614C10.296 26.9803 10.296 25.714 11.077 24.933L16.2658 19.7441L11.077 14.5553C10.296 13.7743 10.296 12.5079 11.077 11.7269L11.4827 11.3212C12.2637 10.5402 13.5301 10.5402 14.3111 11.3212L19.4999 16.51L24.6888 11.3211C25.4698 10.5401 26.7362 10.5401 27.5172 11.3211L27.9229 11.7268C28.704 12.5079 28.704 13.7742 27.9229 14.5553L22.7341 19.7441L27.9229 24.933C28.704 25.7141 28.704 26.9804 27.9229 27.7614L27.5172 28.1671C26.7362 28.9482 25.4698 28.9482 24.6888 28.1671L19.4999 22.9782L14.3111 28.1671C13.5301 28.9481 12.2637 28.9481 11.4827 28.1671L11.077 27.7614Z" fill="#D9D9D9"/> </svg></div> -->
+    </div>
+    <div class="icons_clmn">
+      <img class="table-icon-image" src="{{ section.settings.check_image | img_url: "master" }}" />
+<!--       <div class="ico_rgt"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M19.0128 0.567627C8.81937 0.567627 0.525635 8.86713 0.525635 19.0676C0.525635 29.2681 8.81937 37.5676 19.0128 37.5676C29.2062 37.5676 37.4999 29.2681 37.4999 19.0676C37.4999 8.86713 29.2062 0.567627 19.0128 0.567627ZM29.3452 14.1992L17.5301 25.9298C16.8351 26.6253 15.7231 26.6716 14.9818 25.9761L8.7267 20.2731C7.98536 19.5777 7.93903 18.4185 8.5877 17.6766C9.28271 16.9348 10.4411 16.8884 11.1824 17.5839L16.1401 22.1278L26.7042 11.5563C27.4455 10.8145 28.6039 10.8145 29.3452 11.5563C30.0865 12.2982 30.0865 13.4574 29.3452 14.1992Z" fill="#ABF052"/> </svg></div> -->
+    </div>
+  </div>
+  <div class="sec_subscrow_1">
+    <div class="icons_clmn">
+      <div class="icons_ttl">
+        {% if section.settings.icon_5 != blank %}
+        <img src="{{ section.settings.icon_5 | img_url:'master' }}">
+        {% endif %}
+        <p>{{ section.settings.ic_txt_5 }}</p>
+      </div>
+    </div>
+    <div class="icons_clmn">
+      <img class="table-icon-image" src="{{ section.settings.x_image | img_url: "master" }}" />
+<!--       <div class="icttl_1"><svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4999 38.5676C29.8959 38.5676 38.3235 30.14 38.3235 19.744C38.3235 9.34802 29.8959 0.92041 19.4999 0.92041C9.10388 0.92041 0.67627 9.34802 0.67627 19.744C0.67627 30.14 9.10388 38.5676 19.4999 38.5676ZM11.077 27.7614C10.296 26.9803 10.296 25.714 11.077 24.933L16.2658 19.7441L11.077 14.5553C10.296 13.7743 10.296 12.5079 11.077 11.7269L11.4827 11.3212C12.2637 10.5402 13.5301 10.5402 14.3111 11.3212L19.4999 16.51L24.6888 11.3211C25.4698 10.5401 26.7362 10.5401 27.5172 11.3211L27.9229 11.7268C28.704 12.5079 28.704 13.7742 27.9229 14.5553L22.7341 19.7441L27.9229 24.933C28.704 25.7141 28.704 26.9804 27.9229 27.7614L27.5172 28.1671C26.7362 28.9482 25.4698 28.9482 24.6888 28.1671L19.4999 22.9782L14.3111 28.1671C13.5301 28.9481 12.2637 28.9481 11.4827 28.1671L11.077 27.7614Z" fill="#D9D9D9"/> </svg></div> -->
+    </div>
+    <div class="icons_clmn">
+      <img class="table-icon-image" src="{{ section.settings.check_image | img_url: "master" }}" />
+<!--       <div class="ico_rgt"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M19.0128 0.567627C8.81937 0.567627 0.525635 8.86713 0.525635 19.0676C0.525635 29.2681 8.81937 37.5676 19.0128 37.5676C29.2062 37.5676 37.4999 29.2681 37.4999 19.0676C37.4999 8.86713 29.2062 0.567627 19.0128 0.567627ZM29.3452 14.1992L17.5301 25.9298C16.8351 26.6253 15.7231 26.6716 14.9818 25.9761L8.7267 20.2731C7.98536 19.5777 7.93903 18.4185 8.5877 17.6766C9.28271 16.9348 10.4411 16.8884 11.1824 17.5839L16.1401 22.1278L26.7042 11.5563C27.4455 10.8145 28.6039 10.8145 29.3452 11.5563C30.0865 12.2982 30.0865 13.4574 29.3452 14.1992Z" fill="#ABF052"/> </svg></div> -->
+    </div>
+  </div> 
+      <div class="sec_subscrow_1">
+    <div class="icons_clmn">
+      <div class="icons_ttl">
+        {% if section.settings.icon_6 != blank %}
+        <img src="{{ section.settings.icon_6 | img_url:'master' }}">
+        {% endif %}
+        <p>{{ section.settings.ic_txt_6 }}</p>
+      </div>
+    </div>
+    <div class="icons_clmn">
+      <img class="table-icon-image" src="{{ section.settings.x_image | img_url: "master" }}" />
+<!--       <div class="icttl_1"><svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4999 38.5676C29.8959 38.5676 38.3235 30.14 38.3235 19.744C38.3235 9.34802 29.8959 0.92041 19.4999 0.92041C9.10388 0.92041 0.67627 9.34802 0.67627 19.744C0.67627 30.14 9.10388 38.5676 19.4999 38.5676ZM11.077 27.7614C10.296 26.9803 10.296 25.714 11.077 24.933L16.2658 19.7441L11.077 14.5553C10.296 13.7743 10.296 12.5079 11.077 11.7269L11.4827 11.3212C12.2637 10.5402 13.5301 10.5402 14.3111 11.3212L19.4999 16.51L24.6888 11.3211C25.4698 10.5401 26.7362 10.5401 27.5172 11.3211L27.9229 11.7268C28.704 12.5079 28.704 13.7742 27.9229 14.5553L22.7341 19.7441L27.9229 24.933C28.704 25.7141 28.704 26.9804 27.9229 27.7614L27.5172 28.1671C26.7362 28.9482 25.4698 28.9482 24.6888 28.1671L19.4999 22.9782L14.3111 28.1671C13.5301 28.9481 12.2637 28.9481 11.4827 28.1671L11.077 27.7614Z" fill="#D9D9D9"/> </svg></div> -->
+    </div>
+    <div class="icons_clmn">
+      <img class="table-icon-image" src="{{ section.settings.check_image | img_url: "master" }}" />
+<!--       <div class="ico_rgt"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M19.0128 0.567627C8.81937 0.567627 0.525635 8.86713 0.525635 19.0676C0.525635 29.2681 8.81937 37.5676 19.0128 37.5676C29.2062 37.5676 37.4999 29.2681 37.4999 19.0676C37.4999 8.86713 29.2062 0.567627 19.0128 0.567627ZM29.3452 14.1992L17.5301 25.9298C16.8351 26.6253 15.7231 26.6716 14.9818 25.9761L8.7267 20.2731C7.98536 19.5777 7.93903 18.4185 8.5877 17.6766C9.28271 16.9348 10.4411 16.8884 11.1824 17.5839L16.1401 22.1278L26.7042 11.5563C27.4455 10.8145 28.6039 10.8145 29.3452 11.5563C30.0865 12.2982 30.0865 13.4574 29.3452 14.1992Z" fill="#ABF052"/> </svg></div> -->
+    </div>
+  </div> 
+        
+  </div>
+    <div class="btn_subs">
+     {% if section.settings.btn_substxt != blank %} <a href="{{ section.settings.btn_subsurl }}" class="btn">{{ section.settings.btn_substxt }}</a>{% endif %}
+    </div>
+    <div class="review-section">
+    <h2 class="review-section-header" style="color: #262F69; padding-bottom: 40px; padding-top: 80px">Reviews</h2>
+    <div class="review-grid">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'review' %}
+          <div class="review-card">
+            <span>{{ block.settings.review_content }}</span>
+            <img src="{{ 'review_stars.png' | asset_url }}" />
+          </div>
+      {% endcase %}
+    {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="maual_feat_collection">
+  <div class="manu_fetcont">
+    <h2>{{ section.settings.sales_title }}</h2>
+    <div class="manu_desc">
+      {{ section.settings.sales_content }}
+    </div>
+    <div class="featur_coll_mnu">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when "sales-item" %}
+        <div class="featur_coll_box">
+          {% if block.settings.image_pc != blank %}<img src="{{ block.settings.image_pc | img_url:'master' }}">{% endif %}
+          <h3 style="color:{{ block.settings.img_ttlclr }}">{{ block.settings.img_ttl }}</h3>
+          <h4 style="color:{{ block.settings.img_subttlclr }}">{{ block.settings.img_subttl }}</h4>
+          <div class="img_cntnt">
+            {{ block.settings.img_cntnt }}
+          </div>
+          {% if block.settings.img_btntxt != blank %}
+            <div class="img_btn_cl">
+              <a href="{{ block.settings.img_btnurl }}" style="background:{{ block.settings.img_btnclr }}">{{ block.settings.img_btntxt }}</a>
+            </div>
+          {% endif %}
+        </div>
+          {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<style>
+
+
+.maual_feat_collection .manu_fetcont h2 {color: #6A6A6A;font-size: 55px;font-weight: 600;letter-spacing: 0;text-align: center;margin-top: 200px;}
+.maual_feat_collection .manu_fetcont .manu_desc {color: #6A6A6A;max-width: 60rem;margin: 0 auto;text-align: center;}
+.maual_feat_collection .featur_coll_box h3 {font-size: 18px;letter-spacing: 0;margin-bottom: 10px;}  
+.maual_feat_collection .featur_coll_box h4 {font-size: 28px;letter-spacing: 3px;text-transform: uppercase;}  
+.maual_feat_collection .img_btn_cl a {display: block;max-width: 195px;margin: 50px auto;color: #fff;font-weight: 700;padding: 8px 0;border-radius: 100px;}
+
+.maual_feat_collection .featur_coll_mnu {
+    width: 100% !important;
+}
+  
+.maual_feat_collection .img_cntnt {
+    color: #202020;
+    width: 65%;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 700;
+}
+  
+.maual_feat_collection .featur_coll_mnu {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 80px;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: space-around;
+}
+  
+  .featur_coll_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+          .build-a-bundle {
+            display: grid;
+            grid-template-columns: 48% 48%;
+            justify-content: center;
+          }
+
+          .bundle-save-text-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+          }
+
+          .bundle-save-btn {
+            padding: 10px 30px;
+            color: white;
+            background: #262F69;
+            font-weight: 700;
+          }
+          
+          .bundle-save-text {
+            color: #262F69;
+            font-size: 40px;
+            font-weight: 700;
+          }
+          
+          </style>
+<div class="faq_bndl_sc">
+  <h2>{{ section.settings.faq_heading }}</h2>
+  <div class="faq_bndlsque_ans">
+    <div class="lft_que_ans">
+      {% for block in section.blocks limit:section.settings.number_row_show %}
+        <div class="que_ans">
+          <h3><span>{{ block.settings.question }}</span> <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.8584 13.1115L21.6485 3.3212C21.8752 3.09476 22 2.79249 22 2.47018C22 2.14788 21.8752 1.8456 21.6485 1.61917L20.9277 0.89818C20.458 0.42903 19.6947 0.429029 19.2257 0.89818L11.0046 9.11932L2.77431 0.889057C2.54769 0.66262 2.24559 0.537597 1.92347 0.537597C1.60098 0.537597 1.29889 0.66262 1.07209 0.889057L0.351461 1.61004C0.124845 1.83666 1.83736e-06 2.13875 1.82327e-06 2.46106C1.80918e-06 2.78337 0.124845 3.08564 0.351461 3.31208L10.1505 13.1115C10.3778 13.3385 10.6814 13.4631 11.004 13.4624C11.3279 13.4631 11.6313 13.3385 11.8584 13.1115Z" fill="black"/> </svg></h3>
+          <div class="conte_ans">
+            {{ block.settings.answer }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="lft_que_ans">
+      {% for block in section.blocks offset:section.settings.number_row_show %}
+        {% case block.type %}
+          {% when 'faq' %}
+        <div class="que_ans">
+          <h3><span>{{ block.settings.question }}</span> <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.8584 13.1115L21.6485 3.3212C21.8752 3.09476 22 2.79249 22 2.47018C22 2.14788 21.8752 1.8456 21.6485 1.61917L20.9277 0.89818C20.458 0.42903 19.6947 0.429029 19.2257 0.89818L11.0046 9.11932L2.77431 0.889057C2.54769 0.66262 2.24559 0.537597 1.92347 0.537597C1.60098 0.537597 1.29889 0.66262 1.07209 0.889057L0.351461 1.61004C0.124845 1.83666 1.83736e-06 2.13875 1.82327e-06 2.46106C1.80918e-06 2.78337 0.124845 3.08564 0.351461 3.31208L10.1505 13.1115C10.3778 13.3385 10.6814 13.4631 11.004 13.4624C11.3279 13.4631 11.6313 13.3385 11.8584 13.1115Z" fill="black"/> </svg></h3>
+          <div class="conte_ans">
+            {{ block.settings.answer }}
+          </div>
+        </div>
+          {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script>
+  $(document).on('click','.lft_que_ans h3',function(){
+    if($(this).next('.conte_ans').css('display') == 'none'){
+      $('.conte_ans').slideUp();
+      $('.que_ans svg').css('transform','rotate(0deg)');
+      $(this).next('.conte_ans').slideDown();
+      $(this).children('svg').css('transform','rotate(180deg)');
+    }
+    else{
+      $(this).children('svg').css('transform','rotate(0deg)');
+      $(this).next('.conte_ans').slideUp();
+    }
+  });
+</script>
+<script>  
+function addItemToCart(variant_id, qty, selling_plan) {
+
+    data = {
+      "id": variant_id,
+      "quantity": qty,
+      "selling_plan": selling_plan
+    }
+    jQuery.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: data,
+      dataType: 'json',
+      success: function() { 
+        window.location.href = '/cart'; 
+      }
+    });
+  }
+</script> 
+
+<style>
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-around;
+}
+  
+.sec_subscr {
+  background: #262F69;
+}
+
+  .subscrTxtlft {
+    background: #262F69 !important;
+    left: 3vw !important
+  }
+  
+.sec_subscr * {
+  color: white !important;
+  font-weight: 700;
+}
+
+  
+.sec_subscr .sec_subscrow_1 > div:first-child {
+    text-align: left !important;
+}
+
+.sec_subscrow_1 > div:nth-child(2) {
+    border-right: solid white 4px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .sec_subscrow_1 {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    border-bottom: white 4px solid;
+}
+
+  .icttl_1 {
+    font-size: 40px;
+    text-transform: none
+  }
+
+  .table-icon-image {
+    max-width: 70px
+  }
+  
+  .icons_ttl p {
+    margin-bottom: 0px
+  }
+  
+  .collection_list {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto auto auto;
+}
+
+  .bundle_nd_sv .coll_grid {
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+  .bundle_text {
+    position: absolute;
+    bottom: 60px;
+    width: 80%;
+    padding: 0px;
+    left: 10%;
+  }
+
+  
+  .bundle_text h2 {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 5vw
+  }
+
+  .bundle_img {
+    margin-bottom: 0px !important
+  }
+
+  .bundle-hero {
+    position: relative;
+  }
+
+  .routine--main-text {
+    color: #f84e00;
+    letter-spacing: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .routine-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .routine-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .routine-card * {
+      text-align: center;
+   }
+
+  .routine-card img  {
+    max-height: 10vw;
+    aspect-ratio: 1/1;
+    object-fit: contain
+  }
+  
+.routine--main-text {
+    font-size: 1.2vw;
+    padding: 20px 0px 15px;
+    font-weight: 700;
+    margin-bottom: 0px !important;
+}
+
+  .routine--body-text {
+    font-size: 1vw;
+    font-weight: 700;
+  }
+
+  .routine-header-text {
+    font-size: 3vw;
+    font-weight: 700;
+    padding: {{ section.settings.title_padding }}px 0px;
+    text-align: center
+  }
+
+
+
+  .features--main-text {
+    color: #f84e00;
+    letter-spacing: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    column-gap: 5%;
+    row-gap: 40px; 
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 160px; 
+  }
+
+  .features-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .features-card * {
+      text-align: center;
+   }
+
+  .features-card img  {
+    max-height: 7vw;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    border-radius: 200px;
+    border: 3px solid black
+  }
+  
+  .features--main-text {
+    font-size: 1.5vw;;
+    padding: 5px 0px 5px;
+    font-weight: 700;
+    margin-bottom: 0px !important;
+  }
+
+  .features--body-text {
+    font-size: 1vw;
+    font-weight: 700;
+  }
+
+  .features-header-text {
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: center;
+    color: #545454;
+    margin-bottom: 40px !important
+  }
+
+    .features-sub-header-text {
+    font-size: 1.5vw;
+    font-weight: 700;
+    text-align: center;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      padding-top: 80px
+  }
+  
+  .bundle_nd_sv.fav_bndl {
+    margin-top: 60px
+  }
+
+  .collection_list img {
+    aspect-ratio: 316/197;
+    object-fit: contain
+  }
+
+  .review-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    column-gap: 5%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .review-card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .review-card img {
+    padding-top: 10px
+  }
+
+  .review-card * {
+    text-align: center
+  }
+
+  .review-section-header{
+   font-size: 2vw;
+    text-align: center;
+    font-weight: 700
+  }
+
+        .image-with-text {
+
+    display: grid;
+    grid-template-columns: 55% 45%;
+    background: #F4F6FC;
+    margin: 60px 0px;
+  }
+
+  .iwt-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iwt-image-main {
+    aspect-ratio: 1/1;
+    border: solid 10px #992A36;
+    border-radius: 10%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    max-width: 600px;
+    margin: 60px;
+  }
+  .iwt-text-section {
+     display: flex;
+     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px; 
+  }
+  
+  .iwt-header {
+    font-size: 28px;
+    color: #992A36;
+    font-weight: 700; 
+  }
+
+  .iwt-sub-header {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .iwt-bullet-section {
+    background: #992A36 ;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 30px;
+    border-radius: 6px;
+  }
+
+  .iwt-bullet {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0px;
+    color: white
+  }
+
+  
+  .iwt-bullet img {
+    max-width: 40px;
+  }
+
+    .iwt-bullet span {
+    margin-left: 20px;
+  }
+
+  .iwt-button-link {
+    padding: 20px 60px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #F84E00;
+    border-radius: 6px;
+    margin-top: 30px;
+  }
+
+      @media screen and (max-width: 1150px) {
+        .image-with-text {
+    grid-template-columns: 80%;
+    background: #F4F6FC;
+    padding: 60px 0px;
+      justify-content: center;
+      
+  }
+  .maual_feat_collection .featur_coll_mnu {
+      grid-template-columns: 60%;
+      }
+
+      .iwt-text-section {
+      max-width: 100%
+      }
+      }
+  
+  @media screen and (max-width: 830px) {
+  
+  .maual_feat_collection .featur_coll_mnu {
+      grid-template-columns: 80%;
+      }
+    .icttl_1 {
+    font-size: 20px;
+  }
+
+  .table-icon-image {
+    max-width: 30px
+  }
+    
+  .icons_ttl p {
+    font-size: 16px;
+    line-height: 20px
+  }
+
+.collection_list {
+  grid-template-columns: auto auto
+}
+
+    .site-header-sticky {
+      height: 70px !important
+    }
+
+      .review-grid {
+    grid-template-columns: 70%;
+  }
+
+      
+  .features-grid,.routine-grid {
+    display: grid;
+    grid-template-columns: 70%;
+    row-gap: 30px; 
+    width: 100%;
+    justify-content: center;
+      margin-left: 0px
+  }
+
+        .features-card img ,.routine-card img  {
+    max-height: 20vw;
+  }
+  
+  .features--main-text,.routine--main-text {
+    font-size: 5.5vw;;
+  }
+
+  .features--body-text,.routine--body-text {
+    font-size: 3vw;
+  }
+
+  .features-header-text,.routine-header-text {
+    font-size: 7vw;
+      padding: 0px 20px 30px;
+  }
+
+    .features-sub-header-text,.routine-sub-header-text {
+    font-size: 3.5vw;
+    font-weight: 700;
+      padding: 80px 20px 0px;
+  }
+  }
+  
+</style>
+
+{% schema %}
+  {
+    "name": "Bundle and save page",
+    "settings": [
+      {
+        "type":"color",
+        "id":"tp_bg_clr",
+        "label":"Background color"
+      },
+      {
+        "type":"text",
+        "id":"top_heading",
+        "label":"Upper Sub Heading"
+      },
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+        "type":"text",
+        "id":"bottom_heading",
+        "label":"Bottom Sub Heading"
+      },
+      {
+        "type":"textarea",
+        "id":"description",
+        "label":"Description"
+      },
+      {
+        "type":"image_picker",
+        "id":"img",
+        "label":"Desktop Hero Image"
+      },
+      {
+        "type":"image_picker",
+        "id":"mobile_img",
+        "label":"Mobile Hero Image"
+      },
+      {
+        "type":"image_picker",
+        "id":"floating_img",
+        "label":"Floating Hero Image"
+      },
+      {
+        "type":"text",
+        "id":"btn_text",
+        "label":"Button text"
+      },
+      {
+        "type":"url",
+        "id":"btn_url",
+        "label":"Button link"
+      },
+      {
+        "type":"text",
+        "id":"fav_heading",
+        "label":"Heading"
+      },
+      {
+        "type":"color",
+        "id":"subs_bg_clr",
+        "label":"Background color"
+      },
+      {
+        "type":"text",
+        "id":"routine_header",
+        "label":"Routine Section Header"
+      },
+      {
+        "type": "range",
+        "id": "title_padding",
+        "label": "Routine Title Top / Bottom Padding",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "default": 20
+      },
+      {
+        "type":"text",
+        "id":"features_header",
+        "label":"Features Section Header"
+      },
+      {
+        "type":"text",
+        "id":"features_sub_header",
+        "label":"Features Section Sub Header"
+      },
+      {
+        "type":"text",
+        "id":"bundle_save_text",
+        "label":"Bundle & Save Main Text"
+      },
+      {
+        "type":"text",
+        "id":"bundle_save_button",
+        "label":"Bundle & Save Button Text"
+      },
+      {
+        "type":"image_picker",
+        "id":"bundle_save_image",
+        "label":"Bundle & Save Image"
+      },
+      {
+        "type":"image_picker",
+        "id":"iwt_image",
+        "label":"Image With Text Image"
+      },
+      {
+        "type":"text",
+        "id":"iwt_header",
+        "label":"Image With Text Header"
+      },
+      {
+        "type":"text",
+        "id":"iwt_sub_header",
+        "label":"Image With Text Sub Header"
+      },
+      {
+        "type":"text",
+        "id":"iwt_button_text",
+        "label":"Image With Text Button Text"
+      },
+      {
+        "type":"url",
+        "id":"iwt_button_link",
+        "label":"Image With Text Button Link"
+      },
+      {
+        "type":"text",
+        "id":"lft_circletxt",
+        "label":"Circle text"
+      },
+      {
+        "type":"text",
+        "id":"subs_heading",
+        "label":"Heading"
+      },
+      {
+        "type":"text",
+        "id":"head_1",
+        "label":"Table title 1"
+      },
+      {
+        "type":"text",
+        "id":"head_2",
+        "label":"Table title 2"
+      },
+      {
+        "type":"text",
+        "id":"head_3",
+        "label":"Table title 3"
+      },
+      {
+        "type":"image_picker",
+        "id":"head_logo",
+        "label":"Logo Image"
+      },
+      {
+        "type":"image_picker",
+        "id":"x_image",
+        "label":"X Image"
+      },
+      {
+        "type":"image_picker",
+        "id":"check_image",
+        "label":"Checkmark Image"
+      },
+      {
+        "type":"image_picker",
+        "id":"icon_1",
+        "label":"Row 1 icon"
+      },
+      {
+        "type":"textarea",
+        "id":"ic_txt_1",
+        "label":"Row 1 text"
+      },
+      {
+        "type":"image_picker",
+        "id":"icon_2",
+        "label":"Row 2 icon"
+      },
+      {
+        "type":"textarea",
+        "id":"ic_txt_2",
+        "label":"Row 2 text"
+      },
+      {
+        "type":"image_picker",
+        "id":"icon_3",
+        "label":"Row 3 icon"
+      },
+      {
+        "type":"textarea",
+        "id":"ic_txt_3",
+        "label":"Row 3 text"
+      },
+      {
+        "type":"image_picker",
+        "id":"icon_4",
+        "label":"Row 4 icon"
+      },
+      {
+        "type":"textarea",
+        "id":"ic_txt_4",
+        "label":"Row 4 text"
+      },
+      {
+        "type":"image_picker",
+        "id":"icon_5",
+        "label":"Row 5 icon"
+      },
+      {
+        "type":"textarea",
+        "id":"ic_txt_5",
+        "label":"Row 5 text"
+      },
+      {
+        "type":"textarea",
+        "id":"ic_txt_6",
+        "label":"Row 6 text"
+      },
+      {
+        "type":"text",
+        "id":"btn_substxt",
+        "label":"Button text"
+      },
+      {
+        "type":"url",
+        "id":"btn_subsurl",
+        "label":"Button Link"
+      },
+      {
+        "type":"text",
+        "id":"faq_heading",
+        "label":"Faq heading"
+      },
+      {
+        "type":"number",
+        "id":"number_row_show",
+        "label":"Show on one row"
+      },
+      {
+        "type": "collection",
+        "id": "collection_test",
+        "label":"Collection Test"
+      },
+      {
+        "type":"text",
+        "id":"sales_title",
+        "label":"Sales Title"
+      },
+      {
+        "type":"textarea",
+        "id":"sales_content",
+        "label":"Sales Content"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"faq",
+        "name":"faq",
+        "settings":[
+          {
+            "type":"textarea",
+            "id":"question",
+            "label":"Question"
+          },
+          {
+            "type":"textarea",
+            "id":"answer",
+            "label":"Answer"
+          }
+        ]
+      },
+      {
+        "type":"shopbundle",
+        "name":"shop bundle",
+        "settings":[
+          {
+            "type":"text",
+            "id":"shop_ttl",
+            "label":"Title"
+          },
+          {
+            "type":"image_picker",
+            "id":"shop_img",
+            "label":"Image"
+          },
+          {
+            "type":"text",
+            "id":"shop_btn_1",
+            "label":"Button text 1"
+          },
+          {
+            "type":"url",
+            "id":"shop_btnurl_1",
+            "label":"Button url 1"
+          },
+          {
+            "type":"text",
+            "id":"shop_btn_2",
+            "label":"Button text 2"
+          },
+          {
+            "type":"url",
+            "id":"shop_btnurl_2",
+            "label":"Button url 2"
+          }
+        ]
+      }, 
+      {
+        "type":"routine-card",
+        "name":"Routine Card",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Icon Image"
+          },
+          {
+            "type":"text",
+            "id":"main_text",
+            "label":"Main Text"
+          },
+          {
+            "type":"text",
+            "id":"body_text",
+            "label":"Body Text"
+          }
+        ]
+      },
+      {
+        "type":"features-card",
+          "name":"Features Card",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Icon Image"
+          },
+          {
+            "type":"text",
+            "id":"main_text",
+            "label":"Main Text"
+          },
+          {
+            "type":"text",
+            "id":"body_text",
+            "label":"Body Text"
+          }
+        ]
+      },
+      {
+        "type":"review",
+        "name":"Review",
+        "settings":[
+          {
+            "type":"text",
+            "id":"review_content",
+            "label":"Review Text"
+          }
+        ]
+      },
+      {
+        "type":"hero-logo-item",
+        "name":"Hero Logo Item",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"logo_image",
+            "label":"Logo"
+          },
+          {
+            "type":"text",
+            "id":"text",
+            "label":"Text"
+          }
+        ]
+      },
+      {
+        "type":"iwt-bullet",
+        "name":"Image With Text Bullet",
+        "settings":[
+          {
+            "type":"text",
+            "id":"iwt_bullet_text",
+            "label":"Text"
+          }
+        ]
+      },
+      {
+        "type":"sales-item",
+        "name": "Sales Item",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"image_pc",
+            "label":"Image"
+          },
+          {
+            "type":"text",
+            "id":"img_ttl",
+            "label":"Title"
+          },
+          {
+            "type":"color",
+            "id":"img_ttlclr",
+            "label":"Title color"
+          },
+          {
+            "type":"text",
+            "id":"img_subttl",
+            "label":"Sub Title"
+          },
+          {
+            "type":"color",
+            "id":"img_subttlclr",
+            "label":"Sub Title color"
+          },
+          {
+            "type":"textarea",
+            "id":"img_cntnt",
+            "label":"Content"
+          },
+          {
+            "type":"text",
+            "id":"img_btntxt",
+            "label":"Button text"
+          },
+          {
+            "type":"url",
+            "id":"img_btnurl",
+            "label":"Button Link"
+          },
+          {
+            "type":"color",
+            "id":"img_btnclr",
+            "label":"Button color"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

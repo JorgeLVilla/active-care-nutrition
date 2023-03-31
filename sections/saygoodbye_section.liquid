@@ -1,0 +1,123 @@
+<div class="saygoodbye_section" style="background:{{ section.settings.bg_clr }};">
+  <div class="sy_gdb_cont">
+    <div class="lft_content_gd">
+      <h3>{{ section.settings.title }}</h3>
+      <div class="lft_content_gd_cntnt">
+        {{ section.settings.content }}
+      </div>
+    </div>
+    <div class="rgt_content_gd">
+      <div class="rgt_content_gd_cntnt">
+        <ul>
+          {% if section.settings.ico_1 != blank %}
+          <li>
+            <div class="rgt_ico">
+              <img src="{{ section.settings.ico_1 | img_url:'master' }}">
+            </div>
+            <div class="rgt_para">
+              <p>{{ section.settings.txt_1 }}</p>
+            </div>
+          </li>
+           {% endif %}
+           {% if section.settings.ico_2 != blank %}
+          <li>
+            <div class="rgt_ico">
+              <img src="{{ section.settings.ico_2 | img_url:'master' }}">
+            </div>
+            <div class="rgt_para">
+              <p>{{ section.settings.txt_2 }}</p>
+            </div>
+          </li>
+          {% endif %}
+           {% if section.settings.ico_3 != blank %}
+          <li>
+            <div class="rgt_ico">
+              <img src="{{ section.settings.ico_3 | img_url:'master' }}">
+            </div>
+            <div class="rgt_para">
+              <p>{{ section.settings.txt_3 }}</p>
+            </div>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+    {% if section.settings.btn_txt != blank %}
+    <div class="bottom_btn">
+      <a href="{{ section.settings.btn_url }}">{{ section.settings.btn_txt }}</a>
+    </div>{% endif %}
+  </div>
+</div>
+<style>
+  .saygoodbye_section .bottom_btn a:hover{
+    background:#2c3368;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Say goodbye section",
+    "settings": [
+      {
+        "type":"color",
+        "id":"bg_clr",
+        "label":"Background color"
+      },
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+        "type":"textarea",
+        "id":"content",
+        "label":"Content"
+      },
+      {
+        "type":"image_picker",
+        "id":"ico_1",
+        "label":"Icon 1"
+      },
+      {
+        "type":"text",
+        "id":"txt_1",
+        "label":"Text 1"
+      },
+      {
+        "type":"image_picker",
+        "id":"ico_2",
+        "label":"Icon 2"
+      },
+      {
+        "type":"text",
+        "id":"txt_2",
+        "label":"Text 2"
+      },
+      {
+        "type":"image_picker",
+        "id":"ico_3",
+        "label":"Icon 3"
+      },
+      {
+        "type":"text",
+        "id":"txt_3",
+        "label":"Text 3"
+      },
+      {
+        "type":"text",
+        "id":"btn_txt",
+        "label":"Button text"
+      },
+      {
+        "type":"url",
+        "id":"btn_url",
+        "label":"Button Link"
+      }
+    ],
+    "presets":[
+      {
+        "name":"Say goodbye section"
+      }
+    ]
+  }
+{% endschema %}

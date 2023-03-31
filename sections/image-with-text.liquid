@@ -1,0 +1,187 @@
+<div class="image-with-text">
+
+  <div class="iwt-image-container">
+    <img class="iwt-image-main" src="{{ section.settings.iwt_image | img_url: "master"}}" />
+  </div>
+  <div class="iwt-text-section">
+    <h2 class="iwt-header">{{ section.settings.iwt_header }}</h2>
+    <h2 class="iwt-sub-header">{{ section.settings.iwt_sub_header }}</h2>
+    <div class="iwt-bullet-section">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when "iwt-bullet" %}
+          <div class="iwt-bullet">
+            <img src="{{ "checkmark-cta-yellow.png" | asset_url }}" />
+            <span>{{ block.settings.iwt_bullet_text }}</span>
+          </div>
+      {% endcase %}
+    {% endfor %}
+    </div>
+    <a class="iwt-button-link" href="{{ section.settings.iwt_button_link }}">{{ section.settings.iwt_button_text }}</a>
+  </div>
+  
+</div>
+
+<style>
+
+  
+        .image-with-text {
+
+    display: grid;
+    grid-template-columns: 55% 45%;
+    background: #F4F6FC;
+    padding: 60px 0px;
+    margin: 60px 0px;
+  }
+
+  .iwt-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iwt-image-main {
+    aspect-ratio: 1/1;
+    border: solid 10px #262F69;
+    border-radius: 10%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    max-width: 600px;
+    margin: 60px;
+  }
+  .iwt-text-section {
+     display: flex;
+     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px; 
+  }
+  
+  .iwt-header {
+    font-size: 40px;
+    color: #262F69 !important;
+    text-align: center;
+    font-weight: 700; 
+    
+  }
+
+  .iwt-sub-header {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .iwt-bullet-section {
+    background: #262F69 ;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 30px;
+    border-radius: 6px;
+  }
+
+  .iwt-bullet {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0px;
+    color: white
+  }
+
+  
+  .iwt-bullet img {
+    max-width: 40px;
+  }
+
+    .iwt-bullet span {
+    margin-left: 20px;
+  }
+
+  .iwt-button-link {
+    padding: 20px 60px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #F84E00;
+    border-radius: 6px;
+    margin-top: 30px;
+  }
+
+      @media screen and (max-width: 1150px) {
+        .image-with-text {
+    grid-template-columns: 80%;
+    background: #F4F6FC;
+    padding: 60px 0px;
+      justify-content: center;
+      
+  }
+
+      .iwt-text-section {
+      max-width: 100%
+      }
+      }
+  
+</style>
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"iwt_image",
+        "label":"Image With Text Image"
+      },
+      {
+        "type":"text",
+        "id":"iwt_header",
+        "label":"Image With Text Header"
+      },
+      {
+        "type":"text",
+        "id":"iwt_sub_header",
+        "label":"Image With Text Sub Header"
+      },
+      {
+        "type":"text",
+        "id":"iwt_button_text",
+        "label":"Image With Text Button Text"
+      },
+      {
+        "type":"url",
+        "id":"iwt_button_link",
+        "label":"Image With Text Button Link"
+      }
+    ],
+    "blocks": [
+      
+      {
+        "type":"iwt-bullet",
+        "name":"Image With Text Bullet",
+        "settings":[
+          {
+            "type":"text",
+            "id":"iwt_bullet_text",
+            "label":"Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+      "name": "Image With Text"
+    }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

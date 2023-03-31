@@ -1,0 +1,56 @@
+#shopify-section-social, #shopify-section-footer, footer.site-footer.text-center, div#SocialReviews-social {
+
+  background: #992A36 !important;
+  
+}
+
+footer.site-footer.text-center *, div#SocialReviews-social * {
+
+  color: white !important
+  
+}
+
+.site-footer__section.site-footer__content, .site-footer__section {
+  border-color: white  
+}
+
+.dev_l {
+  display: none !important
+}
+
+.sticky-cart__inner {
+  background-color: #992A36;
+  color: white;
+  fill: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sticky-cart__inner * {
+  color: white !important;
+  fill: white;
+}
+
+a.sticky-cart__item {
+  border-bottom-color: white !important
+}
+
+.text-supplements-icons .text-with-icons__block-icon .icon_image {
+  max-width: 30%;
+}
+
+.text-supplements-icons .text-supplements-icons .text-with-icons__blocks .text-with-icons__block {
+  padding: 30px 0px;
+}
+
+@media screen and (max-width: 1100px) {
+  .text-supplements-icons .text-with-icons__blocks .text-with-icons__block {
+    width: 50%
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-supplements-icons .text-with-icons__blocks .text-with-icons__block {
+    width: 100%
+  }
+}

@@ -1,0 +1,87 @@
+<div class="review-section">
+    <h2 class="review-section-header" style="color: #262F69; padding-bottom: 40px; padding-top: 80px">Reviews</h2>
+    <div class="review-grid">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'review' %}
+          <div class="review-card">
+            <span>{{ block.settings.review_content }}</span>
+            <img src="{{ 'review_stars.png' | asset_url }}" />
+          </div>
+      {% endcase %}
+    {% endfor %}
+    </div>
+  </div>
+
+
+     
+    <style>
+
+      .review-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    column-gap: 5%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .review-card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .review-card img {
+    padding-top: 10px
+  }
+
+  .review-card * {
+    text-align: center
+  }
+
+  .review-section-header{
+   font-size: 2vw;
+    text-align: center;
+    font-weight: 700
+  }
+  
+  @media screen and (max-width: 830px) {
+  
+      .review-grid {
+    grid-template-columns: 70%;
+  }
+  }
+    </style>
+  {% schema %}
+  {
+    "name": "Reviews",
+    "settings": [],
+    "blocks": [
+            {
+        "type":"review",
+        "name":"Review",
+        "settings":[
+          {
+            "type":"text",
+            "id":"review_content",
+            "label":"Review Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+      "name": "Reviews",
+      "blocks": [
+        
+      ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

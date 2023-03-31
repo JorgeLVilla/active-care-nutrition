@@ -1,0 +1,393 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "globe",
+            "text": "Free worldwide shipping"
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "e0d035bf-80af-4e04-ab6f-e88c9c6cf82e": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Help achieve nutritional goals and enhance whole body health with our customized ingredients plus naturally derived cannabinoids."
+          }
+        },
+        "cb76ff61-bd82-44c6-a3e0-b3784c14befe": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Primary Benefits",
+            "content": "<p>This next-generation multivitamin can be an ideal supplement for any person who desires to lead a healthier & enhanced lifestyle, by helping promote:<\/p><p>+ Nutritional Efficiences<\/p><p>+ Boosted Cellular Energy<\/p><p>+ Enhanced Focus, Mood & Productivity<\/p><p>+ Healthy Aging & Longevity<\/p><p>+ Immune & Nervous System, Skin, Brain, Eye, Heart, Beauty & Whole Body Health<\/p>",
+            "page": ""
+          }
+        },
+        "6fc8721a-d94b-48c2-b4e4-eea848e96fd2": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Ingredients",
+            "content": "<p>We imbue 24 active, healthful ingredients into our multi+V including:<\/p><p>+ <strong>Built-in B complex <\/strong>for a healthy methylation cycle, which fuels cellular energy, brain function, cell metabolism and produce collagen. Vitamin B complex may help prevent infections and help support or promote: cell health and growth of red blood cells.<\/p><p>+ <strong>Fat Soluble Vitamins <\/strong>that function as antioxidants, thus supporting the immune system & preventing premature aging of cells.<\/p><p>+ <strong>Array Minerals <\/strong>to help keep your bones, muscles, heart & brain working properly. Minerals are also important for creating enzymes & hormones, while maintaining a proper balance of water in the body<\/p><p>+ <strong>Prebiotics & Probiotics <\/strong>help support gut health, digestion and absorb nutrients more efficiently.<\/p><p>+ <strong>Naturally derived Cannabinoids <\/strong>are a class of molecules that interact with cannabinoid receptors in the human body that can be used to help manage or support the symptoms of stress, chronic pain, inflammation, migraines, epilepsy, autoimmune diseases, depression & anxiety.<\/p><p>+ <strong>Fruit derived terpene \"D-Limonene\" <\/strong>acts as an antioxidant in the body, helping absorb and remove damaging free radicals before they can injure cells. Dietary limonene may help lower your risk of certain health issues and signs of aging by reducing the amount of oxidative stress on your body<\/p>",
+            "page": ""
+          }
+        },
+        "d6ecab9f-915d-4250-b200-4c35ac6aa20b": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "How it works",
+            "content": "<p>Take 1 ActiveCare <strong>Hybrid Multivitamin+<\/strong> Gummy daily, at or around meal or snack time, or as directed by your healthcare practitioner. Store in a tightly-sealed, cool, dry place outside of direct sunlight. Keep out of the reach of children, who may mistake these for candy.<\/p><p>You can take our <strong>Hybrid Multi+<\/strong> at any point in the day that works best for your needs. We recommend you take it at or around the time of a meal or snack because the natural absorption of essential fat-soluble vitamins is supported by the proximity of a meal or a snack that provides some fat content.<\/p><p>Since many of our clients find that our Hybrid Multivitamin+ gummies are energizing and promote mental clarity, most customers choose to take our multivitamins and mineral supplements in the morning, or midday, instead of near bedtime.<\/p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "page": ""
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {}
+        },
+        "7fe74614-652c-4ec4-aabe-3dc56695a7b9": {
+          "type": "custom",
+          "settings": {
+            "code": "<h4>Good to know<\/h4>\n<div>\n<p class=\"good-to-know__item\">\n\n<strong>PB-<\/strong> Plant Base\n\n<\/p>\n<p class=\"good-to-know__item\">\n\n<strong>GM-<\/strong> GMO Free\n\n<\/p>\n<p class=\"good-to-know__item\">\n\n<strong>GF-<\/strong> Gluten Free\n\n<\/p>\n<p class=\"good-to-know__item\">\n\n<strong>SF-<\/strong> Soy Free\n\n<\/p>\n<p class=\"good-to-know__item\">\n\n<strong>3rd Party Tested<\/strong>\n\n<\/p>\n<p class=\"good-to-know__item\">\n\n<strong>Built-in B Complex<\/strong>\n\n<\/p>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "variant_picker",
+        "sales_point",
+        "inventory_status",
+        "buy_buttons",
+        "description",
+        "e0d035bf-80af-4e04-ab6f-e88c9c6cf82e",
+        "cb76ff61-bd82-44c6-a3e0-b3784c14befe",
+        "6fc8721a-d94b-48c2-b4e4-eea848e96fd2",
+        "d6ecab9f-915d-4250-b200-4c35ac6aa20b",
+        "tab",
+        "contact",
+        "share",
+        "7fe74614-652c-4ec4-aabe-3dc56695a7b9"
+      ],
+      "settings": {
+        "product_image_size": "large",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "background-image-text": {
+      "type": "background-image-text",
+      "disabled": true,
+      "settings": {
+        "subtitle": "",
+        "title": "Large image with text box",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "desktop_size": 0,
+        "image_alignment": "center center",
+        "color_border": "#f4f4f4",
+        "layout": "left"
+      }
+    },
+    "630a731f-5a56-4dd2-bc08-75019508a99a": {
+      "type": "ingredients",
+      "blocks": {
+        "template--16636697575666__630a731f-5a56-4dd2-bc08-75019508a99a-1675697256f8c58214-0": {
+          "type": "vitamin",
+          "settings": {
+            "name": "Tiamin (B1)",
+            "description": "<p>Thiamine plays an important role in converting carbohydrates into energy. Without thiamine, the nervous system can’t function and everyday abilities like walking, cognition and speech are impaired<\/p>"
+          }
+        },
+        "a1e3f009-a7fe-45a0-981b-a506ab9e96a7": {
+          "type": "vitamin",
+          "settings": {
+            "name": "Riboflavin (B2)",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus nisl. Non blandit massa enim nec dui nunc. Lacus viverra vitae congue eu consequat ac.<\/p>"
+          }
+        },
+        "cbdb762c-dfbc-4ba9-8ce3-076eca6df057": {
+          "type": "vitamin",
+          "settings": {
+            "name": "Niacin (B3)",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus nisl. Non blandit massa enim nec dui nunc. Lacus viverra vitae congue eu consequat ac.<\/p>"
+          }
+        },
+        "74ada393-3aaa-43ed-b936-bb5cfa1fed90": {
+          "type": "vitamin",
+          "settings": {
+            "name": "Pantothenic Acid (B5)",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus nisl. Non blandit massa enim nec dui nunc. Lacus viverra vitae congue eu consequat ac.<\/p>"
+          }
+        },
+        "7a37e4f6-5188-488d-aa4c-f72cb35e166a": {
+          "type": "vitamin",
+          "settings": {
+            "name": "Pyridoxine (B6)",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus nisl. Non blandit massa enim nec dui nunc. Lacus viverra vitae congue eu consequat ac.<\/p>"
+          }
+        },
+        "00d8563a-8381-4ac6-9d91-8f263dafd40b": {
+          "type": "vitamin",
+          "settings": {
+            "name": "Biotin (B7)",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus nisl. Non blandit massa enim nec dui nunc. Lacus viverra vitae congue eu consequat ac.<\/p>"
+          }
+        },
+        "40986866-1557-487d-979a-051061fab284": {
+          "type": "vitamin",
+          "settings": {
+            "name": "Foltate (B9)",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus nisl. Non blandit massa enim nec dui nunc. Lacus viverra vitae congue eu consequat ac.<\/p>"
+          }
+        },
+        "031610e4-ca06-4214-8d6e-bd87560ccdac": {
+          "type": "vitamin",
+          "settings": {
+            "name": "Cobalamin (B12)",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus nisl. Non blandit massa enim nec dui nunc. Lacus viverra vitae congue eu consequat ac.<\/p>"
+          }
+        },
+        "66848738-e65f-41f7-9117-58fd43123a2d": {
+          "type": "vitamin",
+          "settings": {
+            "name": "Vitamin A",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus nisl. Non blandit massa enim nec dui nunc. Lacus viverra vitae congue eu consequat ac.<\/p>"
+          }
+        },
+        "template--16636697575666__630a731f-5a56-4dd2-bc08-75019508a99a-1675697256f8c58214-1": {
+          "type": "mineral",
+          "settings": {
+            "name": "Example mineral array",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam sem et tortor consequat id porta. Vitae ultricies leo integer malesuada nunc vel. Lectus vestibulum mattis ullamcorper velit.<\/p>"
+          }
+        },
+        "template--16636697575666__630a731f-5a56-4dd2-bc08-75019508a99a-1675697256f8c58214-2": {
+          "type": "probiotic",
+          "settings": {
+            "name": "Example probiotic",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum. Augue eget arcu dictum varius. Eget nunc scelerisque viverra mauris.<\/p>"
+          }
+        },
+        "template--16636697575666__630a731f-5a56-4dd2-bc08-75019508a99a-1675697256f8c58214-3": {
+          "type": "cannabinoid",
+          "settings": {
+            "name": "Example cannabinoid",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra convallis posuere morbi leo urna molestie at. Vitae ultricies leo integer malesuada nunc. Id aliquet lectus proin nibh nisl condimentum.<\/p>"
+          }
+        },
+        "f303b104-3590-4882-9e6b-fbfbe0193b0f": {
+          "type": "mineral",
+          "settings": {
+            "name": "Name",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Facilisis gravida neque convallis a cras.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16636697575666__630a731f-5a56-4dd2-bc08-75019508a99a-1675697256f8c58214-0",
+        "a1e3f009-a7fe-45a0-981b-a506ab9e96a7",
+        "cbdb762c-dfbc-4ba9-8ce3-076eca6df057",
+        "74ada393-3aaa-43ed-b936-bb5cfa1fed90",
+        "7a37e4f6-5188-488d-aa4c-f72cb35e166a",
+        "00d8563a-8381-4ac6-9d91-8f263dafd40b",
+        "40986866-1557-487d-979a-051061fab284",
+        "031610e4-ca06-4214-8d6e-bd87560ccdac",
+        "66848738-e65f-41f7-9117-58fd43123a2d",
+        "template--16636697575666__630a731f-5a56-4dd2-bc08-75019508a99a-1675697256f8c58214-1",
+        "template--16636697575666__630a731f-5a56-4dd2-bc08-75019508a99a-1675697256f8c58214-2",
+        "template--16636697575666__630a731f-5a56-4dd2-bc08-75019508a99a-1675697256f8c58214-3",
+        "f303b104-3590-4882-9e6b-fbfbe0193b0f"
+      ],
+      "settings": {
+        "heading": "Ingredients",
+        "subtitle": "Take a look at the ingredients",
+        "alt": false,
+        "alt_no_gap": false,
+        "alt_no_bottom_gap": false,
+        "vitamins_label": "Vitamins",
+        "mineral_label": "Mineral Array",
+        "probiotics_label": "Probiotics",
+        "cannabinoids_label": "Cannabinoids"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "show_stars": true,
+            "number_of_stars": 5
+          }
+        },
+        "testimonials-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "show_stars": true,
+            "number_of_stars": 5
+          }
+        },
+        "testimonials-2": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "show_stars": true,
+            "number_of_stars": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonials-0",
+        "testimonials-1",
+        "testimonials-2"
+      ],
+      "settings": {
+        "title": "Testimonials",
+        "align_text": "center",
+        "stars_color": "#f65002",
+        "stars_empty_color": "#cccccc",
+        "round_images": true,
+        "alt": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 2
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {}
+    },
+    "743b524f-fc9c-4356-b098-57ea4a8b7500": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Check out our other products",
+        "description": "",
+        "home_featured_products": "frontpage",
+        "rows": 3,
+        "per_row_desktop": 3,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    },
+    "4d3a2d97-24ce-474e-858f-c48ca92a3186": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16636697575666__4d3a2d97-24ce-474e-858f-c48ca92a3186-16756928600ba8c557-0": {
+          "type": "image",
+          "settings": {
+            "title": "Subscribe & Save",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/black-brunette-woman-smiling-and-looking-at-camera-2022-04-11-14-21-04-utc.jpg",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16636697575666__4d3a2d97-24ce-474e-858f-c48ca92a3186-16756928600ba8c557-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "section_height": "450px",
+        "show_overlay_image": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "background-image-text",
+    "630a731f-5a56-4dd2-bc08-75019508a99a",
+    "testimonials",
+    "product-recommendations",
+    "collection-return",
+    "743b524f-fc9c-4356-b098-57ea4a8b7500",
+    "4d3a2d97-24ce-474e-858f-c48ca92a3186"
+  ]
+}

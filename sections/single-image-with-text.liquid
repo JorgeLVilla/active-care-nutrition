@@ -1,0 +1,54 @@
+<div class="bg_image_single_txt">
+  <div class="single_txt_meta">
+    <h2>{{ section.settings.title }}</h2>
+    <div class="sing-desc">
+      {{ section.settings.content }}
+    </div>
+    {% if section.settings.icons != blank %}
+      <div class="sing-img">
+        <img src="{{ section.settings.icons | img_url:'master' }}">
+      </div>
+    {% endif %}
+  </div>
+</div>
+<style>
+  {% if section.settings.image != blank %}
+  .bg_image_single_txt{
+    background:url({{section.settings.image | img_url:'master'}}) no-repeat;
+    background-size:cover;
+  }
+  {% endif %}
+</style>
+
+{% schema %}
+  {
+    "name": "Single image text",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"image",
+        "label":"Image"
+      },
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+        "type":"textarea",
+        "id":"content",
+        "label":"Content"
+      },
+      {
+        "type":"image_picker",
+        "id":"icons",
+        "label":"Icons"
+      }
+    ],
+    "presets":[
+      {
+        "name":"Single iamge text"
+      }
+    ]
+  }
+{% endschema %}

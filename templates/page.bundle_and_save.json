@@ -1,0 +1,388 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-bundle-page",
+      "blocks": {
+        "7a60bdc0-199d-456f-9843-1ccffef3561f": {
+          "type": "hero-logo-item",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/7de9fbc1-fa8c-45cd-9555-a025e091781a.png",
+            "text": "100% Vegan"
+          }
+        },
+        "59fff0bd-faab-48fb-b6e6-bb0830ad259a": {
+          "type": "hero-logo-item",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/image_2.png",
+            "text": "Science Backed"
+          }
+        },
+        "0cc30887-2c21-4b43-99ae-187e2fb7f4a3": {
+          "type": "hero-logo-item",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/ffbda518-5c9c-4e45-b63f-86cdc24aa121.png",
+            "text": "Money Back Guaranteed"
+          }
+        },
+        "ddeef769-e1db-4beb-be1f-52f46534e0fc": {
+          "type": "iwt-bullet",
+          "settings": {
+            "iwt_bullet_text": "Multi-Nutrient Gummies"
+          }
+        },
+        "6517767e-5a3e-440e-9a22-91266892d0fd": {
+          "type": "iwt-bullet",
+          "settings": {
+            "iwt_bullet_text": "100% Vegan"
+          }
+        },
+        "07f223ab-e726-489e-8849-079ba19a0ace": {
+          "type": "iwt-bullet",
+          "settings": {
+            "iwt_bullet_text": "3rd Party Tested for Heavy Metals  & Purity"
+          }
+        },
+        "78adb502-6eb5-4c46-9368-bdb758ecf2f5": {
+          "type": "iwt-bullet",
+          "settings": {
+            "iwt_bullet_text": "Gelatin, Glueten, Soy, GMO & Artifical Flavoring FREE!"
+          }
+        },
+        "94f6b0e7-b2b2-4877-b53c-8d7d9bcce22b": {
+          "type": "iwt-bullet",
+          "settings": {
+            "iwt_bullet_text": "Targets Whole Body Health& Digestion."
+          }
+        },
+        "a57b4c65-1f1a-470c-9e86-d7a68a1c23e4": {
+          "type": "faq",
+          "settings": {
+            "question": "What Is Whole Body Health?",
+            "answer": "Whole Body Health is a complete 360-view of one’s health. It combines physical, mental, emotional, social and spiritual factors in your ability to thrive rather than merely survive. \n\nWhole body wellness is essential to help prevent disease, reduce the risk of chronic and acute injuries, successfully treat existing conditions and become a more productive and happier person."
+          }
+        },
+        "7d15e551-d0f3-4eda-a56e-4a7383cab125": {
+          "type": "faq",
+          "settings": {
+            "question": "How does targeting Whole Body Health & Circadian Rhythm support my overall well-being & healthy aging?",
+            "answer": "Great Question!\n\nIn our fast-paced world, factors like stress, traveling, environmental changes, and unhealthy diets can impact our overall well-being and how we age. Embracing whole body health and aligning with our natural circadian rhythms is crucial for a vibrant and balanced life.\n\nImagine your body as a thriving, interconnected ecosystem made up of trillions of enzymes, microorganisms, and fungi. Nourishing this complex network with essential nutrients, beneficial bacteria, digestive enzymes, and natural adaptogens promotes comprehensive health and well-being from within.\n\nBy aligning your body's internal ecosystem with your circadian rhythms, you promote holistic wellness that lays the foundation for a strong, resilient, and balanced life."
+          }
+        },
+        "097422ff-3e61-416b-9fbb-66e6e0da1101": {
+          "type": "faq",
+          "settings": {
+            "question": "What are terpenes, and how do they enhance vitamin gummies?",
+            "answer": "Terpenes are aromatic compounds found in plants that can have various health benefits. When added to vitamin gummies, terpenes can enhance their flavor, aroma, elevated mood and potential health benefits."
+          }
+        },
+        "968763b4-3f07-4699-8db2-4cfca9344499": {
+          "type": "faq",
+          "settings": {
+            "question": "Are your vitamin gummies vegan-friendly?",
+            "answer": "Yes! Our vitamin gummies are made with natural fruit pectin instead of the animal products used to make gelatin.\n\nFurthermore our ingredients are organically-sourced, GMO Free, Soy and Dairy Free."
+          }
+        },
+        "783aa7d0-c027-406e-946d-7d30c62ed5f5": {
+          "type": "faq",
+          "settings": {
+            "question": "What Are Probiotic Fiber Gummies?",
+            "answer": "Probiotics are specific strains of live bacteria chosen for their immense health benefits to the body. These beneficial microbes can be added to a wide range of foods and taken as dietary supplements.\n\nAlthough they are both essential for the good health of the immune system, probiotics should not be mistaken for a prebiotic fiber blend, which is a non-digestible supplement taken as a source of food for the growth of essential gut microbiome colony-forming units.\n\nOne such food-bacteria combination is the addition of probiotics to gummy bear candies to produce probiotic gummies.\n\nThese adult probiotic gummies are great for guarding the body against a host of ailments associated with digestive and cognitive health."
+          }
+        },
+        "b556d2df-b389-4915-887a-f6cb63bf0350": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the best way to take my ActiveCare gummies?",
+            "answer": "We recommend you take one gummy either at or around the time of a meal or snack to ensure optimal absorption. By taking the gummies with some food containing fat, your body can naturally support the absorption of essential fat-soluble vitamins in our product, allowing you to enjoy maximum benefits; however, it is not mandatory. \n\nIt's essential to follow the recommended dosage and only exceed it if your healthcare practitioner advises. \n\nTaking more than the recommended dosage can result in adverse effects, including potential toxicity.\n\nIt is important to consult with your healthcare professional prior to use if you are taking any medications, have any medical conditions or are allergic to any of the listed ingredients."
+          }
+        },
+        "97c4de47-b07b-420d-8980-ce5b0a27f2c6": {
+          "type": "faq",
+          "settings": {
+            "question": "Are ActiveCare gummies right for me?",
+            "answer": "People looking to support their nutritional needs and fill any gaps in their diets, vital macro and micro nutrient absorption, elevated mood, restorative sleep patterns, support their whole body health and wellbeing would find ActiveCare gummies ideal. \n\nThis is true for people who might experience deficiencies because of dietary choices (like vegetarianism or veganism), for those who have intense training programs, work-life stresses or for frequent travelers who have irregular meals."
+          }
+        },
+        "d94819d3-3634-4cd8-9ae1-c2229b0c898d": {
+          "type": "faq",
+          "settings": {
+            "question": "What is your money-back guarantee and return policy?",
+            "answer": "It’s important to us that our customers are happy, so your purchase is covered by our incredible 30 day money-back guarantee.\n\nIf you’re not 100% satisfied, you can contact us within 30 days of your first order to initiate the process of receiving a refund for your original order."
+          }
+        },
+        "5f52ca29-fd19-42de-ae7c-fa31219228d8": {
+          "type": "shopbundle",
+          "settings": {
+            "shop_ttl": "Immunity & Comfort Bundle",
+            "shop_img": "shopify:\/\/shop_images\/Group_837.png",
+            "shop_btn_1": "One time Purchase $110",
+            "shop_btnurl_1": "shopify:\/\/collections\/all",
+            "shop_btn_2": "Subscription Bundle        $99",
+            "shop_btnurl_2": "shopify:\/\/collections\/all"
+          }
+        },
+        "1b8fcca7-0f8c-4201-a3c5-994265c3c0b9": {
+          "type": "shopbundle",
+          "settings": {
+            "shop_ttl": "Energy & Recovery Bundle",
+            "shop_img": "shopify:\/\/shop_images\/Group_813.png",
+            "shop_btn_1": "One time Purchase $110",
+            "shop_btnurl_1": "shopify:\/\/collections\/all",
+            "shop_btn_2": "Subscribe and Save 20%",
+            "shop_btnurl_2": "shopify:\/\/collections\/all"
+          }
+        },
+        "1d70ba3f-d1c4-4517-8c25-972a68ff3077": {
+          "type": "shopbundle",
+          "settings": {
+            "shop_ttl": "Relief & Recovery Bundle",
+            "shop_img": "shopify:\/\/shop_images\/Group_838_1.png",
+            "shop_btn_1": "One time Purchase $110",
+            "shop_btnurl_1": "shopify:\/\/collections\/all",
+            "shop_btn_2": "Subscribe and Save 20%",
+            "shop_btnurl_2": "shopify:\/\/collections\/all"
+          }
+        },
+        "62cb764f-215f-4a09-b32c-07f317aef25d": {
+          "type": "shopbundle",
+          "settings": {
+            "shop_ttl": "Total Balance Bundle",
+            "shop_img": "shopify:\/\/shop_images\/Group_820_57b02997-6356-4fb9-b900-4edda67230dd.png",
+            "shop_btn_1": "One time Purchase $160",
+            "shop_btnurl_1": "shopify:\/\/collections\/all",
+            "shop_btn_2": "Subscribe and Save 20%",
+            "shop_btnurl_2": "shopify:\/\/collections\/all"
+          }
+        },
+        "f3c5a60d-4c76-44ce-a016-abb772b6f275": {
+          "type": "routine-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Copy_of_ACN_WIRE_FRAME_7.jpg",
+            "main_text": "Bridge Nutritional Gaps",
+            "body_text": "Immunity & Energy Boost Performance, Rest & Recovery            Heart & Beauty Health"
+          }
+        },
+        "7e380eac-2a8b-42b7-950c-95c422bafac2": {
+          "type": "routine-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Copy_of_ACN_WIRE_FRAME_6.jpg",
+            "main_text": "Mental & Cognitive Functions",
+            "body_text": "Focus, Mood & Clarity                                                      Emotional & Social Wellbeing                              Fight or Flight Responses"
+          }
+        },
+        "b76a7e3a-180b-4e29-ad49-e0134ecfb768": {
+          "type": "routine-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Copy_of_ACN_WIRE_FRAME_5.jpg",
+            "main_text": "Mental & Cognitive Functions",
+            "body_text": "Metabolism & Weight  Gut Microbiome & GI System                  Vital Nutrient Absorption"
+          }
+        },
+        "88fd8815-0cd0-4055-950c-d9ff2636b03a": {
+          "type": "routine-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Copy_of_ACN_WIRE_FRAME_4.jpg",
+            "main_text": "Whole Body Health & Aging",
+            "body_text": "Respiratory & Oral Health         Hormone Balance                            24-hr. Circadian Rythm"
+          }
+        },
+        "7fdc6138-2abc-4837-a7ee-869784b1a962": {
+          "type": "review",
+          "settings": {
+            "review_content": "Absolutely LOVE these! I took the Immunity & Energy and what a difference to my daytime routine!!<br>- Jeanne M."
+          }
+        },
+        "5a09f111-2ffc-4959-879d-bfc55ca17dcf": {
+          "type": "review",
+          "settings": {
+            "review_content": "I have allocated time each day to taking these and WOW. I absolutely love these, they give you a different perspective on how to think\/empower your balanced health and nutrition. I’m feeling a thousand times better for having started these. So much more positive.\" <br>- Jess B"
+          }
+        },
+        "d6ecfe48-fbf8-4239-8d32-6d8d4fcf39ba": {
+          "type": "review",
+          "settings": {
+            "review_content": "I've taken several different types and forms of multivitamins and NONE of them compare to ActiveCares! Easy to consume, packed with nutrients that target my whole body and shockingly good!<br>- Tom D"
+          }
+        },
+        "80e5e54f-c49f-4e41-8a62-d27dff4ab913": {
+          "type": "features-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sun.png",
+            "main_text": "Vitamins & Mineral Array",
+            "body_text": "Power your nutritional journey through fueling your body with essential vitamins and minerals to help boost immunity, energy, beauty and aging."
+          }
+        },
+        "43d38390-59a4-4dd0-b5d9-f6bc0a93a8ff": {
+          "type": "features-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/am.png",
+            "main_text": "Probiotics",
+            "body_text": "Empower and protect your bodies ecosystem with a community of 'friendly' microorganisms to help support your guts microbiome, micronutrient synthesis, cognitive functions and systemic health."
+          }
+        },
+        "4e3a37ae-59ae-452c-a697-5b01ebba6334": {
+          "type": "features-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kidney.png",
+            "main_text": "Digestive Enzymes",
+            "body_text": "Absorb vital macro and micro nutrients throughout your daily meals and help break down  carbohydrates into sugars. Fats into fatty acids, Lactose into glucose and galactose and Protein into amino acids."
+          }
+        },
+        "9394f4a2-2463-4a24-8e96-3e02ac6bc0ec": {
+          "type": "features-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jug.png",
+            "main_text": "Botanical Terpenes",
+            "body_text": "Discover the hidden gems of nature: terpenes! These scarce, magical compounds found in plants and fruit hold the key to enhancing your well-being by effortlessly boosting your mood, energy, and sleep quality, all while bidding farewell to inflammation and stress."
+          }
+        },
+        "1728bb93-87d7-4829-bb47-83845e33a0f5": {
+          "type": "features-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/plant.png",
+            "main_text": "Adaptogen Superfoods",
+            "body_text": "Fuel your body's resilience with plant and mushroom Adaptogens - a powerful ally for battling stress, harmonizing hormone levels, and reinforcing your internal systems for the fight or flight response."
+          }
+        },
+        "8fe1fa7e-bb49-4b3a-a598-b84a9bdb1aef": {
+          "type": "features-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/melon.png",
+            "main_text": "Fruit Pectin",
+            "body_text": "A natural extract sourced from real fruits that's transforming the health scene. Not only does it replace animal-based gelatin, but it's also believed to improve blood sugar and blood fat levels, promote a healthy weight and promote digestion."
+          }
+        },
+        "2ef7dab4-3d9b-4497-afca-f47ff98392d1": {
+          "type": "sales-item",
+          "settings": {
+            "image_pc": "shopify:\/\/shop_images\/ActiveCare_Hybrid_Multi-dec7_FRONT_1_750x_de5b3c45-b855-4514-998b-75ffd926a8c1.png",
+            "img_ttl": "Immunity & Energy",
+            "img_ttlclr": "#111111",
+            "img_subttl": "Multivitamin",
+            "img_subttlclr": "#fc8761",
+            "img_cntnt": "Bridge nutritional gaps, promote digestive health, clarity, mood, whole body health, aging and your daytime circadian rhythm with as little as one gummy a day.",
+            "img_btntxt": "SHOP NOW",
+            "img_btnurl": "shopify:\/\/products\/active-care-nutritions-women-mens-hybird-multi-watermalon-mango",
+            "img_btnclr": "#852933"
+          }
+        },
+        "a206a727-9b2a-48e0-b433-57e8b30cce5d": {
+          "type": "sales-item",
+          "settings": {
+            "image_pc": "shopify:\/\/shop_images\/ActiveCare_Relief_Recovery_dec7_FRONT_1_750x_56736561-b2f1-46a3-953f-c86ba61944b0.png",
+            "img_ttl": "Mind & Body",
+            "img_ttlclr": "#fbb624",
+            "img_subttl": "Stress Support",
+            "img_subttlclr": "#852933",
+            "img_cntnt": "All-one-on holistic approached gummy to support your fight or flight responses, nutritional diet, digestive health & whole body health & recovery.",
+            "img_btntxt": "SHOP NOW",
+            "img_btnurl": "shopify:\/\/products\/relief-recovery",
+            "img_btnclr": "#f84e00"
+          }
+        },
+        "56e5b686-990e-46db-aa4d-2c02bbe36e05": {
+          "type": "sales-item",
+          "settings": {
+            "image_pc": "shopify:\/\/shop_images\/ActiveCare_Sleep_Well_dec7_FRONT_1_750x_eda3d317-6e35-481f-af87-1559cd7a22e8.png",
+            "img_ttl": "Rest + Digest",
+            "img_ttlclr": "#2e98ec",
+            "img_subttl": "Nighttime",
+            "img_subttlclr": "#2a336c",
+            "img_cntnt": "Promote your bodies natural melatonin production, relaxation, digestion & nighttime circadian rhythm and feel refreshed and recharged for the next day.",
+            "img_btntxt": "SHOP NOW",
+            "img_btnurl": "shopify:\/\/products\/active-care-nutritions-women-mens-rest-support",
+            "img_btnclr": "#2a336c"
+          }
+        }
+      },
+      "block_order": [
+        "7a60bdc0-199d-456f-9843-1ccffef3561f",
+        "59fff0bd-faab-48fb-b6e6-bb0830ad259a",
+        "0cc30887-2c21-4b43-99ae-187e2fb7f4a3",
+        "ddeef769-e1db-4beb-be1f-52f46534e0fc",
+        "6517767e-5a3e-440e-9a22-91266892d0fd",
+        "07f223ab-e726-489e-8849-079ba19a0ace",
+        "78adb502-6eb5-4c46-9368-bdb758ecf2f5",
+        "94f6b0e7-b2b2-4877-b53c-8d7d9bcce22b",
+        "a57b4c65-1f1a-470c-9e86-d7a68a1c23e4",
+        "7d15e551-d0f3-4eda-a56e-4a7383cab125",
+        "097422ff-3e61-416b-9fbb-66e6e0da1101",
+        "968763b4-3f07-4699-8db2-4cfca9344499",
+        "783aa7d0-c027-406e-946d-7d30c62ed5f5",
+        "b556d2df-b389-4915-887a-f6cb63bf0350",
+        "97c4de47-b07b-420d-8980-ce5b0a27f2c6",
+        "d94819d3-3634-4cd8-9ae1-c2229b0c898d",
+        "5f52ca29-fd19-42de-ae7c-fa31219228d8",
+        "1b8fcca7-0f8c-4201-a3c5-994265c3c0b9",
+        "1d70ba3f-d1c4-4517-8c25-972a68ff3077",
+        "62cb764f-215f-4a09-b32c-07f317aef25d",
+        "f3c5a60d-4c76-44ce-a016-abb772b6f275",
+        "7e380eac-2a8b-42b7-950c-95c422bafac2",
+        "b76a7e3a-180b-4e29-ad49-e0134ecfb768",
+        "88fd8815-0cd0-4055-950c-d9ff2636b03a",
+        "7fdc6138-2abc-4837-a7ee-869784b1a962",
+        "5a09f111-2ffc-4959-879d-bfc55ca17dcf",
+        "d6ecfe48-fbf8-4239-8d32-6d8d4fcf39ba",
+        "80e5e54f-c49f-4e41-8a62-d27dff4ab913",
+        "43d38390-59a4-4dd0-b5d9-f6bc0a93a8ff",
+        "4e3a37ae-59ae-452c-a697-5b01ebba6334",
+        "9394f4a2-2463-4a24-8e96-3e02ac6bc0ec",
+        "1728bb93-87d7-4829-bb47-83845e33a0f5",
+        "8fe1fa7e-bb49-4b3a-a598-b84a9bdb1aef",
+        "2ef7dab4-3d9b-4497-afca-f47ff98392d1",
+        "a206a727-9b2a-48e0-b433-57e8b30cce5d",
+        "56e5b686-990e-46db-aa4d-2c02bbe36e05"
+      ],
+      "settings": {
+        "tp_bg_clr": "#f4f6fc",
+        "top_heading": "Functional & Flavorful",
+        "title": "Super Gummies",
+        "bottom_heading": "Targeting Whole Body Health",
+        "description": "Vitamins & Minerals | Probiotics | Digestive Enzymes | Adaptogen Complex and more!",
+        "img": "shopify:\/\/shop_images\/Copy_of_ACN_WIRE_FRAME_39ad36b0-afff-4d52-8ff1-651a503485ad.jpg",
+        "mobile_img": "shopify:\/\/shop_images\/Copy_of_ACN_WIRE_FRAME_39ad36b0-afff-4d52-8ff1-651a503485ad.jpg",
+        "floating_img": "shopify:\/\/shop_images\/Copy_of_ACN_WIRE_FRAME.png",
+        "btn_text": "Start Today",
+        "btn_url": "shopify:\/\/collections\/all",
+        "fav_heading": "",
+        "subs_bg_clr": "#f4f4f3",
+        "routine_header": "Gummy routine to help support:",
+        "title_padding": 30,
+        "features_header": "Supplements that keep up with you.",
+        "features_sub_header": "TOTAL BODY, TOTAL SUPPORT.",
+        "bundle_save_text": "Build a Bundle & Save",
+        "bundle_save_button": "Start",
+        "bundle_save_image": "shopify:\/\/shop_images\/Group_800_1.png",
+        "iwt_image": "shopify:\/\/shop_images\/iwt_image_71a2f9fe-87da-46bd-b5cf-ef16307154b2.jpg",
+        "iwt_header": "Try ActiveCare's Routine!",
+        "iwt_sub_header": "At home or on the go? For you or two? Target whole body health with our perfect routine!",
+        "iwt_button_text": "Get Started",
+        "iwt_button_link": "shopify:\/\/products\/active-care-nutritions-women-mens-hybird-multi-watermalon-mango",
+        "lft_circletxt": "Subscribe and unlock even more savings",
+        "subs_heading": "5 reasons why you should subscribe to ActiveCare",
+        "head_1": "",
+        "head_2": "Traditional Supplements",
+        "head_3": "",
+        "head_logo": "shopify:\/\/shop_images\/ActiveCare_Primary_Logo_White.webp",
+        "x_image": "shopify:\/\/shop_images\/red_x.webp",
+        "check_image": "shopify:\/\/shop_images\/green_check.webp",
+        "ic_txt_1": "Targets Whole Body\nHealth  & Digestion.",
+        "ic_txt_2": "Routine to support \nday\/night circadian rhythm.",
+        "ic_txt_3": "Formulated using Probiotics, \"Multi\"-Enzymes, Adaptogens, Terpenes  with ..",
+        "ic_txt_4": "Over 15 essential  vitamins and minerals in a Vegan, Fruit Pectin based Gummy Berry.",
+        "ic_txt_5": "Breaks down and absorbs vital macro and micro nutrients throughout your daily diet.",
+        "ic_txt_6": "Bonus: 30-day supply for less than $2 a day when you <br>bundle and subscribe!?",
+        "btn_substxt": "Subscribe",
+        "btn_subsurl": "shopify:\/\/collections\/all",
+        "faq_heading": "Frequently Asked Questions",
+        "number_row_show": 4,
+        "collection_test": "frontpage",
+        "sales_title": "The Perfect Routine",
+        "sales_content": "Add some flavor to your supplements while balancing your nutrition and circadian rhythm."
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

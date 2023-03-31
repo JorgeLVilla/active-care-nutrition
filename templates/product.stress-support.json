@@ -1,0 +1,508 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-stress-support",
+      "blocks": {
+        "6165e710-ab61-4cbb-a750-3e64137329f3": {
+          "type": "description_lines",
+          "settings": {
+            "description_line": "Built in B Complex with Vitamins A, C, \nD3, E, CoQ10 and Calcium, Zinc, Magnesium Malate."
+          }
+        },
+        "33102758-eabd-42cf-af9a-a92a9ec607f4": {
+          "type": "description_lines",
+          "settings": {
+            "description_line": "Clinically validated probiotic Lactospore® (Bacillus coagulans) & \"multi' enzymes DigeZyme® (α–Amylase, Cellulase, Lipase, Protease, Lactase)"
+          }
+        },
+        "8bb67710-e053-425c-949a-abc4e7b43a62": {
+          "type": "description_lines",
+          "settings": {
+            "description_line": "Reishi Mushroom, Ginger Extract and Flax Powder with 100% All Natural Botanical \"Recovery\"Terpene blend designed by Dr. Ethan Russo"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "ca3471d5-9b77-452b-b2d7-7380368dbe84": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": false
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Product Description",
+            "content": "<p>Introducing Mind & Body Stress Support Gummies – a natural and science-backed solution for stress! We give you the power to resist daily stresses with our advanced formula designed to help you lead the healthier and enhanced lifestyle you’ve been dreaming about. <\/p><p><\/p><p>Our gummies cover all aspects of wellness to provide real results, such as improving your daytime circadian rhythm, fight or flight responses, gut and digestive health, nutritional gaps, mood, cognitive functions and whole body health. With Mind & Body Stress Support Gummies, feel the difference in no time! Our hassle-free gummies offer unbeatable convenience making it easier to reach a balanced state of mind. <\/p><p><\/p><p>Take one these gummies per day and enjoy the powers of our all natural supplement made right here in the USA so you can trust that every batch is safe and high quality. <\/p><p><\/p><p>Unlock your fullest potential with Mind & Body Stress Support Gummies today!made easy! Reach a higher level of health and well-being with this boss mode multivitamin today.<\/p>",
+            "page": ""
+          }
+        },
+        "964a5019-c07d-4542-a515-228d8bae50e3": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "<p>+ Helps fill nutritional gaps in your diet, providing key nutrients essential for optimal health and wellbeing.<\/p><p>+ Supports recovery and immunity, helping your body fight off illnesses and bounce back from physical activity.<\/p><p>+ Aids in nutrient absorption and synthesis, helping your body extract the maximum nutritional value from the foods you eat.<\/p><p>+ Promotes mental balance, helping to reduce stress, anxiety, and depression, and improve cognitive function.<\/p><p>+ Helps balance hormones, ensuring healthy reproductive function and overall hormonal balance.<\/p><p>+ Supports emotional and social wellbeing, helping to improve mood, increase social connectedness, and reduce feelings of isolation and loneliness.<\/p><p>+ Enhances focus, mood, clarity, and productivity, helping you stay on task and achieve your goals.<\/p><p>+ Helps manage stress and anxiety, reducing the negative impact of these factors on your physical and mental health.<\/p><p>+ Promotes digestive health, reducing bloating and improving overall gut health and function.<\/p><p>+ Supports cardiovascular function, improving heart health and cholesterol levels, and enhancing cellular energy and oxygen levels, and reducing the impact of inflammatory mediators, promoting whole-body health and aging.<\/p>",
+            "page": ""
+          }
+        },
+        "5f0f9b8a-6432-4bd3-8955-e6f69be6029c": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "",
+            "tab_image": "shopify:\/\/shop_images\/Screenshot_2023-03-23_at_8.37.23_PM.png",
+            "page": ""
+          }
+        },
+        "6fc8721a-d94b-48c2-b4e4-eea848e96fd2": {
+          "type": "tab",
+          "settings": {
+            "title": "How it works",
+            "content": "<p>Incorporating the right nutrients into your daily routine can be an essential step toward achieving whole body health and circadian rythm support for your short and long term goals. Our Stress Support Gummies make it easy to take care of yourself without any added stress.<\/p><p><\/p><p>We recommend taking one gummy daily, either at or around the time of a meal or snack, to ensure optimal absorption. By taking the gummies with some food containing fat, your body can naturally support the absorption of essential fat-soluble vitamins in our product, allowing you to enjoy maximum benefits, however it is not mandatory. <\/p><p><\/p><p>To ensure safety and efficacy, follow the recommended dosage and only exceed it if your healthcare practitioner advises. Remember, taking too much can lead to potential toxicity and adverse effects.<\/p><p><\/p><p>When it comes to the safety of our loved ones, it's vital to keep our Stress Support Gummies out of reach of children. Our product is safe for adults, but children's bodies may not be able to handle the vitamins' dosage effectively, so it's best to be cautious.<\/p><p><\/p><p>Finally, keeping our gummies in a cool, dry place without direct sunlight can help maintain their efficacy and quality. You shouldn't have to worry about stress when you're taking care of yourself; with our Stress Support Gummies, you won't have to.<\/p>",
+            "page": ""
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "6165e710-ab61-4cbb-a750-3e64137329f3",
+        "33102758-eabd-42cf-af9a-a92a9ec607f4",
+        "8bb67710-e053-425c-949a-abc4e7b43a62",
+        "variant_picker",
+        "ca3471d5-9b77-452b-b2d7-7380368dbe84",
+        "buy_buttons",
+        "tab",
+        "964a5019-c07d-4542-a515-228d8bae50e3",
+        "5f0f9b8a-6432-4bd3-8955-e6f69be6029c",
+        "6fc8721a-d94b-48c2-b4e4-eea848e96fd2",
+        "contact",
+        "share"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false,
+        "gtk_title": "Good to know",
+        "gtk_txts": "<b>PB<\/b>- Plant Base<br><b>GF<\/b>- Gluten Free",
+        "gtk_txts2": "<b>GM<\/b>- GMO Free<br><b>SF<\/b>- Soy Free",
+        "gtk_txts3": "<b>3rd Party Tested<br>Built-in B complex<\/b>"
+      }
+    },
+    "1b25ae9f-4cff-4d6c-9fcf-c8e3b221ea2d": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--16657790173426__1b25ae9f-4cff-4d6c-9fcf-c8e3b221ea2d-16791258199c73914c-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/cup_icon_7d1d97ae-645a-4e07-8bdd-1c8cc02293e2.png",
+            "title": "Bridge  Nutritional Gaps",
+            "text": "<p>Immunity & Energy Boost Performance, Rest & Recovery, Heart and Beauty Health<\/p>",
+            "hide_icon": false
+          }
+        },
+        "template--16657790173426__1b25ae9f-4cff-4d6c-9fcf-c8e3b221ea2d-16791258199c73914c-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/light_blub.webp",
+            "title": "Mental & Cognitive Wellbeing",
+            "text": "<p>Focus, Mood, Clarity & Productivity Emotional & Social Support Stress & Anxiety Response<\/p>",
+            "hide_icon": false
+          }
+        },
+        "template--16657790173426__1b25ae9f-4cff-4d6c-9fcf-c8e3b221ea2d-16791258199c73914c-2": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/gut.png",
+            "title": "Digestive & Gut Health",
+            "text": "<p>Macro and Micro  Nutrient Absorption Gut Microbiome & GI System Metabolism and Weight<\/p>",
+            "hide_icon": false
+          }
+        },
+        "94238c4a-d2f4-4c69-a70f-ef972f5462fc": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/plus_circle.png",
+            "title": "Whole Body Health & Aging",
+            "text": "<p>Heart Health & Cholesterol Cellular Energy & Oxygen Inflammatory mediators<\/p>",
+            "hide_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16657790173426__1b25ae9f-4cff-4d6c-9fcf-c8e3b221ea2d-16791258199c73914c-0",
+        "template--16657790173426__1b25ae9f-4cff-4d6c-9fcf-c8e3b221ea2d-16791258199c73914c-1",
+        "template--16657790173426__1b25ae9f-4cff-4d6c-9fcf-c8e3b221ea2d-16791258199c73914c-2",
+        "94238c4a-d2f4-4c69-a70f-ef972f5462fc"
+      ],
+      "settings": {
+        "subtitle": "",
+        "title": "Formulated to support",
+        "align_text": "center",
+        "single_row": false,
+        "desktop_columns_per_row": 4,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "alt": false,
+        "alt_no_gap": true,
+        "top_padded": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "deb5cf4d-7278-4ff0-ae70-cc3db4903662": {
+      "type": "mulivitamin_ingredients",
+      "blocks": {
+        "50a4ab17-8847-47f1-b621-46435fc85990": {
+          "type": "text",
+          "settings": {
+            "line": "Tiamin (B1)",
+            "text_cont": "Thiamine plays an important role in converting carbohydrates into energy. Without thiamine, the nervous system can’t function and everyday abilities like walking, cognition and speech are impaired",
+            "text_contpro": ""
+          }
+        },
+        "3fba6600-e5ff-4b60-ac26-71a4777418d8": {
+          "type": "text",
+          "settings": {
+            "line": "Riboflavin (B2)",
+            "text_cont": "Riboflavin works to reduce oxidative stress and inflammation of nerves, which are contributors to migraine headaches.",
+            "text_contpro": ""
+          }
+        },
+        "d8c1bb89-3b56-4c1a-8da2-20767f4bd4a9": {
+          "type": "text",
+          "settings": {
+            "line": "Niacin (B3)",
+            "text_cont": "Niacin (vitamin B-3) is often part of a daily multivitamin, but most people get enough niacin from the food they eat.",
+            "text_contpro": ""
+          }
+        },
+        "ad501704-f774-47c9-ab68-d96c944709e8": {
+          "type": "text",
+          "settings": {
+            "line": "Pantothenic Acid (B5)",
+            "text_cont": "In addition to playing a role in the breakdown of fats and carbohydrates for energy",
+            "text_contpro": ""
+          }
+        },
+        "1b6b5422-3c5b-49dd-8714-0fb46ccb1d4f": {
+          "type": "text",
+          "settings": {
+            "line": "Pyridoxine (B6)",
+            "text_cont": "Vitamin B-6 (pyridoxine) is important for normal brain development and for keeping the nervous system and immune system healthy.",
+            "text_contpro": ""
+          }
+        },
+        "d13bfa8b-5053-4544-b0cd-5a6946d12547": {
+          "type": "text",
+          "settings": {
+            "line": "Foltate (B9)",
+            "text_cont": "Folate (vitamin B-9) is important in red blood cell formation and for healthy cell growth and function.",
+            "text_contpro": ""
+          }
+        },
+        "1d943c68-f1d4-4e48-b79a-7f20f693b5de": {
+          "type": "text",
+          "settings": {
+            "line": "Cobalamin (B12)",
+            "text_cont": "Vitamin B12, or cobalamin, is naturally found in animal foods. It can also be added to foods or supplements.",
+            "text_contpro": ""
+          }
+        },
+        "f75ec0c6-ea82-4464-8a6f-c86ff268f410": {
+          "type": "text",
+          "settings": {
+            "line": "Vitamin A",
+            "text_cont": "Vitamin A, also known as retinol, has several important functions.",
+            "text_contpro": ""
+          }
+        },
+        "e4283f41-b236-4c91-8533-2d0621898be6": {
+          "type": "text",
+          "settings": {
+            "line": "Vitamin D3",
+            "text_cont": "Vitamin D3 is best known for strengthening your bones, which it does by helping the body absorb calcium and phosphorus from food",
+            "text_contpro": ""
+          }
+        },
+        "1315e938-3b12-4f4a-8981-1fbcaf528f2c": {
+          "type": "text",
+          "settings": {
+            "line": "Vitamin K1",
+            "text_cont": "Phytonadione (vitamin K1) is a medication used to treat and manage vitamin K deficiency, which is a significant risk factor for intracranial hemorrhage and other bleeds",
+            "text_contpro": ""
+          }
+        },
+        "2ea2e527-386c-4628-b99c-cb43c5c50b7b": {
+          "type": "text",
+          "settings": {
+            "line": "Vitamin K2",
+            "text_cont": "It contributes to skin health and bone metabolism, promotes proper brain function and prevents heart-related diseases.",
+            "text_contpro": ""
+          }
+        }
+      },
+      "block_order": [
+        "50a4ab17-8847-47f1-b621-46435fc85990",
+        "3fba6600-e5ff-4b60-ac26-71a4777418d8",
+        "d8c1bb89-3b56-4c1a-8da2-20767f4bd4a9",
+        "ad501704-f774-47c9-ab68-d96c944709e8",
+        "1b6b5422-3c5b-49dd-8714-0fb46ccb1d4f",
+        "d13bfa8b-5053-4544-b0cd-5a6946d12547",
+        "1d943c68-f1d4-4e48-b79a-7f20f693b5de",
+        "f75ec0c6-ea82-4464-8a6f-c86ff268f410",
+        "e4283f41-b236-4c91-8533-2d0621898be6",
+        "1315e938-3b12-4f4a-8981-1fbcaf528f2c",
+        "2ea2e527-386c-4628-b99c-cb43c5c50b7b"
+      ],
+      "settings": {
+        "heading": "Ingredients & Benfits",
+        "subheading": "Yorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.",
+        "tab1": "Vitamins",
+        "tab2": "Mineral Array",
+        "tab3": "Probiotics"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "disabled": true,
+      "blocks": {
+        "testimonials-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Absolutely LOVE these! I took the Immunity & Energy and what a difference to my daytime routine!! <\/p>",
+            "author": "Jeanne M.",
+            "show_stars": true,
+            "number_of_stars": 5
+          }
+        },
+        "testimonials-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>I have allocated time each day to taking these and WOW. I absolutely love these, they give you a different perspective on how to think\/empower your balanced health and nutrition. I’m feeling a thousand times better for having started these. So much more positive.\" <\/p>",
+            "author": "Jess B",
+            "show_stars": true,
+            "number_of_stars": 5
+          }
+        },
+        "testimonials-2": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>I've taken several different types and forms of multivitamins and NONE of them compare to ActiveCares! Easy to consume, packed with nutrients that target my whole body and shockingly good!<\/p>",
+            "author": "Tom D",
+            "show_stars": true,
+            "number_of_stars": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonials-0",
+        "testimonials-1",
+        "testimonials-2"
+      ],
+      "settings": {
+        "bg_clr": "#eaeaea",
+        "title": "Reviews",
+        "align_text": "center",
+        "stars_color": "#ecd504",
+        "stars_empty_color": "#cccccc",
+        "round_images": true,
+        "alt": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "show_product_recommendations": false,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "1e860fba-ca6a-4ebe-827e-d5cdd15e18ba": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "margin_top": "",
+        "margin_right": "",
+        "page_wd": "",
+        "sect_heading": "",
+        "image": "shopify:\/\/shop_images\/Plan_de_travail_1_1_3_1.png",
+        "image_width": 700,
+        "bg_clr": "",
+        "subtitle": "",
+        "title": "Build a bundle & Save",
+        "text": "",
+        "button_label": "Start",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "alt": false
+      }
+    },
+    "89c7d5eb-4440-46af-ba03-97aaf98aebe5": {
+      "type": "reviews-section",
+      "blocks": {
+        "4cf758d3-fa00-42ea-a68a-2e2048f12cdd": {
+          "type": "review",
+          "settings": {
+            "review_content": "Absolutely LOVE these! I took the Immunity & Energy and what a difference to my daytime routine!!<br><br>- Jeanne M."
+          }
+        },
+        "f261b9e3-3882-45fc-9104-26fdc93b14af": {
+          "type": "review",
+          "settings": {
+            "review_content": "I have allocated time each day to taking these and WOW. I absolutely love these, they give you a different perspective on how to think\/empower your balanced health and nutrition. I’m feeling a thousand times better for having started these. So much more positive.\"<br><br>- Jess B"
+          }
+        },
+        "2a425e27-663f-4a22-ad24-b79d5be6dddf": {
+          "type": "review",
+          "settings": {
+            "review_content": "I've taken several different types and forms of multivitamins and NONE of them compare to ActiveCares! Easy to consume, packed with nutrients that target my whole body and shockingly good!<br><br>- Tom D"
+          }
+        }
+      },
+      "block_order": [
+        "4cf758d3-fa00-42ea-a68a-2e2048f12cdd",
+        "f261b9e3-3882-45fc-9104-26fdc93b14af",
+        "2a425e27-663f-4a22-ad24-b79d5be6dddf"
+      ],
+      "custom_css": [
+        ".review-section-header {font-size: 40px;}"
+      ],
+      "settings": {}
+    },
+    "2984c87d-8dba-4fcc-aee0-cb6c62993be2": {
+      "type": "multi-faq",
+      "blocks": {
+        "5d227f00-b20b-4173-a039-04ebe25ad467": {
+          "type": "faq",
+          "settings": {
+            "question": "How does targeting Whole Body Health & Circadian Rhythm support my overall well-being & healthy aging?",
+            "answer": "In our fast-paced world, factors like stress, traveling, environmental changes, and unhealthy diets can impact our overall well-being and how we age. \n\nEmbracing whole body health and aligning with our natural circadian rhythms is crucial for a vibrant and balanced life.\nImagine your body as a thriving, interconnected ecosystem made up of trillions of enzymes, microorganisms, and fungi. \n\nNourishing this complex network with essential nutrients, beneficial bacteria, digestive enzymes, and natural adaptogens promotes comprehensive health and well-being from within.\n\nBy aligning your body's internal ecosystem with your circadian rhythms, you promote holistic wellness that lays the foundation for a strong, resilient, and balanced life."
+          }
+        },
+        "9542d0c8-9740-4dc8-b480-21f394e6b8cf": {
+          "type": "faq",
+          "settings": {
+            "question": "Why Are Probiotics Important?",
+            "answer": "Probiotics are live microorganisms known that are ingested through supplements or fermented meals.\n\nMore and more research indicates a connection between general health and disease and the balance or imbalance of bacteria in your digestive system.\n\nProbiotics have been linked to a variety of health advantages and help maintain a healthy balance of gut bacteria.\n\nA few of the advantages include that they promote weight loss, help maintain digestive and immunological health, and more.\n\nWe love using probiotics in our gummy vitamins because they can help prevent gastrointestinal disorders and strengthen one's immune system."
+          }
+        },
+        "2b9daf0a-cb07-4e33-9130-af2e62841bbc": {
+          "type": "faq",
+          "settings": {
+            "question": "Are the gummies clinically-studied?",
+            "answer": "ActiveCare’s Gummies are formulated with a clinically-studied DigeZyme® for its enhanced absorption of minerals and vitamins, decreased pain and tenderness associated by exercising and a declining trend in the level of pro-inflammatory biomarkers.\n\nFurthermore, our gummies also use a clinically validated and commercial  probiotic, Lactorspore® containing L(+) lactic acid producing microbial preparation from Bacillus coagulans, MTCC 5856 (also  known to be Lactobacillus sporogenes). demonstrated  for its supportive role in managing the immune system, irritable bowel syndrome, weight management and even cholesterol management"
+          }
+        },
+        "b71a3080-a061-48bc-a486-31469892fd80": {
+          "type": "faq",
+          "settings": {
+            "question": "How do you source your ingredients?",
+            "answer": "All ingredients are organically sourced from food with a focus on bioavailability and bio-accessibility. Every ingredient and product goes through comprehensive 3rd party testing. They are Vegan, Non-GMO, Soy Free, Dairy Free, Gelatin-Free and Proudly Manufactured in our USA Facility, which is FDA Registered, and NSF, ISO & GMP Certified."
+          }
+        },
+        "7cd9d47c-6cf7-4435-9ab3-3b84c49dffb3": {
+          "type": "faq",
+          "settings": {
+            "question": "What are terpenes, and how do they enhance vitamin gummies?",
+            "answer": "Terpenes are aromatic compounds found in plants that can have various health benefits. When added to vitamin gummies, terpenes can enhance their flavor, aroma, and potential health benefits."
+          }
+        },
+        "a0a20463-7f20-4840-ba27-4c330fc1af16": {
+          "type": "faq",
+          "settings": {
+            "question": "Are Probiotic Gummies Effective?",
+            "answer": "While probiotic gummies are as effective as other supplements that contain probiotics, gummies do not always contain the same amount of live cultures. Therefore, not all gummies will have the same impact or provide the same digestive advantage."
+          }
+        },
+        "22f4f0ce-6c6f-4d3e-8726-10253469ed35": {
+          "type": "faq",
+          "settings": {
+            "question": "What Are Digestive Enzymes?",
+            "answer": "The food you eat needs to be broken down by digestive enzymes. These proteins accelerate the chemical processes that transform food into compounds that can be absorbed by your digestive system.\n\nThere are digesting enzymes in your saliva. They are also expelled by a few of your organs, such as the gallbladder, liver, and pancreas. Digestive enzymes are also kept in cells that line the outside of your intestines.\n\nHowever, you can also add digestive enzymes into your diet if you need to improve your body's performance, digestion, and recovery. All our ActiveCare products follow a multi-enzyme approach that ensures superior absorption of vital macro and micro nutrients in your body and throughout your daily diet."
+          }
+        },
+        "09fe241d-40ff-4573-b31d-a1eaaef6f87c": {
+          "type": "faq",
+          "settings": {
+            "question": "Are Gummy Vitamins Beneficial?",
+            "answer": "Yes, there are numerous benefits to gummy vitamins. The following people will benefit the most from taking gummy vitamins:\n\nPeople who forget to take vitamins:\nTaking vitamins doesn't have to feel like a chore anymore! Our gummy dietary supplement is a great way to make health fun, flavorful, and interesting.\n\nThose who can't swallow pills:\nGummy vitamins are an excellent way to get your nutrients in if you struggle to swallow pills.\n\nThose with dietary restrictions:\nIf you have certain food allergies, gummies can help you get the nutrients you might be lacking from not being able to eat those foods; for example, if you can’t drink milk, our adults’ gummy calcium dietary supplement will be a great substitute. \n\nFortunately, ActiveCare has the best multi-nutrient gummy to support your whole body health and aging."
+          }
+        }
+      },
+      "block_order": [
+        "5d227f00-b20b-4173-a039-04ebe25ad467",
+        "9542d0c8-9740-4dc8-b480-21f394e6b8cf",
+        "2b9daf0a-cb07-4e33-9130-af2e62841bbc",
+        "b71a3080-a061-48bc-a486-31469892fd80",
+        "7cd9d47c-6cf7-4435-9ab3-3b84c49dffb3",
+        "a0a20463-7f20-4840-ba27-4c330fc1af16",
+        "22f4f0ce-6c6f-4d3e-8726-10253469ed35",
+        "09fe241d-40ff-4573-b31d-a1eaaef6f87c"
+      ],
+      "settings": {
+        "faq_heading": "Frequently Asked Questions",
+        "number_row_show": 4
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1b25ae9f-4cff-4d6c-9fcf-c8e3b221ea2d",
+    "sub",
+    "deb5cf4d-7278-4ff0-ae70-cc3db4903662",
+    "testimonials",
+    "product-recommendations",
+    "collection-return",
+    "1e860fba-ca6a-4ebe-827e-d5cdd15e18ba",
+    "89c7d5eb-4440-46af-ba03-97aaf98aebe5",
+    "2984c87d-8dba-4fcc-aee0-cb6c62993be2"
+  ]
+}

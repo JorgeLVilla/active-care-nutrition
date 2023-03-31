@@ -1,0 +1,139 @@
+<div class="faq_bndl_sc">
+  <h2>{{ section.settings.faq_heading }}</h2>
+  <div class="faq_bndlsque_ans">
+    <div class="lft_que_ans">
+      {% for block in section.blocks limit:section.settings.number_row_show %}
+        <div class="que_ans">
+          <h3><span>{{ block.settings.question }}</span> <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.8584 13.1115L21.6485 3.3212C21.8752 3.09476 22 2.79249 22 2.47018C22 2.14788 21.8752 1.8456 21.6485 1.61917L20.9277 0.89818C20.458 0.42903 19.6947 0.429029 19.2257 0.89818L11.0046 9.11932L2.77431 0.889057C2.54769 0.66262 2.24559 0.537597 1.92347 0.537597C1.60098 0.537597 1.29889 0.66262 1.07209 0.889057L0.351461 1.61004C0.124845 1.83666 1.83736e-06 2.13875 1.82327e-06 2.46106C1.80918e-06 2.78337 0.124845 3.08564 0.351461 3.31208L10.1505 13.1115C10.3778 13.3385 10.6814 13.4631 11.004 13.4624C11.3279 13.4631 11.6313 13.3385 11.8584 13.1115Z" fill="black"/> </svg></h3>
+          <div class="conte_ans">
+            {{ block.settings.answer }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="lft_que_ans">
+      {% for block in section.blocks offset:section.settings.number_row_show %}
+        <div class="que_ans">
+          <h3><span>{{ block.settings.question }}</span> <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.8584 13.1115L21.6485 3.3212C21.8752 3.09476 22 2.79249 22 2.47018C22 2.14788 21.8752 1.8456 21.6485 1.61917L20.9277 0.89818C20.458 0.42903 19.6947 0.429029 19.2257 0.89818L11.0046 9.11932L2.77431 0.889057C2.54769 0.66262 2.24559 0.537597 1.92347 0.537597C1.60098 0.537597 1.29889 0.66262 1.07209 0.889057L0.351461 1.61004C0.124845 1.83666 1.83736e-06 2.13875 1.82327e-06 2.46106C1.80918e-06 2.78337 0.124845 3.08564 0.351461 3.31208L10.1505 13.1115C10.3778 13.3385 10.6814 13.4631 11.004 13.4624C11.3279 13.4631 11.6313 13.3385 11.8584 13.1115Z" fill="black"/> </svg></h3>
+          <div class="conte_ans">
+            {{ block.settings.answer }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script>
+  $(document).on('click','.lft_que_ans h3',function(){
+    if($(this).next('.conte_ans').css('display') == 'none'){
+      $('.conte_ans').slideUp();
+      $('.que_ans svg').css('transform','rotate(0deg)');
+      $(this).next('.conte_ans').slideDown();
+      $(this).children('svg').css('transform','rotate(180deg)');
+    }
+    else{
+      $(this).children('svg').css('transform','rotate(0deg)');
+      $(this).next('.conte_ans').slideUp();
+    }
+  });
+</script>
+{% schema %}
+  {
+    "name": "Multivitamin faq",
+    "settings": [
+      {
+        "type":"text",
+        "id":"faq_heading",
+        "label":"Faq heading"
+      },
+      {
+        "type":"number",
+        "id":"number_row_show",
+        "label":"Show on one row"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"faq",
+        "name":"faq",
+        "settings":[
+          {
+            "type":"textarea",
+            "id":"question",
+            "label":"Question"
+          },
+          {
+            "type":"textarea",
+            "id":"answer",
+            "label":"Answer"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Multivitamin faq"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+.faq_bndl_sc h2 {
+    color: #6A6A6A;
+    text-align: center;
+    letter-spacing: 0;
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 72px;
+    margin-top: 100px;
+}
+.faq_bndlsque_ans {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.conte_ans {
+    font-size: 15px;
+    letter-spacing: 0;
+  display:none;
+}
+.que_ans h3 {
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+      margin: 0;cursor:pointer;
+}
+.que_ans {
+    padding: 29px 17px;
+    border: 2px solid #F4F4F3;
+    padding-bottom: 27px;
+    margin-bottom: 27px;
+    background: #F4F4F3;
+    border-radius: 13px;
+}
+.que_ans svg {
+    width: 16px;
+}
+.lft_que_ans {
+    width: 50%;
+}
+.conte_ans {
+    padding-top: 14px;
+}
+@media only screen and (min-width:320px) and (max-width:830px){
+  .faq_bndl_sc h2 {font-size: 24px;}
+  .faq_bndlsque_ans {gap: 20px;max-width: 100%;padding: 0 20px;}
+  .lft_que_ans {width: 100%;}
+  .faq_bndlsque_ans {flex-wrap: wrap;}
+  .que_ans {margin-bottom: 20px;padding: 20px 10px 20px;}
+  .que_ans h3 {font-size: 12px;}
+  .conte_ans {font-size: 11px;}
+  .bundle_text {text-align: center;}
+  .faq_bndlsque_ans {gap: 0px;}
+}
+</style>

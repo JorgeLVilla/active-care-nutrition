@@ -1,0 +1,222 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-faq",
+      "disabled": true,
+      "blocks": {
+        "e786059f-1722-4f76-b6c7-bd66430324f6": {
+          "type": "questionanswer",
+          "settings": {
+            "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "answer": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "2f746471-cf3f-42de-a6ed-41f8d586dbe5": {
+          "type": "questionanswer",
+          "settings": {
+            "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "answer": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "392ba3c6-bb95-49cb-a4d0-68914ca94f45": {
+          "type": "questionanswer",
+          "settings": {
+            "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "answer": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "4402a1a3-dac5-4d41-9a71-85296c92d869": {
+          "type": "questionanswer",
+          "settings": {
+            "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "answer": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "41614f1b-bab1-40b9-acf0-4be1a7295f99": {
+          "type": "questionanswer",
+          "settings": {
+            "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "answer": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "e3b77378-1ddc-4fe6-ac06-250a18cb3ead": {
+          "type": "questionanswer",
+          "settings": {
+            "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "answer": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        }
+      },
+      "block_order": [
+        "e786059f-1722-4f76-b6c7-bd66430324f6",
+        "2f746471-cf3f-42de-a6ed-41f8d586dbe5",
+        "392ba3c6-bb95-49cb-a4d0-68914ca94f45",
+        "4402a1a3-dac5-4d41-9a71-85296c92d869",
+        "41614f1b-bab1-40b9-acf0-4be1a7295f99",
+        "e3b77378-1ddc-4fe6-ac06-250a18cb3ead"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
+    },
+    "ac65ce71-67af-41b4-b1b3-1ae7696e9599": {
+      "type": "custom-faq",
+      "blocks": {
+        "45e5cfcf-229b-4886-b449-aaf4a39d11b0": {
+          "type": "section",
+          "settings": {
+            "section_title": "Product Information",
+            "image": "shopify:\/\/shop_images\/sun_2.png",
+            "question_1": "Lorem ipsum",
+            "answer_1": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_2": "Lorem ipsum",
+            "answer_2": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_3": "Lorem ipsum",
+            "answer_3": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_4": "Lorem ipsum",
+            "answer_4": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_5": "Lorem ipsum",
+            "answer_5": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_6": "Lorem ipsum",
+            "answer_6": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_7": "",
+            "answer_7": "",
+            "question_8": "",
+            "answer_8": "",
+            "question_9": "",
+            "answer_9": "",
+            "question_10": "",
+            "answer_10": "",
+            "question_11": "",
+            "answer_11": "",
+            "question_12": "",
+            "answer_12": "",
+            "question_13": "",
+            "answer_13": "",
+            "question_14": "",
+            "answer_14": ""
+          }
+        },
+        "695f6597-84a1-4454-a4ec-43c9cf851f16": {
+          "type": "section",
+          "settings": {
+            "section_title": "Shipping & Returns",
+            "image": "shopify:\/\/shop_images\/vial.png",
+            "question_1": "Lorem ipsum",
+            "answer_1": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_2": "Lorem ipsum",
+            "answer_2": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_3": "Lorem ipsum",
+            "answer_3": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_4": "Lorem ipsum",
+            "answer_4": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_5": "Lorem ipsum",
+            "answer_5": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_6": "Lorem ipsum",
+            "answer_6": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_7": "",
+            "answer_7": "",
+            "question_8": "",
+            "answer_8": "",
+            "question_9": "",
+            "answer_9": "",
+            "question_10": "",
+            "answer_10": "",
+            "question_11": "",
+            "answer_11": "",
+            "question_12": "",
+            "answer_12": "",
+            "question_13": "",
+            "answer_13": "",
+            "question_14": "",
+            "answer_14": ""
+          }
+        },
+        "da71bacf-4ed0-4640-a5f2-a9f583c5cc3c": {
+          "type": "section",
+          "settings": {
+            "section_title": "Ingredients",
+            "image": "shopify:\/\/shop_images\/watermelon.png",
+            "question_1": "Lorem ipsum",
+            "answer_1": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_2": "Lorem ipsum",
+            "answer_2": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_3": "Lorem ipsum",
+            "answer_3": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_4": "Lorem ipsum",
+            "answer_4": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_5": "Lorem ipsum",
+            "answer_5": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_6": "Lorem ipsum",
+            "answer_6": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_7": "",
+            "answer_7": "",
+            "question_8": "",
+            "answer_8": "",
+            "question_9": "",
+            "answer_9": "",
+            "question_10": "",
+            "answer_10": "",
+            "question_11": "",
+            "answer_11": "",
+            "question_12": "",
+            "answer_12": "",
+            "question_13": "",
+            "answer_13": "",
+            "question_14": "",
+            "answer_14": ""
+          }
+        },
+        "4c3501a7-affc-4f5c-9e42-bd1aaa0c9733": {
+          "type": "section",
+          "settings": {
+            "section_title": "Policies",
+            "image": "shopify:\/\/shop_images\/ameoda.png",
+            "question_1": "Lorem ipsum",
+            "answer_1": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_2": "Lorem ipsum",
+            "answer_2": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_3": "Lorem ipsum",
+            "answer_3": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_4": "Lorem ipsum",
+            "answer_4": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_5": "Lorem ipsum",
+            "answer_5": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_6": "Lorem ipsum",
+            "answer_6": "<p>Lorem ipsum dolor quest si etc dolimun floiolstico blian ques tor<\/p>",
+            "question_7": "",
+            "answer_7": "",
+            "question_8": "",
+            "answer_8": "",
+            "question_9": "",
+            "answer_9": "",
+            "question_10": "",
+            "answer_10": "",
+            "question_11": "",
+            "answer_11": "",
+            "question_12": "",
+            "answer_12": "",
+            "question_13": "",
+            "answer_13": "",
+            "question_14": "",
+            "answer_14": ""
+          }
+        }
+      },
+      "block_order": [
+        "45e5cfcf-229b-4886-b449-aaf4a39d11b0",
+        "695f6597-84a1-4454-a4ec-43c9cf851f16",
+        "da71bacf-4ed0-4640-a5f2-a9f583c5cc3c",
+        "4c3501a7-affc-4f5c-9e42-bd1aaa0c9733"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "contact_page": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ac65ce71-67af-41b4-b1b3-1ae7696e9599"
+  ]
+}

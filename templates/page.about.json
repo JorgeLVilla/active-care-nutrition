@@ -1,0 +1,341 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "top_subtitle": "",
+            "title": "A MultiFunctional Approach",
+            "bottom_subtitle": "",
+            "title_size": 70,
+            "subheading": "Founded on the principals of balanced health & nutrition, ActiveCare is a hybrid-team of researchers, developers, manufactures, designers, marketers, influencers & ambassadors changing the way we supplement.",
+            "link": "",
+            "link_text": "",
+            "second_style": false,
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/header_2facc6ea-9cdd-4116-ad9d-b770ebad1e03.png",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0"
+      ],
+      "custom_css": [],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "section_height": "650px",
+        "show_overlay_image": false
+      }
+    },
+    "35c7d987-1a10-41ae-a3cd-a0da341d002b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16657789780210__35c7d987-1a10-41ae-a3cd-a0da341d002b-1679056180abc65037-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Our story"
+          }
+        }
+      },
+      "block_order": [
+        "template--16657789780210__35c7d987-1a10-41ae-a3cd-a0da341d002b-1679056180abc65037-0"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "79064b3f-7505-47cd-b20b-c7937a1927c8": {
+      "type": "text-and-image",
+      "settings": {
+        "margin_top": "60",
+        "margin_right": "0",
+        "page_wd": "1200px",
+        "sect_heading": "",
+        "image": "shopify:\/\/shop_images\/screen_2x_8a2bbfa2-78c4-4fe6-95bf-db30ec2e1c60.webp",
+        "image_width": 470,
+        "bg_clr": "",
+        "subtitle": "",
+        "title": "Principles",
+        "text": "<p>Founded on the principals of balanced health & nutrition, ActiveCare is a hybrid-team of researchers, developers, manufactures, designers, marketers, influencers & ambassadors changing the way we supplement. <\/p><p>Not everyone has the time, budget or know-how to find the right supplement(s) to support there bodies overall health & longevity.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "right",
+        "layout": "right",
+        "alt": false
+      }
+    },
+    "9c4ecb04-4720-472e-93aa-a115927af622": {
+      "type": "text-and-image",
+      "settings": {
+        "margin_top": "40",
+        "margin_right": "",
+        "page_wd": "1200px",
+        "sect_heading": "",
+        "image": "shopify:\/\/shop_images\/s2.jpg",
+        "image_width": 520,
+        "bg_clr": "#ffffff",
+        "subtitle": "",
+        "title": "Targeted Whole Body Support",
+        "text": "<p>Science backed and organically sourced balance of vitamins, minerals, probiotics, digestive \"multi\" enzymes and adaptogens s are crucial for a well-functioning nervous system, and a fundamental building block of a strong immune system and healthy aging.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "left",
+        "alt": false
+      }
+    },
+    "3582d90b-9d9b-43af-93a9-17932a247794": {
+      "type": "text-and-image",
+      "settings": {
+        "margin_top": "60",
+        "margin_right": "",
+        "page_wd": "1200px",
+        "sect_heading": "",
+        "image": "shopify:\/\/shop_images\/Group_841_1080x_copy.jpg",
+        "image_width": 470,
+        "bg_clr": "#ffffff",
+        "subtitle": "",
+        "title": "A Committment to Quality",
+        "text": "<p>We proudly manufacture, package and ship all of our gummies here in Denver, Colorado location. This allows us to have total control of the high quality ingredients we source, manufacturing methods, standards and logistics while also performing comprehensive third party analysis to ensure purity and quality.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "right",
+        "layout": "right",
+        "alt": false
+      }
+    },
+    "dba9e84d-3c8c-472d-b42a-b4532e6b3beb": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--16628043809010__dba9e84d-3c8c-472d-b42a-b4532e6b3beb-167424858993ec7e5e-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "plant",
+            "icon_image": "shopify:\/\/shop_images\/Group_786.png",
+            "title": "",
+            "text": "",
+            "hide_icon": false
+          }
+        },
+        "template--16628043809010__dba9e84d-3c8c-472d-b42a-b4532e6b3beb-167424858993ec7e5e-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "globe",
+            "icon_image": "shopify:\/\/shop_images\/g3738_efc8ab3d-d609-4bb4-9f48-ca0a61f7e869.png",
+            "title": "",
+            "text": "",
+            "hide_icon": false
+          }
+        },
+        "template--16628043809010__dba9e84d-3c8c-472d-b42a-b4532e6b3beb-167424858993ec7e5e-2": {
+          "type": "text_block",
+          "settings": {
+            "icon": "shield",
+            "icon_image": "shopify:\/\/shop_images\/g8358_89e9013f-90b5-4496-9804-6535d335b441.png",
+            "title": "",
+            "text": "",
+            "hide_icon": false
+          }
+        },
+        "e7c40493-d660-461b-8ccc-e368973dfd34": {
+          "type": "text_block",
+          "settings": {
+            "icon": "charity",
+            "icon_image": "shopify:\/\/shop_images\/g3435_17cdc8c6-31f1-4921-a406-c66f8e5b5538.png",
+            "title": "",
+            "text": "",
+            "hide_icon": false
+          }
+        },
+        "e8a1ba3e-2240-4177-86a1-264419a9393b": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "icon_image": "shopify:\/\/shop_images\/g627_53789d81-948f-418b-a3cc-bb2453704015.png",
+            "title": "",
+            "text": "",
+            "hide_icon": false
+          }
+        },
+        "1cfec3be-43b2-457d-bd9f-1bb9e21427e6": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/Group_753_3c679ec1-c15f-4ab4-8269-688e299616fd.png",
+            "title": "",
+            "text": "",
+            "hide_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16628043809010__dba9e84d-3c8c-472d-b42a-b4532e6b3beb-167424858993ec7e5e-0",
+        "template--16628043809010__dba9e84d-3c8c-472d-b42a-b4532e6b3beb-167424858993ec7e5e-1",
+        "template--16628043809010__dba9e84d-3c8c-472d-b42a-b4532e6b3beb-167424858993ec7e5e-2",
+        "e7c40493-d660-461b-8ccc-e368973dfd34",
+        "e8a1ba3e-2240-4177-86a1-264419a9393b",
+        "1cfec3be-43b2-457d-bd9f-1bb9e21427e6"
+      ],
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "align_text": "center",
+        "single_row": true,
+        "desktop_columns_per_row": 6,
+        "icon_color": "#ffffff",
+        "button_label": "",
+        "button_link": "",
+        "alt": false,
+        "alt_no_gap": true,
+        "top_padded": false
+      }
+    },
+    "d5a81df7-adb9-44f3-a264-78b1669fb74a": {
+      "type": "rich-text-image",
+      "disabled": true,
+      "blocks": {
+        "template--16657789780210__d5a81df7-adb9-44f3-a264-78b1669fb74a-167905485527ecbe6a-0": {
+          "type": "heading",
+          "settings": {
+            "title": "The perfect balance"
+          }
+        },
+        "template--16657789780210__d5a81df7-adb9-44f3-a264-78b1669fb74a-167905485527ecbe6a-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Health is more than targeted a specific body part or system; health is state of complete physical, mental and social well-being and not merely the absence of disease or infirmity...<\/p><p>And it starts with the nutrients we fuel our bodies with that promotes our energy, digestion, mood, sleep, stress response, performance and more..<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16657789780210__d5a81df7-adb9-44f3-a264-78b1669fb74a-167905485527ecbe6a-0",
+        "template--16657789780210__d5a81df7-adb9-44f3-a264-78b1669fb74a-167905485527ecbe6a-1"
+      ],
+      "settings": {
+        "bg_sec": "#f4f4f3",
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false,
+        "img_sc_rct": "shopify:\/\/shop_images\/gummbitches_1.png"
+      }
+    },
+    "6bb35d2d-d6c2-4d2c-a40b-55cb11195b3a": {
+      "type": "manual-featured-collection",
+      "blocks": {
+        "ab535d87-10e8-48b8-b4cd-8a84b498cbf7": {
+          "type": "image",
+          "settings": {
+            "image_pc": "shopify:\/\/shop_images\/ActiveCare_Hybrid_Multi-dec7_FRONT_1_750x_de5b3c45-b855-4514-998b-75ffd926a8c1.png",
+            "img_ttl": "Immunity & Energy",
+            "img_ttlclr": "#992a36",
+            "img_subttl": "MultiVitamin",
+            "img_subttlclr": "#fd6b6b",
+            "img_cntnt": "Tackle stress and discomfort caused by sudden sudden diet changes, environmental pollutants or extensive travel.",
+            "img_btntxt": "SHOP NOW",
+            "img_btnurl": "shopify:\/\/products\/active-care-nutritions-women-mens-hybird-multi-watermalon-mango",
+            "img_btnclr": "#fd6b6b"
+          }
+        },
+        "549adec4-26c5-4238-a90f-47cb0d7e4d97": {
+          "type": "image",
+          "settings": {
+            "image_pc": "shopify:\/\/shop_images\/ActiveCare_Relief_Recovery_dec7_FRONT_1_750x_56736561-b2f1-46a3-953f-c86ba61944b0.png",
+            "img_ttl": "Mind & Body",
+            "img_ttlclr": "#f84e00",
+            "img_subttl": "Stress Support",
+            "img_subttlclr": "#ffa114",
+            "img_cntnt": "Tackle stress and discomfort caused by sudden sudden diet changes, environmental pollutants or extensive travel.",
+            "img_btntxt": "SHOP NOW",
+            "img_btnurl": "shopify:\/\/products\/relief-recovery",
+            "img_btnclr": "#ffa114"
+          }
+        },
+        "aa1cd287-af9d-40ec-a592-bab6be4e8a56": {
+          "type": "image",
+          "settings": {
+            "image_pc": "shopify:\/\/shop_images\/ActiveCare_Sleep_Well_dec7_FRONT_1_750x_eda3d317-6e35-481f-af87-1559cd7a22e8.png",
+            "img_ttl": "Rest + Digest",
+            "img_ttlclr": "#2c3368",
+            "img_subttl": "Nighttime",
+            "img_subttlclr": "#6dc3f3",
+            "img_cntnt": "Tackle stress and discomfort caused by sudden sudden diet changes, environmental pollutants or extensive travel.",
+            "img_btntxt": "SHOP NOW",
+            "img_btnurl": "shopify:\/\/products\/active-care-nutritions-women-mens-rest-support",
+            "img_btnclr": "#6dc3f3"
+          }
+        }
+      },
+      "block_order": [
+        "ab535d87-10e8-48b8-b4cd-8a84b498cbf7",
+        "549adec4-26c5-4238-a90f-47cb0d7e4d97",
+        "aa1cd287-af9d-40ec-a592-bab6be4e8a56"
+      ],
+      "settings": {
+        "title": "A balanced gummy",
+        "content": "Say goodbye to individual supplements with excessive daily values and low absorption rates. With the combined features of a multivitamin and the powers of a probiotic and adaptogen superfoods, our dietary supplements are truly all-in-one. Place an order with ActiveCare today!"
+      }
+    },
+    "f36aa4ea-8d11-45ef-aab9-0597e98982c5": {
+      "type": "single-image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/FDA_Section.png",
+        "title": "Organic Ingredients",
+        "content": "Using the latest science, we select the most effective and bioavailable form of every single ingredient in AG1 to deliver the highest possible quality and value.",
+        "icons": "shopify:\/\/shop_images\/Group_842.png"
+      }
+    },
+    "d193531d-356f-4cab-b73b-c958b0fb4fa1": {
+      "type": "image-text-about",
+      "settings": {
+        "margin_top": "",
+        "margin_right": "",
+        "page_wd": "1200px",
+        "sect_heading": "",
+        "image": "shopify:\/\/shop_images\/Group_800_1.png",
+        "image_width": 700,
+        "bg_clr": "#f4f4f3",
+        "subtitle": "",
+        "title": "Bundle & Save!",
+        "text": "<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.<\/p>",
+        "button_label": "GET STARTED",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow",
+    "35c7d987-1a10-41ae-a3cd-a0da341d002b",
+    "79064b3f-7505-47cd-b20b-c7937a1927c8",
+    "9c4ecb04-4720-472e-93aa-a115927af622",
+    "3582d90b-9d9b-43af-93a9-17932a247794",
+    "dba9e84d-3c8c-472d-b42a-b4532e6b3beb",
+    "d5a81df7-adb9-44f3-a264-78b1669fb74a",
+    "6bb35d2d-d6c2-4d2c-a40b-55cb11195b3a",
+    "f36aa4ea-8d11-45ef-aab9-0597e98982c5",
+    "d193531d-356f-4cab-b73b-c958b0fb4fa1"
+  ]
+}

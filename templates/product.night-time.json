@@ -1,0 +1,623 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-night-time",
+      "blocks": {
+        "9e49b6a0-d202-494c-bbe1-2f139e56580a": {
+          "type": "description_lines",
+          "settings": {
+            "description_line": "Melatonin Free Gummies made with GABA, Magnesium Bisglycinate, L-Theanine & 5-HTP."
+          }
+        },
+        "4870ae6f-93e4-499c-9043-5c7473debabe": {
+          "type": "description_lines",
+          "settings": {
+            "description_line": "Clinically validated probiotic Lactospore® (Bacillus coagulans) & \"multi' enzymes DigeZyme® (α–Amylase, Cellulase, Lipase, Protease, Lactase)"
+          }
+        },
+        "71396331-46fb-40b9-a168-93ecd8173b00": {
+          "type": "description_lines",
+          "settings": {
+            "description_line": "Reishi Mushrooms with 100% All Natural Botanical \"Rest\"Terpene blend designed by Dr. Ethan Russo"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": false
+          }
+        },
+        "b324ffae-e13d-4191-8ca2-4fc6886eba95": {
+          "type": "tab",
+          "settings": {
+            "title": "Reviews",
+            "content": "<p>“I have allocated time each day to taking these and WOW. I absolutely love these, they give you a different perspective on how to think\/empower your balanced health and nutrition. I’m feeling a thousand times better for having started these. So much more positive.\"- <\/p><p>Jess B<\/p>",
+            "page": ""
+          }
+        },
+        "f0204529-5fc6-4635-af4d-60d4e98e8d96": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "<p>+ Promotes Rest & Relaxation<\/p><p>+ Enhances Sleep Quality<\/p><p>+ Supports sleep - wake cycle<\/p>",
+            "page": ""
+          }
+        },
+        "3e2b4f9a-7a56-458b-96df-f9beeae1a4a3": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "<p>+CBN (Cannabinol) it may promote sleep indirectly through reducing psychological arousal (caused by sources of stress, pain, etc.)<\/p><p>+Reishi is a all-natural mushroom used for centuries to enhance the immune system, reduce stress, improve sleep, and lessen fatigue<\/p><p>+ Citrolonal<\/p>",
+            "page": ""
+          }
+        },
+        "6fc8721a-d94b-48c2-b4e4-eea848e96fd2": {
+          "type": "tab",
+          "settings": {
+            "title": "How it works",
+            "content": "<p>Take 1 gummy daily at or around the time of a dinner (or snack), or as directed by your healthcare practitioner. Keep out of reach of children. Store tightly sealed in a cool, dry place without direct sunlight.<\/p><p>Our bodies produce endocannabinoids, naturally, which are neurotransmitters that bind to cannabinoid receptors in your nervous system. Studies & Science have shown that CBD can help reduce chronic pain by affecting endocannabinoid receptor activity, reducing inflammation, and interacting with neurotransmitters controlling your overall mood, comfort, appetite and more.<\/p><p>You can take our Rest Support + at any point in the day that works best for you and your needs, but we recommend you take it at or around the time of a meal or snack. Why do you ask? The absorption of the essential fat-soluble vitamins is naturally supported by the proximity of a meal or snacke with some fat content.<\/p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "page": ""
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "9e49b6a0-d202-494c-bbe1-2f139e56580a",
+        "4870ae6f-93e4-499c-9043-5c7473debabe",
+        "71396331-46fb-40b9-a168-93ecd8173b00",
+        "description",
+        "variant_picker",
+        "buy_buttons",
+        "b324ffae-e13d-4191-8ca2-4fc6886eba95",
+        "f0204529-5fc6-4635-af4d-60d4e98e8d96",
+        "3e2b4f9a-7a56-458b-96df-f9beeae1a4a3",
+        "6fc8721a-d94b-48c2-b4e4-eea848e96fd2",
+        "tab",
+        "contact",
+        "share"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false,
+        "gtk_title": "Good To Know",
+        "gtk_txts": "<b>PB<\/b>- Plant Base<br>\n<b>GF<\/b>- Gluten Free",
+        "gtk_txts2": "<b>GM<\/b>- GMO Free<br>\n<b>SF<\/b>- Soy Free",
+        "gtk_txts3": "<b>3rd Party Tested<br>\nBuilt-in B complex<\/b>",
+        "icons_btm": "shopify:\/\/shop_images\/Frame_1.png"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "0f56c6af-536f-439e-81ec-339a085fcaf8": {
+      "type": "text-with-icons",
+      "disabled": true,
+      "blocks": {
+        "template--16657790075122__0f56c6af-536f-439e-81ec-339a085fcaf8-167836407927483c04-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/Group_747_1.png",
+            "title": "Nutritional Gaps",
+            "text": "<p>Immunity Boost Energy & Performance Muscle, Bone & Beauty<\/p>",
+            "hide_icon": false
+          }
+        },
+        "template--16657790075122__0f56c6af-536f-439e-81ec-339a085fcaf8-167836407927483c04-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/Group_7.png",
+            "title": "Mental & Cognitive Well being",
+            "text": "<p>Emotional & Social Support Focus, Mood, Clarity & Productivity Stress & Anxiety Response<\/p>",
+            "hide_icon": false
+          }
+        },
+        "template--16657790075122__0f56c6af-536f-439e-81ec-339a085fcaf8-167836407927483c04-2": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/g2079_1.png",
+            "title": "Digestive Health",
+            "text": "<p>Bloating & Composition Gastrintestinal System Micronutrient Absorption<\/p>",
+            "hide_icon": false
+          }
+        },
+        "8970f026-d32c-44a8-acc4-e8c7e77e8f2e": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/Group_8.png",
+            "title": "Cardiovascular Function",
+            "text": "<p>Heart Health & Cholesterol Cellular Energy & Oxygen Inflammatory mediators<\/p>",
+            "hide_icon": false
+          }
+        },
+        "3c290d02-2659-436c-9c5b-809676dce4b1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/Group_9.png",
+            "title": "Gut Health",
+            "text": "<p>Heart Health & Cholesterol Cellular Energy & Oxygen Inflammatory mediators<\/p>",
+            "hide_icon": false
+          }
+        },
+        "67960007-52ba-4ce4-b354-60ada866ec2c": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/Vector_2.png",
+            "title": "Women & Men Unique Benefits",
+            "text": "<p>Circadian Rhythm Hormone Balance Physical & Personal Development<\/p>",
+            "hide_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16657790075122__0f56c6af-536f-439e-81ec-339a085fcaf8-167836407927483c04-0",
+        "template--16657790075122__0f56c6af-536f-439e-81ec-339a085fcaf8-167836407927483c04-1",
+        "template--16657790075122__0f56c6af-536f-439e-81ec-339a085fcaf8-167836407927483c04-2",
+        "8970f026-d32c-44a8-acc4-e8c7e77e8f2e",
+        "3c290d02-2659-436c-9c5b-809676dce4b1",
+        "67960007-52ba-4ce4-b354-60ada866ec2c"
+      ],
+      "settings": {
+        "subtitle": "",
+        "title": "Designed to help support:",
+        "align_text": "center",
+        "single_row": true,
+        "desktop_columns_per_row": 6,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "alt": true,
+        "alt_no_gap": false,
+        "top_padded": false
+      }
+    },
+    "background-image-text": {
+      "type": "background-image-text",
+      "disabled": true,
+      "settings": {
+        "subtitle": "",
+        "title": "Large image with text box",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "desktop_size": 0,
+        "image_alignment": "center center",
+        "color_border": "#f4f4f4",
+        "layout": "left"
+      }
+    },
+    "a946f0df-f043-4d1e-b5e7-d45c49472b36": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--16657790075122__a946f0df-f043-4d1e-b5e7-d45c49472b36-167913417903922c27-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/cup_icon_7d1d97ae-645a-4e07-8bdd-1c8cc02293e2.png",
+            "title": "Bridge  Nutritional Gaps",
+            "text": "<p>Immunity & Energy Boost Performance, Rest & Recovery, Heart and Beauty Health<\/p>",
+            "hide_icon": false
+          }
+        },
+        "template--16657790075122__a946f0df-f043-4d1e-b5e7-d45c49472b36-167913417903922c27-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/light_blub.webp",
+            "title": "Mental & Cognitive Wellbeing",
+            "text": "<p>Focus, Mood, Clarity & Productivity Emotional & Social Support Stress & Anxiety Response<\/p>",
+            "hide_icon": false
+          }
+        },
+        "template--16657790075122__a946f0df-f043-4d1e-b5e7-d45c49472b36-167913417903922c27-2": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/gut.png",
+            "title": "Digestive & Gut Health",
+            "text": "<p>Macro and Micro  Nutrient Absorption Gut Microbiome & GI System Metabolism and Weight<\/p>",
+            "hide_icon": false
+          }
+        },
+        "5149a074-656e-47e2-9eea-70b83ad73dbd": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "icon_image": "shopify:\/\/shop_images\/plus_circle.png",
+            "title": "Whole Body Health & Aging",
+            "text": "<p>Heart Health & Cholesterol Cellular Energy & Oxygen Inflammatory mediators<\/p>",
+            "hide_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16657790075122__a946f0df-f043-4d1e-b5e7-d45c49472b36-167913417903922c27-0",
+        "template--16657790075122__a946f0df-f043-4d1e-b5e7-d45c49472b36-167913417903922c27-1",
+        "template--16657790075122__a946f0df-f043-4d1e-b5e7-d45c49472b36-167913417903922c27-2",
+        "5149a074-656e-47e2-9eea-70b83ad73dbd"
+      ],
+      "settings": {
+        "subtitle": "",
+        "title": "Formulated to support",
+        "align_text": "center",
+        "single_row": false,
+        "desktop_columns_per_row": 4,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "alt": false,
+        "alt_no_gap": true,
+        "top_padded": false
+      }
+    },
+    "89c7d5eb-4440-46af-ba03-97aaf98aebe5": {
+      "type": "reviews-section",
+      "blocks": {
+        "4cf758d3-fa00-42ea-a68a-2e2048f12cdd": {
+          "type": "review",
+          "settings": {
+            "review_content": "Absolutely LOVE these! I took the Immunity & Energy and what a difference to my daytime routine!!<br><br>- Jeanne M."
+          }
+        },
+        "f261b9e3-3882-45fc-9104-26fdc93b14af": {
+          "type": "review",
+          "settings": {
+            "review_content": "I have allocated time each day to taking these and WOW. I absolutely love these, they give you a different perspective on how to think\/empower your balanced health and nutrition. I’m feeling a thousand times better for having started these. So much more positive.\"<br><br>- Jess B"
+          }
+        },
+        "2a425e27-663f-4a22-ad24-b79d5be6dddf": {
+          "type": "review",
+          "settings": {
+            "review_content": "I've taken several different types and forms of multivitamins and NONE of them compare to ActiveCares! Easy to consume, packed with nutrients that target my whole body and shockingly good!<br><br>- Tom D"
+          }
+        }
+      },
+      "block_order": [
+        "4cf758d3-fa00-42ea-a68a-2e2048f12cdd",
+        "f261b9e3-3882-45fc-9104-26fdc93b14af",
+        "2a425e27-663f-4a22-ad24-b79d5be6dddf"
+      ],
+      "custom_css": [
+        ".review-section-header {font-size: 40px;}"
+      ],
+      "settings": {}
+    },
+    "e5ac2026-dd9f-4f23-a31f-92323d9738e1": {
+      "type": "mulivitamin_ingredients",
+      "blocks": {
+        "0ca50adb-2b9d-4dae-b1e8-da8b102e0eb5": {
+          "type": "text",
+          "settings": {
+            "line": "Tiamin (B1)",
+            "text_cont": "Thiamine plays an important role in converting carbohydrates into energy. Without thiamine, the nervous system can’t function and everyday abilities like walking, cognition and speech are impaired",
+            "text_contpro": ""
+          }
+        },
+        "1b4fe23b-4ab4-48fa-afba-680e649c204e": {
+          "type": "text",
+          "settings": {
+            "line": "Riboflavin (B2)",
+            "text_cont": "Riboflavin works to reduce oxidative stress and inflammation of nerves, which are contributors to migraine headaches.",
+            "text_contpro": ""
+          }
+        },
+        "8d35d498-2c52-4ab9-b02d-9a88d5bc115f": {
+          "type": "text",
+          "settings": {
+            "line": "Niacin (B3)",
+            "text_cont": "Niacin (vitamin B-3) is often part of a daily multivitamin, but most people get enough niacin from the food they eat.",
+            "text_contpro": ""
+          }
+        },
+        "6a31c3a4-94aa-4931-b32a-98b30e458206": {
+          "type": "text",
+          "settings": {
+            "line": "Pantothenic Acid (B5)",
+            "text_cont": "In addition to playing a role in the breakdown of fats and carbohydrates for energy",
+            "text_contpro": ""
+          }
+        },
+        "9f2e9a7d-3bfb-4048-843b-e4d7d6f1cf4d": {
+          "type": "text",
+          "settings": {
+            "line": "Pyridoxine (B6)",
+            "text_cont": "Vitamin B-6 (pyridoxine) is important for normal brain development and for keeping the nervous system and immune system healthy.",
+            "text_contpro": ""
+          }
+        },
+        "56fd23c6-ea7a-49aa-a5a6-f16a529c45f6": {
+          "type": "text",
+          "settings": {
+            "line": "Foltate (B9)",
+            "text_cont": "Folate (vitamin B-9) is important in red blood cell formation and for healthy cell growth and function.",
+            "text_contpro": ""
+          }
+        },
+        "a7deb4a4-8e51-4098-adbb-9affd26d1751": {
+          "type": "text",
+          "settings": {
+            "line": "Cobalamin (B12)",
+            "text_cont": "Vitamin B12, or cobalamin, is naturally found in animal foods. It can also be added to foods or supplements.",
+            "text_contpro": ""
+          }
+        },
+        "5a674ac0-cd1d-4d40-9c42-0c270d5da495": {
+          "type": "text",
+          "settings": {
+            "line": "Vitamin A",
+            "text_cont": "Vitamin A, also known as retinol, has several important functions.",
+            "text_contpro": ""
+          }
+        },
+        "710f15fc-8b66-402d-ae8d-90a2ee6ab28b": {
+          "type": "text",
+          "settings": {
+            "line": "Vitamin D3",
+            "text_cont": "Vitamin D3 is best known for strengthening your bones, which it does by helping the body absorb calcium and phosphorus from food",
+            "text_contpro": ""
+          }
+        },
+        "3ba38db7-154c-4393-922c-4c4a723df41d": {
+          "type": "text",
+          "settings": {
+            "line": "Vitamin K1",
+            "text_cont": "Phytonadione (vitamin K1) is a medication used to treat and manage vitamin K deficiency, which is a significant risk factor for intracranial hemorrhage and other bleeds",
+            "text_contpro": ""
+          }
+        },
+        "3e3f84c0-dea4-4da8-ba6d-6665c313d86a": {
+          "type": "text",
+          "settings": {
+            "line": "Vitamin K2",
+            "text_cont": "It contributes to skin health and bone metabolism, promotes proper brain function and prevents heart-related diseases.",
+            "text_contpro": ""
+          }
+        }
+      },
+      "block_order": [
+        "0ca50adb-2b9d-4dae-b1e8-da8b102e0eb5",
+        "1b4fe23b-4ab4-48fa-afba-680e649c204e",
+        "8d35d498-2c52-4ab9-b02d-9a88d5bc115f",
+        "6a31c3a4-94aa-4931-b32a-98b30e458206",
+        "9f2e9a7d-3bfb-4048-843b-e4d7d6f1cf4d",
+        "56fd23c6-ea7a-49aa-a5a6-f16a529c45f6",
+        "a7deb4a4-8e51-4098-adbb-9affd26d1751",
+        "5a674ac0-cd1d-4d40-9c42-0c270d5da495",
+        "710f15fc-8b66-402d-ae8d-90a2ee6ab28b",
+        "3ba38db7-154c-4393-922c-4c4a723df41d",
+        "3e3f84c0-dea4-4da8-ba6d-6665c313d86a"
+      ],
+      "settings": {
+        "heading": "Ingredients & Benfits",
+        "subheading": "Yorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.",
+        "tab1": "Vitamins",
+        "tab2": "Mineral Array",
+        "tab3": "Probiotics"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "disabled": true,
+      "blocks": {
+        "testimonials-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Absolutely LOVE these! I took the Immunity & Energy and what a difference to my daytime routine!! <\/p>",
+            "author": "Jeanne M.",
+            "show_stars": true,
+            "number_of_stars": 5
+          }
+        },
+        "testimonials-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>I have allocated time each day to taking these and WOW. I absolutely love these, they give you a different perspective on how to think\/empower your balanced health and nutrition. I’m feeling a thousand times better for having started these. So much more positive.\" <\/p>",
+            "author": "Jess B",
+            "show_stars": true,
+            "number_of_stars": 5
+          }
+        },
+        "testimonials-2": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>I've taken several different types and forms of multivitamins and NONE of them compare to ActiveCares! Easy to consume, packed with nutrients that target my whole body and shockingly good!<\/p>",
+            "author": "Tom D",
+            "show_stars": true,
+            "number_of_stars": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonials-0",
+        "testimonials-1",
+        "testimonials-2"
+      ],
+      "settings": {
+        "bg_clr": "#eaeaea",
+        "title": "Reviews",
+        "align_text": "center",
+        "stars_color": "#ecd504",
+        "stars_empty_color": "#cccccc",
+        "round_images": true,
+        "alt": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "show_product_recommendations": false,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "fa05fda2-7a34-4724-9eb8-05d2c7c921d7": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "margin_top": "",
+        "margin_right": "",
+        "page_wd": "",
+        "sect_heading": "",
+        "image": "shopify:\/\/shop_images\/Plan_de_travail_1_1_3_1.png",
+        "image_width": 700,
+        "bg_clr": "",
+        "subtitle": "",
+        "title": "Build a bundle & SaveStart",
+        "text": "",
+        "button_label": "Start",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right",
+        "alt": false
+      }
+    },
+    "785f2946-ac3d-4ad6-a9e2-b3285a6bc812": {
+      "type": "multi-faq",
+      "blocks": {
+        "24aace96-f02d-49d5-9ab6-2154fc1b4a44": {
+          "type": "faq",
+          "settings": {
+            "question": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "answer": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.\nYorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+        },
+        "b5c86503-4ac6-43bb-bbab-bc0d8b8e3135": {
+          "type": "faq",
+          "settings": {
+            "question": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "answer": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.\nYorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+        },
+        "0242aa98-779e-41ca-b034-f1f86b3a24d3": {
+          "type": "faq",
+          "settings": {
+            "question": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "answer": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.\nYorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+        },
+        "45074c92-4930-4f62-a3a4-b4685841b723": {
+          "type": "faq",
+          "settings": {
+            "question": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "answer": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.\nYorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+        },
+        "12c007e4-01fb-46af-a250-61893a24dd3a": {
+          "type": "faq",
+          "settings": {
+            "question": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "answer": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.\nYorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+        },
+        "8aa637d3-7194-4f63-887c-50d822c525be": {
+          "type": "faq",
+          "settings": {
+            "question": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "answer": "Yorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+        },
+        "7efe9e52-fb4d-4ff8-9c62-0ed45bf6fc1b": {
+          "type": "faq",
+          "settings": {
+            "question": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "answer": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.\nYorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+        },
+        "ebf36796-5b62-48fa-ac81-c1fc9229e18d": {
+          "type": "faq",
+          "settings": {
+            "question": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "answer": "Yorem ipsum dolor sit amet, consectetur adipiscing elit.\nYorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+        }
+      },
+      "block_order": [
+        "24aace96-f02d-49d5-9ab6-2154fc1b4a44",
+        "b5c86503-4ac6-43bb-bbab-bc0d8b8e3135",
+        "0242aa98-779e-41ca-b034-f1f86b3a24d3",
+        "45074c92-4930-4f62-a3a4-b4685841b723",
+        "12c007e4-01fb-46af-a250-61893a24dd3a",
+        "8aa637d3-7194-4f63-887c-50d822c525be",
+        "7efe9e52-fb4d-4ff8-9c62-0ed45bf6fc1b",
+        "ebf36796-5b62-48fa-ac81-c1fc9229e18d"
+      ],
+      "settings": {
+        "faq_heading": "Frequently Asked Questions",
+        "number_row_show": 4
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "0f56c6af-536f-439e-81ec-339a085fcaf8",
+    "background-image-text",
+    "a946f0df-f043-4d1e-b5e7-d45c49472b36",
+    "89c7d5eb-4440-46af-ba03-97aaf98aebe5",
+    "e5ac2026-dd9f-4f23-a31f-92323d9738e1",
+    "testimonials",
+    "product-recommendations",
+    "collection-return",
+    "fa05fda2-7a34-4724-9eb8-05d2c7c921d7",
+    "785f2946-ac3d-4ad6-a9e2-b3285a6bc812"
+  ]
+}

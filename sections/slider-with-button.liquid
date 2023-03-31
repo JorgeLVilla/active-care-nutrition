@@ -1,0 +1,121 @@
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<div class="slider_w_btn">
+  <div class="slide_ttl_cntnt">
+    <h2>{{ section.settings.title }}</h2>
+    <div class="slide_cntntw">
+      {{ section.settings.content }}
+    </div>
+  </div>
+  <div class="slider_wimgs">
+    {% for block in section.blocks %}
+      <div class="slid_img">
+        <img src="{{ block.settings.img | img_url:'master' }}" class="show_desk_spp">
+        {% if block.settings.img_mob != blank %}<img src="{{ block.settings.img_mob | img_url:'master' }}" class="show_mob_spp">{% endif %}
+      </div>
+    {% endfor %}
+  </div>
+  <div class="slid_btn">
+    <a href="{{ section.settings.btn_url }}" class="btn">{{ section.settings.btn_txt }}</a>
+  </div>
+</div>
+<style>
+ .slider_wimgs img {margin: 0 auto;}
+  .slider_wimgs {width: 95%;margin: 0 auto;}
+  .slid_btn {text-align: center;}
+  .slid_btn a{
+    min-width:192px;border-radius:0px;font-size:16px;font-weight:900;
+    border-radius:100px;background:#F84E00;
+  }
+  .slider_wimgs button {opacity: 0.2;}
+  .slider_w_btn h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #6A6A6A;
+  }
+  .slide_cntntw {
+      color: #6A6A6A;
+      max-width: 60rem;
+      text-align: center;
+      margin: 0 auto;margin-bottom: 55px;
+  }
+  .slider_w_btn .slick-dots li button:before {background: #898989!important;opacity: 1;}
+  .slider_w_btn .slick-next {right: 40px;}
+  .slider_w_btn .slick-prev {left: 40px;} 
+  .slider_w_btn .slick-dots li.slick-active button:before {opacity: 1!important;background: #000000!important;}
+  .show_desk_spp{display:block;}
+  .show_mob_spp{display:none;}
+  @media only screen and (min-width:320px) and (max-width:830px){
+    .show_desk_spp{display:none;}
+    .show_mob_spp{display:block;}
+  }
+</style>
+<script>
+$(document).ready(function(){
+  $('.slider_wimgs').slick({
+    arrows: true,
+    centerPadding: "0px",
+    dots: true,
+    slidesToShow: 1,
+    infinite: false,
+    prevArrow:'<button type="button" class="slick-prev pull-left"><svg width="18" height="31" viewBox="0 0 18 31" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.478465 16.1727L13.8306 29.5246C14.1394 29.8336 14.5517 30.0039 14.9913 30.0039C15.4308 30.0039 15.8431 29.8336 16.1519 29.5246L17.1352 28.5415C17.775 27.901 17.775 26.8599 17.1352 26.2203L5.92305 15.0081L17.1476 3.78355C17.4564 3.47449 17.627 3.06249 17.627 2.62316C17.627 2.18335 17.4564 1.77135 17.1476 1.46204L16.1643 0.479235C15.8553 0.170172 15.4433 -9.13618e-05 15.0037 -9.13234e-05C14.5641 -9.1285e-05 14.1519 0.170172 13.8431 0.479235L0.478465 13.8433C0.168913 14.1534 -0.00110761 14.5673 -0.000131011 15.0074C-0.00110753 15.4492 0.168914 15.8629 0.478465 16.1727Z" fill="black"/> </svg></button>',
+    nextArrow:'<button type="button" class="slick-next pull-right"><svg width="18" height="31" viewBox="0 0 18 31" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17.1485 13.8312L3.79633 0.479328C3.48751 0.170265 3.07526 0 2.6357 0C2.19613 0 1.78388 0.170265 1.47506 0.479328L0.491769 1.46238C-0.148067 2.10295 -0.148067 3.14405 0.491769 3.78364L11.7039 14.9958L0.479328 26.2204C0.170509 26.5294 0 26.9414 0 27.3807C0 27.8206 0.170509 28.2326 0.479328 28.5419L1.46262 29.5247C1.77169 29.8337 2.18369 30.004 2.62326 30.004C3.06282 30.004 3.47507 29.8337 3.78389 29.5247L17.1485 16.1606C17.458 15.8505 17.6281 15.4366 17.6271 14.9965C17.6281 14.5547 17.458 14.141 17.1485 13.8312Z" fill="black"/> </svg></button>'
+  });
+});
+</script>
+{% schema %}
+  {
+    "name": "Slider with button",
+    "settings": [
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+        "type":"textarea",
+        "id":"content",
+        "label":"Content"
+      },
+      {
+        "type":"text",
+        "id":"btn_txt",
+        "label":"Button text"
+      },
+      {
+        "type":"url",
+        "id":"btn_url",
+        "label":"Button Link"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"image",
+        "name":"Image",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"img",
+            "label":"Image"
+          },
+          {
+            "type":"image_picker",
+            "id":"img_mob",
+            "label":"Image mob"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"slider with button"
+      }
+    ]
+  }
+{% endschema %}

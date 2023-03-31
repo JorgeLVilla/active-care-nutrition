@@ -1,0 +1,248 @@
+<div
+  class="ingredients-preview {% if section.settings.alt %} index-section--alt{% endif %} {% if section.settings.alt_no_gap %}index-section--no-gap{% endif %} {% if section.settings.alt_no_bottom_gap %}index-section--no-bottom-gap{% endif %}"
+  data-section-id="{{ section.id }}"
+  data-section-type="ingredients-preview"
+>
+  <div class="page-width" style="width: 100vw">
+    <div class="Ingredients" data-aos>
+        {%- if section.settings.heading != blank -%}
+        <div class="ingredients__title section-header appear-delay-{% increment delay %}">
+          <h2 class="section-header__title ingredients__title">{{ section.settings.heading }}</h2>
+        </div>
+        {%- endif -%}
+        {%- if section.settings.subtitle != blank -%}
+        <div class="ingredients__subtitle appear-delay-{% increment delay %}">
+          <h3 class="title">{{ section.settings.subtitle }}</h3>
+        </div>
+        {%- endif -%}
+
+        <div class="ingredients__tabs-container">
+          <div class="ingredients__tabs-triggers">
+            <div class="ingredients__tab-click appear-delay-{% increment delay %}"><span>{{ section.settings.vitamins_label }}</span></div>
+            <div class="ingredients__tab-click appear-delay-{% increment delay %}"><span>{{ section.settings.mineral_label }}</span></div>
+            <div class="ingredients__tab-click appear-delay-{% increment delay %}"><span>{{ section.settings.probiotics_label }}</span></div>
+            <div class="ingredients__tab-click appear-delay-{% increment delay %}"><span>{{ section.settings.cannabinoids_label }}</span></div>
+          </div>
+          <div class="ingredients__tabs-container appear-delay-{% increment delay %}">
+            <div class="ingredients__tab-content open vitamins-container">
+              <div class="ingredients__names">
+              {% for block in section.blocks %}
+                {% if block.type == 'vitamin' %}
+                  <div class="ingredients__ingredient-click {% if forloop.first == true %}open{% endif %}">
+                    <span>{{ block.settings.name }}</span>
+                  </div>
+                {% endif %}
+              {% endfor %}
+              </div>
+              <div class="ingredients__content">
+              {% for block in section.blocks %}
+                {% if block.type == 'vitamin' %}
+                    <div class="ingredients__ingredient-infos {% if forloop.first == true %}open{% endif %}">{{ block.settings.description }}</div>
+                {% endif %}
+              {% endfor %}
+              </div>
+            </div>
+            <div class="ingredients__tab-content hidden mineral-container">
+              <div class="ingredients__names">
+              {% for block in section.blocks %}
+                {% if block.type == 'mineral' %}
+                  <div class="ingredients__ingredient-click">
+                    <span>{{ block.settings.name }}</span>
+                  </div>
+                {% endif %}
+              {% endfor %}
+              </div>
+              <div class="ingredients__content">
+              {% for block in section.blocks %}
+                {% if block.type == 'mineral' %}
+                    <div class="ingredients__ingredient-infos">{{ block.settings.description }}</div>
+                {% endif %}
+              {% endfor %}
+              </div>
+            </div>
+            <div class="ingredients__tab-content hidden probiotics-container">
+              <div class="ingredients__names">
+              {% for block in section.blocks %}
+                {% if block.type == 'probiotic' %}
+                  <div class="ingredients__ingredient-click">
+                    <span>{{ block.settings.name }}</span>
+                  </div>
+                {% endif %}
+              {% endfor %}
+              </div>
+              <div class="ingredients__content">
+              {% for block in section.blocks %}
+                {% if block.type == 'probiotic' %}
+                    <div class="ingredients__ingredient-infos">{{ block.settings.description }}</div>
+                {% endif %}
+              {% endfor %}
+              </div>
+            </div>
+            <div class="ingredients__tab-content hidden cannabinoids-container">
+              <div class="ingredients__names">
+              {% for block in section.blocks %}
+                {% if block.type == 'cannabinoid' %}
+                  <div class="ingredients__ingredient-click">
+                    <span>{{ block.settings.name }}</span>
+                  </div>
+                {% endif %}
+              {% endfor %}
+              </div>
+              <div class="ingredients__content">
+              {% for block in section.blocks %}
+                {% if block.type == 'cannabinoid' %}
+                    <div class="ingredients__ingredient-infos">{{ block.settings.description }}</div>
+                {% endif %}
+              {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>   
+      </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Ingredients",
+    "settings": [
+      {
+        "type" : "text",
+        "id" : "heading",
+        "label" : "Heading",
+        "default" : "Ingredients"
+      },
+      {
+        "type" : "text",
+        "id" : "subtitle",
+        "label" : "Subtitle",
+        "default" : "Take a look at the ingredients"
+      },
+      {
+        "type": "checkbox",
+        "id": "alt",
+        "label": "Use alternate colors"
+      },
+      {
+        "type": "checkbox",
+        "id": "alt_no_gap",
+        "label": "Remove top gap on alt"
+      },
+      {
+        "type": "checkbox",
+        "id": "alt_no_bottom_gap",
+        "label": "Remove bottom gap on alt"
+      },
+      {
+        "type": "text",
+        "id": "vitamins_label",
+        "label": "Vitamins Label",
+        "default": "Vitamins"
+      },
+      {
+        "type": "text",
+        "id": "mineral_label",
+        "label": "Mineral Array Label",
+        "default": "Mineral Array"
+      },
+      {
+        "type": "text",
+        "id": "probiotics_label",
+        "label": "Probiotics Label",
+        "default": "Probiotics"
+      },
+      {
+        "type": "text",
+        "id": "cannabinoids_label",
+        "label": "Cannabinoids Label",
+        "default": "Cannabinoids"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "vitamin",
+        "name": "Vitamin",
+        "settings": [
+           {
+             "type" : "text",
+             "id" : "name",
+             "label" : "Name"
+           },
+          {
+            "type" : "richtext",
+            "id" : "description",
+            "label" : "Description"
+          }
+        ]
+      },
+      {
+        "type": "mineral",
+        "name": "Mineral Array",
+        "settings": [
+           {
+             "type" : "text",
+             "id" : "name",
+             "label" : "Name"
+           },
+          {
+            "type" : "richtext",
+            "id" : "description",
+            "label" : "Description"
+          }
+        ]
+      },
+      {
+        "type": "probiotic",
+        "name": "Probiotic",
+        "settings": [
+           {
+             "type" : "text",
+             "id" : "name",
+             "label" : "Name"
+           },
+          {
+            "type" : "richtext",
+            "id" : "description",
+            "label" : "Description"
+          }
+        ]
+      },
+      {
+        "type": "cannabinoid",
+        "name": "Cannabinoid",
+        "settings": [
+           {
+             "type" : "text",
+             "id" : "name",
+             "label" : "Name"
+           },
+          {
+            "type" : "richtext",
+            "id" : "description",
+            "label" : "Description"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Ingredients",
+        "blocks": [
+          {
+            "type": "vitamin"
+          },
+          {
+            "type": "mineral"
+          },
+          {
+            "type": "probiotic"
+          },
+          {
+            "type": "cannabinoid"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
