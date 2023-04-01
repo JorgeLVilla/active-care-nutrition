@@ -1,0 +1,25 @@
+<template>
+ <div v-if="widgetSettings.show_subscription_details" class="rc_popup">
+   <div class="rc_popup__hover" :style="popupHoverStyle">
+     <button ref="detailsButtonRef" class="rc_popup_label_wrapper row" :aria-label="popupLabel" aria-expanded="false" aria-controls="rc_popup__block__content" @keyup.enter="show = true" @click.prevent.self>
+       <reload-icon v-if="rechargeIcon.visible" data-test-popup-icon :fill="rechargeIcon.fill" />
+       <span class="rc_popup__label">{{ popupLabel }}</span>
+     </button>
+     <focus-trap ref="focusTrap" :active="false" :initial-focus="() => $refs.learnMoreContentRef" :click-outside-deactivates="() => true" :escape-deactivates="true" :fallback-focus="() => $refs.detailsButtonRef" @deactivate="show = false">
+       <div ref="popupBlockRef" :class="{ active: show }" class="rc_popup__block" :style="popupBlockStyle">
+         <div class="rc_popup__block__content">
+           <div ref="learnMoreContentRef" class="rc_popup__how_it_works" v-html="howItWorksHTML" />
+           <a v-if="learnMoreLink.visible" ref="learnMoreLinkRef" :style="{ color: learnMoreLink.color }" class="rc_popup__learn_more" :href="learnMoreLink.href" target="_blank" rel="noopener noreferrer">
+{{ learnMoreLink.text }}</a>
+         </div>
+         <div v-if="widgetSettings.show_poweredby" class="rc_popup__block__footer">
+           <a :href="powerByHref" target="_blank" rel="noopener noreferrer" class="tooltip-badge">
+             <span class="powered-by">Powered by</span>
+             <recharge-logo />
+           </a>
+         </div>
+       </div>
+     </focus-trap>
+   </div>
+ </div>
+</template>

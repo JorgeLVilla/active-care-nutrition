@@ -13,6 +13,52 @@
     min-width: 624px;
   }
 
+    @media only screen and (max-width: 600px) {
+      .hero-desc-container {
+        max-width: 100vw !important
+      }
+    .bundle_text {
+      padding-top: 20px !important;
+      left: 0 !important;
+      width: 100vw !important;
+      text-align: center !important;
+      min-width: 100% !important;
+    }
+    .bundle_text
+    a.secnd_btnshbnl {
+     margin: 10px auto !important;
+    }
+    .bundle-top-heading {
+     text-align: center !important;
+      margin: 0 auto !important;
+      font-size: 20px !important;
+    }
+    .bundle-main-heading {
+      text-align: center !important;
+      font-size: 32px !important;
+      margin: 0 auto !important;
+    }
+    .bundle-bottom-heading {
+      text-align: center !important;
+      font-size: 24px !important;
+    }
+    .bundle-description {
+      text-align: center !important;
+      width: 95% !important;
+      margin: 0 auto !important;
+      padding: 5px 0 !important;
+    }
+    .hero-logo-grid {
+      width: 90% !important;
+      margin-left: 1px !important;
+    }
+
+    .collection_list {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+}
+
   .bundle-hero {
     width: 100%;
   }
@@ -134,9 +180,12 @@
 
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 {{ 'bundle-page.css' | asset_url | stylesheet_tag }}
+
 <div class="bundle_nd_sv imagetextwith" style="background:{{ section.settings.tp_bg_clr }};">
   <div class="bunld_cont">
     <div class="bundle-hero">
+    <div class="mobile-space"></div>
+    <div class="hero-desc-container">
     <div class="bundle_text">
       <div class="hidden-background"></div>
       <span class="bundle-top-heading">{{ section.settings.top_heading }}</span>
@@ -158,6 +207,7 @@
             {% endfor %}
         </div>
     </div>
+    </div>
       
         <img class="floating-hero-image" src="{{ section.settings.floating_img | img_url:'master' }}"> 
     <div class="bundle_img" style="width: 100%">
@@ -167,29 +217,102 @@
     </div>
   </div>
 </div>
-<div>
-  <div class="routine-grid-header">
-    <h2 class="routine--main-text routine-header-text">{{ section.settings.routine_header }}</h2>
-  </div>
-  <div class="routine-grid">
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'routine-card'%}
-          <div class="routine-card">
-            <img src="{{ block.settings.image | img_url: "master"}}" />
-            <p class="routine--main-text">{{ block.settings.main_text }}</p>
-            <span class="routine--body-text">{{ block.settings.body_text }}</span>
-          </div>
-      {% endcase %}
-    {% endfor %}
-  </div>
+
+<div class="routine-grid-header">
+  <h2 class="routine--main-text routine-header-text">{{ section.settings.routine_header }}</h2>
 </div>
+<div class="routine-grid routine-mobile-hide">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'routine-card'%}
+        <div class="routine-card">
+          <img src="{{ block.settings.image | img_url: "master"}}" />
+          <p class="routine--main-text">{{ block.settings.main_text }}</p>
+          <span class="routine--body-text">{{ block.settings.body_text }}</span>
+        </div>
+    {% endcase %}
+  {% endfor %}
+</div>
+</div>
+{%comment%} Mobile Icons Carousel {%endcomment%}
+
+{%comment%} Mobile Icons Carousel {%endcomment%}
+<div id="carouselExample" class="carousel slide routine-carousel-mobile">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://cdn.shopify.com/s/files/1/0658/3281/2786/files/Copy_of_ACN_WIRE_FRAME_7.jpg?v=1680233464" class="d-block  mobile-icon" alt="...">
+      <h1 class="desc-headline">Bridge Nutritional Gaps</h1>
+      <p class="desc-icon">Immunity & Energy Boost Performance, Rest & Recovery Heart & Beauty Health</p>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.shopify.com/s/files/1/0658/3281/2786/files/Copy_of_ACN_WIRE_FRAME_6.jpg?v=1680233464" class="d-block  mobile-icon" alt="...">
+      <h1 class="desc-headline">Mental & Cognitive Functions</h1>
+      <p class="desc-icon">Focus, Mood & Clarity Emotional & Social Wellbeing Fight or Flight Responses</p>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.shopify.com/s/files/1/0658/3281/2786/files/Copy_of_ACN_WIRE_FRAME_5.jpg?v=1680233464" class="d-block mobile-icon" alt="...">
+      <h1 class="desc-headline">Mental & Cognitive Functions</h1>
+      <p class="desc-icon">Metabolism & Weight Gut Microbiome & GI System Vital Nutrient Absorption</p>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.shopify.com/s/files/1/0658/3281/2786/files/Copy_of_ACN_WIRE_FRAME_4.jpg?v=1680233464" class="d-block mobile-icon" alt="...">
+      <h1 class="desc-headline">Whole Body Health & Aging</h1>
+      <p class="desc-icon">Respiratory & Oral Health Hormone Balance 24-hr. Circadian Rythm</p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+<style>
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.desc-headline {
+  font-size: 21px;
+  width: 85% !important;
+  color: #f84e00 !important;
+  text-align: center !important;
+  margin: 5px auto;
+}
+
+.mobile-icon {
+  width: 50% !important;
+  height: auto;
+  height: auto;
+  margin: 0 auto;
+}
+.desc-icon {
+  text-align: center;
+  font-weight: bold;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+</style>
+<div>
+  
 <div class="bundle_nd_sv fav_bndl">
   <h2>{{ section.settings.fav_heading }}</h2>
   <div class="collection_list">
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'shopbundle' %}
+        {% comment %} subs component {% endcomment %}
           <div class="coll_grid">
             <h3>{{ block.settings.shop_ttl }}</h3>
             {% if block.settings.shop_img != blank %}<img {% if forloop.index == 3 %}style="aspect-ratio: 343/213; object-fit: contain;"{% endif %} src="{{ block.settings.shop_img | img_url:'master' }}">{% endif %}
@@ -260,11 +383,6 @@
   
 </div>
 
-<style>
-
-
-  
-</style>
 
 
 <div>
@@ -663,7 +781,6 @@ function addItemToCart(variant_id, qty, selling_plan) {
     left: 10%;
   }
 
-  
   .bundle_text h2 {
     text-align: center;
     color: white;
@@ -685,6 +802,19 @@ function addItemToCart(variant_id, qty, selling_plan) {
     font-size: 20px;
     font-weight: 600;
   }
+
+@media only screen and (max-width: 600px) {
+  .routine-mobile-hide {
+    display:none !important;
+  }
+  .routine-carousel-mobile {
+    display: block !important;
+  }
+}
+
+.routine-carousel-mobile {
+  display: none;
+}
 
   .routine-grid {
     display: grid;

@@ -42,10 +42,10 @@
   .vtmn li.active{font-weight:600;}
   .site-footer{margin-top:0;}
   .image_with_text.index-section {margin-top: 40px;margin-bottom: 40px;}
-  label.rc-radio.onetime-radio,.rc-radio.subscription-radio {background: #EAEAEA;}
+  {% comment %} label.rc-radio.onetime-radio,.rc-radio.subscription-radio {background: #EAEAEA;} {% endcomment %}
   .variant-input-wrap label {background: #EAEAEA;border-radius: 0;font-size: 20px;min-width: 250px;text-align: center;box-shadow: 0 0 0 2px #eaeaea;color: #2C3368;font-weight: 500;letter-spacing: 0;}
   .variant-input-wrap input[type=radio]:checked+label {background: #2C3368;color: #fff;border-radius: 0;font-size: 20px;min-width: 250px;text-align: center;}
-  label.rc-radio.rc-radio--active,.rc-radio.rc-radio--active~.rc-selling-plans,.rc-radio.rc-radio--active~.rc-selling-plans span {background-color: #2C3368!important;color: #fff!important;}
+  {% comment %} label.rc-radio.rc-radio--active,.rc-radio.rc-radio--active~.rc-selling-plans,.rc-radio.rc-radio--active~.rc-selling-plans span {background-color: #2C3368!important;color: #fff!important;} {% endcomment %}
    span.r_price {display: block;line-height: 32px;}
   .rcm_price {display: flex;justify-content: center;align-items: center;gap: 10px;margin-top: 5px;margin-bottom: 5px;}
   .rcm_price+p {margin: 0;font-size: 14px;}
@@ -53,8 +53,8 @@
   .variant-input-wrap input[type=radio]+label {display: flex;min-height: 106px;line-height: 17px;flex-wrap: wrap;justify-content: center;align-items: center;flex-direction: column;gap: 6px;}
   .variant-input-wrap .variant-input:nth-child(3) label {line-height: 5px;}
   .variant-input {margin-right: 0;float: left;width: 50%;}
-  .rc-radio__input {position: absolute;top: -100%;}
-  label.rc-radio.onetime-radio {margin-top: 18px;}
+  {% comment %} .rc-radio__input {position: absolute;top: -100%;}
+  label.rc-radio.onetime-radio {margin-top: 18px;} {% endcomment %}
   .product-block {margin-bottom: 15px;}
   .rc-selling-plans {padding-left: 20px!important;}
   .index-section.social-section {margin-top: 85px;}
@@ -78,8 +78,8 @@
   }
   .variant-input-wrap input[type=radio]:checked+label {background: #F4F4F3;color: #202020;box-shadow: none;font-size: 16px;}
   .variant-input-wrap label {min-height: 80px!important;background: #fff;font-size: 16px;box-shadow: none;color: #202020;}
-  label.rc-radio.rc-radio--active, .rc-radio.rc-radio--active~.rc-selling-plans, .rc-radio.rc-radio--active~.rc-selling-plans span {background-color: #F4F4F3!important;color: #202020!important;}
-  label.rc-radio.onetime-radio, .rc-radio.subscription-radio {background: #fff;}
+  {% comment %} label.rc-radio.rc-radio--active, .rc-radio.rc-radio--active~.rc-selling-plans, .rc-radio.rc-radio--active~.rc-selling-plans span {background-color: #F4F4F3!important;color: #202020!important;} {% endcomment %}
+  {% comment %} label.rc-radio.onetime-radio, .rc-radio.subscription-radio {background: #fff;} {% endcomment %}
   .tabs_prod {background: #F4F4F3;padding: 65px 0;}
   .text-with-icons__block-title h3 {font-size: 19px;color: #f84e00;width: 70%;}
   .text-with-icons__block-text p {color: #626262;}
@@ -93,6 +93,7 @@
   .cont_dv li {font-size: 16px;font-weight: 400;color: #202020;line-height: 25px;}
   .vtmn li {color: #202020;line-height: 24px;}
   .multi_para {font-size: 16px;color: #202020;}
+
   /*  media css  */
   @media only screen and (min-width:320px) and (max-width:830px){ 
     .stress_n {text-align: center;}
