@@ -48,10 +48,10 @@
     endif
   endfor
 -%}
-
 <div id="ProductSection-{{ section_id }}"
   class="product-section"
   data-section-id="{{ section_id }}"
+
   data-product-id="{{ product.id }}"
   data-section-type="product-template"
   {% if isModal %}
@@ -408,18 +408,3 @@
     </div>
   </div>
 </div>
-{% style %}
-/* recharge styling */
-
-.rc-option__subsave {
-background: green !important;
-}
-.rc-option__onetime {
-background: red !imp;
-}
-.rc-container{
-  background: blue !important;
-}
-
-/* end recharge styling */
-{% endstyle %}
